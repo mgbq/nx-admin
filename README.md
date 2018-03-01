@@ -32,7 +32,7 @@ vue-permission是一套基于Vue/Vue-Router/axios/Vuex实现的前端用户权�
 
 ## 文档
 
-[Vue2.0用户权限控制解决方案](http://refined-x.com/2017/11/28/Vue2.0%E7%94%A8%E6%88%B7%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/)
+[Vue2.0实现的用户权限控制](http://blog.csdn.net/qq_32340877/article/details/79416344)
 
 ## 捐赠
 ![微信扫一扫](http://img.blog.csdn.net/20180301190740227?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzIzNDA4Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
