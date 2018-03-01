@@ -10,6 +10,25 @@
 ## 介绍
 
 vue-permission是一套基于Vue/Vue-Router/axios/Vuex实现的前端用户权限控制。
+#### 因为也是纯粹的写写前端页面,所以数据方面用的是mock.js,真实的模拟请求。
+#### 这个项目用到的
+####  技术栈：
+##### vue + webpack + vuex + axios
+
+#### 结构：
+- build: webpack配置
+- config: 项目配置参数
+- common 共用的
+- components:组件
+- api :增删改查的接口
+- mock：模拟数据
+- src assets: 静态资源文件，存放图片啥的 
+- router.js: 路由表 
+- store: 状态管理 
+- utils: 常用工具类封装
+- views: 视图页面
+-  static: 静态文件 存放 favicon.ico 等等
+
 
 ## 文档
 
