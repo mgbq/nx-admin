@@ -10,7 +10,7 @@
 ## 介绍
 
 vue-permission是一套基于Vue/Vue-Router/axios/Vuex实现的前端用户权限控制。
-#### 因为也是纯粹的写写前端页面,所以数据方面用的是mock.js,真实的模拟请求。
+#### 因为也是纯粹的写写前端页面,所以数据方面用的是easymock.js,真实的模拟请求。
 #### 这个项目用到的
 ####  技术栈：
 ##### vue + webpack + vuex + axios
