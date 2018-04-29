@@ -8,7 +8,7 @@ const whiteList = ['/login', '/authredirect'] // 不重定向白名单
 router.beforeEach((to, from, next) => {
   if (getToken()) { // 判断是否有token
     if (to.path === '/login') {
-      next({ path: '/' })
+      next()
     } else {
       if (store.getters.roles.length === 0) {
         console.log('roles====0')
