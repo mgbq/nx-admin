@@ -63,7 +63,7 @@
     <div class="head-log">
         <img class="company-log" src="/static/images/common/company-log.png" alt="公司log" />
     </div>
-    <div class="ms-title">用户admin或者editor密码随便但不能少于5位</div>
+    <div class="ms-title">自动化装逼系统</div>
     <div class="ms-login">
         <el-form :model="loginForm" :rules="rules" ref="loginForm" label-width="0px" class="demo-ruleForm">
             <el-form-item prop="username">
@@ -75,7 +75,7 @@
             <!-- `checked` 为 true 或 false -->
             <!-- <el-checkbox v-model="checked">记住密码</el-checkbox> -->
             <div class="login-btn">
-                <el-button :loading="loading"  @click.native.prevent="handleLogin">登录</el-button>
+                <el-button  @click.native.prevent="handleLogin">登录</el-button>
             </div>
         </el-form>
     </div>
@@ -119,7 +119,7 @@ export default {
           validator: validatePass
         }]
       },
-      loading: false
+      loading: true
     }
   },
   methods: {

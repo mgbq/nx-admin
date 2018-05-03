@@ -12,7 +12,7 @@
                 <template v-else>
                  <router-link :to="item.path">
                     <el-menu-item :index="item.path">
-                        <i :class="item.meta.icon"></i>{{ item.meta.title }}
+                        <i :class="item.meta.icon"></i>{{ generateTitle(item.meta.title) }}
                     </el-menu-item>
                   </router-link>
                 </template>
@@ -22,6 +22,7 @@
 </template>
 
 <script>
+import { generateTitle } from '@/utils/i18n'
 export default {
   name: 'vSidebar',
   props: {
@@ -53,6 +54,9 @@ export default {
     onRoutes() {
       return this.$route.path.replace('/permission', '')
     }
+  },
+  methods: {
+    generateTitle
   }
 }
 </script>
