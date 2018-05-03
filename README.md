@@ -33,7 +33,9 @@ vue-permission是一套基于Vue/Vue-Router/axios/Vuex实现的前端用户权�
 ## 相关文档
 
 [Vue2.0实现的用户权限控制](http://blog.csdn.net/qq_32340877/article/details/79416344)
+
 [vue2.0-基于elementui换肤[自定义主题]](https://blog.csdn.net/qq_32340877/article/details/80176987)
+
 [Vue国际化处理 vue-i18n 以及项目自动切换中英文](https://blog.csdn.net/qq_32340877/article/details/80148913)
 
 
