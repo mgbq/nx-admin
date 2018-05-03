@@ -30,9 +30,12 @@ vue-permission是一套基于Vue/Vue-Router/axios/Vuex实现的前端用户权�
 -  static: 静态文件 存放 favicon.ico 等等
 
 
-## 文档
+## 相关文档
 
 [Vue2.0实现的用户权限控制](http://blog.csdn.net/qq_32340877/article/details/79416344)
+[vue2.0-基于elementui换肤[自定义主题]](https://blog.csdn.net/qq_32340877/article/details/80176987)
+[Vue国际化处理 vue-i18n 以及项目自动切换中英文](https://blog.csdn.net/qq_32340877/article/details/80148913)
+
 
 ## 捐赠
 ![微信扫一扫](http://img.blog.csdn.net/20180301190740227?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzIzNDA4Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
