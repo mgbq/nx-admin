@@ -61,7 +61,7 @@
 
 <div class="login-wrap">
     <div class="head-log">
-        <img class="company-log" src="/static/images/common/company-log.png" alt="公司log" />
+        <img class="company-log" src="" alt="公司log" />
     </div>
     <div class="ms-title">自动化装逼系统</div>
     <div class="ms-login">
