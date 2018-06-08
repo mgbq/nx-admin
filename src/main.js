@@ -9,7 +9,13 @@ import i18n from './lang' // Internationalization
 import { global } from '@/global/global'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-
+import {
+  loadStyle
+} from './utils/util'
+import {
+  iconfontUrl,
+  iconfontVersion
+} from '@/config/env'
 import '@/permission' // permission control
 Vue.use(Vuex)
 Vue.use(ElementUI, {
@@ -22,6 +28,10 @@ if (localStorage.getItem('themeValue')) {
 } else {
   global.changeTheme('default')
 }
+
+iconfontVersion.forEach(ele => {
+  loadStyle(iconfontUrl.replace('$key', ele))
+})
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

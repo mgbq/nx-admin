@@ -16,6 +16,12 @@ export const constantRouterMap = [
     component: resolve => require(['../views/login/Login.vue'], resolve)
   },
   {
+    path: '/lock',
+    hidden: true,
+    name: '锁屏页',
+    component: resolve => require(['../components/common/lock/index.vue'], resolve)
+  },
+  {
     path: '/Readme',
     // name: 'Readmehome',
     index: 'Readme',

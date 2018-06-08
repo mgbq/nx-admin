@@ -1,27 +1,32 @@
 <template>
-   <el-menu class="header" :style="{ 'background-color': primaryColor }">
-        <div class="logo">{{$t('navbar.title')}}</div>
-        <div class="user-info">
-            <lang-select class="right-menu-item"></lang-select>
-            <skinComp class="right-menu-item"></skinComp>
-            <el-dropdown trigger="click" @command="handleCommand">
-                <span class="el-dropdown-link">
-                    <img class="user-logo" src="../../../static/img/img.jpg"> {{username}}
-                </span>
-                <el-dropdown-menu slot="dropdown">
-                    <el-dropdown-item command="loginout">退出</el-dropdown-item>
-                </el-dropdown-menu>
-            </el-dropdown>
-        </div>
-    </el-menu>
+  <el-menu class="header" :style="{ 'background-color': primaryColor }">
+    <div class="logo">{{$t('navbar.title')}}</div>
+    <div class="user-info">
+      <lang-select class="right-menu-item"></lang-select>
+      <skinComp class="right-menu-item"></skinComp>
+
+      <top-lock class="right-menu-item"></top-lock>
+      
+      <el-dropdown trigger="click" @command="handleCommand">
+        <span class="el-dropdown-link">
+          <img class="user-logo" src="../../../static/img/img.jpg"> {{username}}
+        </span>
+        <el-dropdown-menu slot="dropdown">
+          <el-dropdown-item command="loginout">退出</el-dropdown-item>
+        </el-dropdown-menu>
+      </el-dropdown>
+    </div>
+  </el-menu>
 </template>
 <script>
 import LangSelect from '@/components/LangSelect'
 import skinComp from '@/components/skin'
+import topLock from '@/components/common/top/top-lock'
 export default {
   components: {
     LangSelect,
-    skinComp
+    skinComp,
+    topLock
   },
   created() {
     // 加载用户 Header主题
@@ -29,47 +34,47 @@ export default {
       switch (localStorage.getItem('themeValue')) {
         case 'blue':
           /* eslint-disable */
-          this.primaryColor = '#409eff'
-          break
-        case 'green':
-          this.primaryColor = '#009a61'
-          break
-        case 'red':
-          this.primaryColor = '#f44336'
-          break
-        case 'purple':
-          this.primaryColor = '#7B7DE5'
-          break
+          this.primaryColor = "#409eff";
+          break;
+        case "green":
+          this.primaryColor = "#009a61";
+          break;
+        case "red":
+          this.primaryColor = "#f44336";
+          break;
+        case "purple":
+          this.primaryColor = "#7B7DE5";
+          break;
         default:
-          this.primaryColor = '#21baa9'
-          break
+          this.primaryColor = "#21baa9";
+          break;
       }
     } else {
-      this.primaryColor = '#21baa9'
+      this.primaryColor = "#21baa9";
     }
   },
   data() {
     return {
-      name: 'linxin'
-    }
+      name: "linxin"
+    };
   },
   computed: {
     username() {
-      const username = localStorage.getItem('ms_username')
-      return username || this.name
+      const username = localStorage.getItem("ms_username");
+      return username || this.name;
     }
   },
   methods: {
     handleCommand(command) {
-      if (command === 'loginout') {
-        localStorage.removeItem('ms_username')
-        this.$store.dispatch('LogOut').then(() => {
-          location.reload() // 为了重新实例化vue-router对象 避免bug
-        })
+      if (command === "loginout") {
+        localStorage.removeItem("ms_username");
+        this.$store.dispatch("LogOut").then(() => {
+          location.reload(); // 为了重新实例化vue-router对象 避免bug
+        });
       }
     }
   }
-}
+};
 </script>
 <style scoped>
 .header {
