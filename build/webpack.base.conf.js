@@ -31,13 +31,6 @@ module.exports = {
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
   },
-  externals: {
-    'vue': 'Vue',
-    'vue-router': 'VueRouter',
-    'vuex': 'Vuex',
-    'axios': 'axios',
-    'element-ui': 'ELEMENT',
-  },
   plugins: [
     new webpack.ProvidePlugin({
       $: "jquery",
