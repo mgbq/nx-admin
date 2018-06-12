@@ -4,9 +4,14 @@ import { Message } from 'element-ui'
 import { getToken } from '@/utils/auth' // 验权
 
 const whiteList = ['/login', '/authredirect'] // 不重定向白名单
-
+const lockPage = '/lock'
 router.beforeEach((to, from, next) => {
   if (getToken()) { // 判断是否有token
+    if (store.getters.isLock && to.path !== lockPage) {
+      next({
+        path: lockPage
+      })
+    } else
     if (to.path === '/login') {
       next()
     } else {
