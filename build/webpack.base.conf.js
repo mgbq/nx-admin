@@ -58,11 +58,16 @@ module.exports = {
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
       },
+      // {
+      //   test: /\.(css|scss)$/,
+      //   loader: "style-loader!css-loader!sass-loader",
+      //   exclude: /node_modules/
+      // },
       {
-        test: /\.(css|scss)$/,
-        loader: "style-loader!css-loader!sass-loader",
-        exclude: /node_modules/
+        test: /\.scss$/,
+        loaders: ["style", "css", "sass"]
       },
+      
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',

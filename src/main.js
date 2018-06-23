@@ -8,7 +8,12 @@ import store from './store'
 import i18n from './lang' // Internationalization
 import { global } from '@/global/global'
 import ElementUI from 'element-ui'
+
+// font-awesome
+import '@/assets/library/font-awesome-4.7.0/css/font-awesome.min.css'
+
 import 'element-ui/lib/theme-chalk/index.css'
+
 import {
   loadStyle
 } from './utils/util'

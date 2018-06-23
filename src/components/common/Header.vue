@@ -2,11 +2,15 @@
   <el-menu class="header" :style="{ 'background-color': primaryColor }">
     <div class="logo">{{$t('navbar.title')}}</div>
     <div class="user-info">
+       <full-screen  class="right-menu-item"/>
+      <help  class="right-menu-item"/>
       <lang-select class="right-menu-item"></lang-select>
       <skinComp class="right-menu-item"></skinComp>
-
-      <top-lock class="right-menu-item"></top-lock>
       
+      <top-lock class="right-menu-item"></top-lock>
+
+      
+
       <el-dropdown trigger="click" @command="handleCommand">
         <span class="el-dropdown-link">
           <img class="user-logo" src="../../../static/img/img.jpg"> {{username}}
@@ -22,11 +26,15 @@
 import LangSelect from '@/components/LangSelect'
 import skinComp from '@/components/skin'
 import topLock from '@/components/common/top/top-lock'
+import fullScreen from '@/components/core/layout-main/full-screen/index'
+import help from '@/components/core/help/index'
 export default {
   components: {
     LangSelect,
     skinComp,
-    topLock
+    topLock,
+    fullScreen,
+    help
   },
   created() {
     // 加载用户 Header主题

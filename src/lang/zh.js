@@ -14,6 +14,7 @@ export default {
   },
   route: {
     Readme: '自述',
-    permission: '权限'
+    permission: '权限',
+    report: '报表'
   }
 }

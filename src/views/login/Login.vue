@@ -130,7 +130,7 @@ export default {
             this.loading = false
             // alert('登录成功')
             localStorage.setItem('ms_username', this.loginForm.username)
-            this.$router.push('/Readme')
+            this.$router.push('/report')
           }).catch(() => {
             this.loading = false
           })

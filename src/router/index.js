@@ -22,6 +22,24 @@ export const constantRouterMap = [
     component: resolve => require(['../components/common/lock/index.vue'], resolve)
   },
   {
+    path: '/report',
+    // name: 'Readmehome',
+    index: 'report',
+    meta: {
+      title: 'report',
+      icon: 'el-icon-tickets'
+    },
+    component: resolve => require(['../components/common/Home.vue'], resolve),
+    children: [
+      {
+        name: 'report',
+        path: '/',
+        meta: { title: 'report', icon: 'el-icon-tickets' },
+        component: resolve => require(['../components/page/report.vue'], resolve)
+      }
+    ]
+  },
+  {
     path: '/Readme',
     // name: 'Readmehome',
     index: 'Readme',
@@ -39,6 +57,7 @@ export const constantRouterMap = [
       }
     ]
   }
+
 ]
 
 export default new Router({
