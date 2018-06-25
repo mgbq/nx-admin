@@ -29,12 +29,12 @@
 
 <script>
 
-import nxDataDisplay from '../../../packages/data-display/index.js'
-import nxDataCard from '../../../packages/data-card/index.js'
-import nxDataTabs from '../../../packages/data-tabs/index.js'
-import nxDataIcons from '../../../packages/data-icons/index.js'
+import nxDataDisplay from '@/components/nx-data-display/nx-data-display'
+import nxDataCard from '@/components/nx-data-card/nx-data-card'
+import nxDataTabs from '@/components/nx-data-tabs/nx-data-tabs'
+import nxDataIcons from '@/components/nx-data-icons/nx-data-icons'
 export default {
-  name: 'exhibition',
+  name: 'report',
   components: {
     nxDataDisplay,
     nxDataCard,
@@ -49,15 +49,15 @@ export default {
         color: '#15A0FF',
         data: [
           {
-            count: '100',
+            count: 1000,
             title: '日活跃数'
           },
           {
-            count: '3,000',
+            count: 3000,
             title: '月活跃数'
           },
           {
-            count: '20,000',
+            count: 20000,
             title: '年活跃数'
           }
         ]
@@ -109,22 +109,22 @@ export default {
         data: [
           {
             name: '姓名1',
-            src: '../../../static/img/mock/card/card-1.jpg',
+            src: '../../../../static/img/mock/card/card-1.jpg',
             text: '介绍1'
           },
           {
             name: '姓名2',
-            src: '../../../static/img/mock/card/card-2.jpg',
+            src: '../../../../static/img/mock/card/card-2.jpg',
             text: '介绍2'
           },
           {
             name: '姓名3',
-            src: '../../../static/img/mock/card/card-3.jpg',
+            src: '../../../../static/img/mock/card/card-3.jpg',
             text: '介绍3'
           },
           {
             name: '姓名4',
-            src: '../../../static/img/mock/card/card-4.jpg',
+            src: '../../../../static/img/mock/card/card-4.jpg',
             text: '介绍4'
           }
         ]
@@ -172,26 +172,32 @@ export default {
         data: [
           {
             title: '错误日志',
+            count: 12678,
             icon: 'icon-cuowu'
           },
           {
             title: '数据展示',
+            count: 12678,
             icon: 'icon-shujuzhanshi2'
           },
           {
             title: '权限管理',
+            count: 12678,
             icon: 'icon-jiaoseguanli'
           },
           {
             title: '菜单管理',
+            count: 12678,
             icon: 'icon-caidanguanli'
           },
           {
             title: '权限测试',
+            count: 12678,
             icon: 'icon-caidanguanli'
           },
           {
             title: '错误页面',
+            count: 12678,
             icon: 'icon-caidanguanli'
           }
         ]

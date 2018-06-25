@@ -11,11 +11,11 @@
         <el-row :gutter="20">
           <el-col :span="12">
             <el-alert :closable="false" type="info" title="扫码进 QQ 群"/>
-            <img class="qr" src="../../../../static/img/me/qq.jpg">
+            <img class="qr" src="../../../static/img/me/qq.jpg">
           </el-col>
           <el-col :span="12">
             <el-alert :closable="false" type="info" title="作者微信 加好友拉进微信群" />
-            <img class="qr" src="../../../../static/img/me/we.jpg">
+            <img class="qr" src="../../../static/img/me/we.jpg">
           </el-col>
         </el-row>
       </div>
@@ -24,9 +24,9 @@
 </template>
 
 <script>
-import nxIcon from '@/components/core/nx-icon'
+import nxIcon from '@/components/nx-icon'
 export default {
-  name: 'help',
+  name: 'nx-help',
   components: {
     nxIcon
   },

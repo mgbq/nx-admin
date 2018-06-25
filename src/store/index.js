@@ -5,7 +5,7 @@ import user from './modules/user'
 import getters from './getters'
 import permission from './modules/permission'
 import fullScreen from './modules/fullScreen'
-
+import common from './modules/common'
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
@@ -13,7 +13,8 @@ const store = new Vuex.Store({
     app,
     user,
     permission,
-    fullScreen
+    fullScreen,
+    common
   },
   getters
 })

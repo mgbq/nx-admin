@@ -13,6 +13,9 @@ export default {
   },
   route: {
     Readme: 'Readme',
-    permission: 'permission'
+    permission: 'permission',
+    treeMenu: 'treeMenu',
+    report: 'report',
+    wel: 'wel'
   }
 }

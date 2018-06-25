@@ -18,7 +18,7 @@
 import { validatenull } from '@/utils/validate'
 import { mapGetters } from 'vuex'
 export default {
-  name: 'top-lock',
+  name: 'nx-top-lock',
   data() {
     return {
       box: false,

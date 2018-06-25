@@ -12,12 +12,12 @@
 
 <script>
 import { mapState, mapMutations } from 'vuex'
-import nxIcon from '@/components/core/nx-icon'
+import nxIcon from '@/components/nx-icon'
 export default {
   components: {
     nxIcon
   },
-  name: 'fullScreen',
+  name: 'nx-fullScreen',
   computed: {
     ...mapState({
       isFullScreen: state => state.fullScreen.isFullScreen

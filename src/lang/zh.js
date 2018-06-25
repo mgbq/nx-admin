@@ -1,3 +1,4 @@
+
 export default {
   // 导航栏
   navbar: {
@@ -15,6 +16,8 @@ export default {
   route: {
     Readme: '自述',
     permission: '权限',
-    report: '报表'
+    report: '报表',
+    treeMenu: '树形菜单',
+    wel: '首页'
   }
 }

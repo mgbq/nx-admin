@@ -2,12 +2,12 @@
   <el-menu class="header" :style="{ 'background-color': primaryColor }">
     <div class="logo">{{$t('navbar.title')}}</div>
     <div class="user-info">
-       <full-screen  class="right-menu-item"/>
-      <help  class="right-menu-item"/>
-      <lang-select class="right-menu-item"></lang-select>
-      <skinComp class="right-menu-item"></skinComp>
+       <nx-full-screen  class="right-menu-item"/>
+      <nx-help  class="right-menu-item"/>
+      <nx-langSelect class="right-menu-item"></nx-langSelect>
+      <nx-skinComp class="right-menu-item"></nx-skinComp>
       
-      <top-lock class="right-menu-item"></top-lock>
+      <nx-top-lock class="right-menu-item"></nx-top-lock>
 
       
 
@@ -15,26 +15,35 @@
         <span class="el-dropdown-link">
           <img class="user-logo" src="../../../static/img/img.jpg"> {{username}}
         </span>
-        <el-dropdown-menu slot="dropdown">
+        <!-- <el-dropdown-menu slot="dropdown">
           <el-dropdown-item command="loginout">退出</el-dropdown-item>
+        </el-dropdown-menu> -->
+          <el-dropdown-menu slot="dropdown">
+              <a href="" target="_blank">
+                   <el-dropdown-item>关于作者</el-dropdown-item>
+                  </a>
+            <a href="https://github.com/mgbq/vue-permission" target="_blank">
+              <el-dropdown-item>项目仓库</el-dropdown-item>
+                </a>
+            <el-dropdown-item divided  command="loginout">退出登录</el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
     </div>
   </el-menu>
 </template>
 <script>
-import LangSelect from '@/components/LangSelect'
-import skinComp from '@/components/skin'
-import topLock from '@/components/common/top/top-lock'
-import fullScreen from '@/components/core/layout-main/full-screen/index'
-import help from '@/components/core/help/index'
+import nxLangSelect from '@/components/nx-lang-select'
+import nxSkinComp from '@/components/nx-skin'
+import nxTopLock from '@/components/common/top/nx-top-lock'
+import nxFullScreen from '@/components/nx-full-screen/index'
+import nxHelp from '@/components/nx-help/index'
 export default {
   components: {
-    LangSelect,
-    skinComp,
-    topLock,
-    fullScreen,
-    help
+    nxLangSelect,
+    nxSkinComp,
+    nxTopLock,
+    nxFullScreen,
+    nxHelp
   },
   created() {
     // 加载用户 Header主题

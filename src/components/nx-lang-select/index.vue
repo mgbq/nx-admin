@@ -13,6 +13,7 @@
 
 <script>
 export default {
+  name: 'nx-lang-select',
   computed: {
     language() {
       return this.$store.getters.language

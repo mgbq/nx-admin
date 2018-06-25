@@ -13,7 +13,7 @@ export const constantRouterMap = [
     path: '/login',
     name: '登录页面',
     hidden: true,
-    component: resolve => require(['../views/login/Login.vue'], resolve)
+    component: resolve => require(['../views/login/index.vue'], resolve)
   },
   {
     path: '/lock',
@@ -21,6 +21,31 @@ export const constantRouterMap = [
     name: '锁屏页',
     component: resolve => require(['../components/common/lock/index.vue'], resolve)
   },
+  // {
+  //   path: '/404',
+  //   component: resolve => require(['../views/errorPage/404.vue'], resolve)
+  // },
+  // 首页
+  {
+    path: '/wel',
+    // name: 'Readmehome',
+    index: 'wel',
+    meta: {
+      title: 'wel',
+      icon: 'el-icon-view'
+    },
+    component: resolve => require(['../components/common/Home.vue'], resolve),
+    children: [
+      {
+        name: 'wel',
+        path: '/',
+        meta: { title: 'wel', icon: 'el-icon-view' },
+        component: resolve => require(['../views/login/wel.vue'], resolve)
+      }
+    ]
+  },
+
+  // 报表页面
   {
     path: '/report',
     // name: 'Readmehome',
@@ -35,7 +60,27 @@ export const constantRouterMap = [
         name: 'report',
         path: '/',
         meta: { title: 'report', icon: 'el-icon-tickets' },
-        component: resolve => require(['../components/page/report.vue'], resolve)
+        component: resolve => require(['../views/page/report.vue'], resolve)
+      }
+    ]
+  },
+
+  // 树形菜单
+  {
+    path: '/treeMenu',
+    // name: 'Readmehome',
+    index: 'treeMenu',
+    meta: {
+      title: 'treeMenu',
+      icon: 'el-icon-edit-outline'
+    },
+    component: resolve => require(['../components/common/Home.vue'], resolve),
+    children: [
+      {
+        name: 'treeMenu',
+        path: '/',
+        meta: { title: 'treeMenu', icon: 'el-icon-edit-outline' },
+        component: resolve => require(['../views/tree/treeMenu.vue'], resolve)
       }
     ]
   },
@@ -53,7 +98,7 @@ export const constantRouterMap = [
         name: 'Readme',
         path: '/',
         meta: { title: 'Readme', icon: 'el-icon-menu' },
-        component: resolve => require(['../components/page/Readme.vue'], resolve)
+        component: resolve => require(['../views/page/Readme.vue'], resolve)
       }
     ]
   }
@@ -82,7 +127,24 @@ export const asyncRouterMap = [
         meta: {
           title: 'permission', icon: 'el-icon-menu', roles: ['admin']
         },
-        component: resolve => require(['../components/page/permission.vue'], resolve)
+        component: resolve => require(['../views/page/permission.vue'], resolve)
+      }
+    ]
+  },
+  {
+    path: '/404',
+    index: '404',
+    meta: {
+      title: '404page',
+      icon: 'el-icon-circle-close'
+    },
+    component: resolve => require(['../components/common/Home.vue'], resolve),
+    children: [
+      {
+        name: '404page',
+        path: '/404',
+        meta: { title: 'Readme', icon: 'el-icon-circle-close' },
+        component: resolve => require(['../views/errorPage/404.vue'], resolve)
       }
     ]
   },

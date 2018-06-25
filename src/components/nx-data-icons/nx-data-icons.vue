@@ -9,8 +9,7 @@
             </div>
             <div class="item-info">
               <span>{{item.title}}</span>
-              <h3 :style="{color:color}">{{item.count}}</h3>
-              <!-- <nx-count-up :start="14" :end="item.count"/> -->
+              <h3 :style="{color:color}"><nx-count-up :start="14" :end="item.count"/></h3>
             </div>
           </div>
         </el-col>
@@ -22,7 +21,7 @@
 <script>
 import nxCountUp from '@/components/nx-count-up/index.vue'
 export default {
-  name: 'nxDataIcons',
+  name: 'nx-data-icons',
   components: {
     nxCountUp
   },
