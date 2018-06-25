@@ -34,7 +34,7 @@
 <script>
 import nxLangSelect from '@/components/nx-lang-select'
 import nxSkinComp from '@/components/nx-skin'
-import nxTopLock from '@/components/common/top/nx-top-lock'
+import nxTopLock from '@/components/common/nx-top/nx-top-lock'
 import nxFullScreen from '@/components/nx-full-screen/index'
 import nxHelp from '@/components/nx-help/index'
 export default {

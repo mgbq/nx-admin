@@ -19,7 +19,7 @@ export const constantRouterMap = [
     path: '/lock',
     hidden: true,
     name: '锁屏页',
-    component: resolve => require(['../components/common/lock/index.vue'], resolve)
+    component: resolve => require(['../views/common/lock/index.vue'], resolve)
   },
   // {
   //   path: '/404',
