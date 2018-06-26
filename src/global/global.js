@@ -30,7 +30,7 @@ export const global = {
     // 需要移到单独的文件存放
     var cssArray = themeArray
     for (let i = 0, len = cssArray.length; i < len; i++) {
-      var itemPath = '../../static/theme/' + themeValue + '/' + cssArray[i].toLowerCase() + '.css'
+      var itemPath = 'static/theme/' + themeValue + '/' + cssArray[i].toLowerCase() + '.css'
 
       loadCss(itemPath)
     }

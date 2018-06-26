@@ -109,22 +109,22 @@ export default {
         data: [
           {
             name: '姓名1',
-            src: '../../../../static/img/mock/card/card-1.jpg',
+            src: 'static/img/mock/card/card-1.jpg',
             text: '介绍1'
           },
           {
             name: '姓名2',
-            src: '../../../../static/img/mock/card/card-2.jpg',
+            src: 'static/img/mock/card/card-2.jpg',
             text: '介绍2'
           },
           {
             name: '姓名3',
-            src: '../../../../static/img/mock/card/card-3.jpg',
+            src: 'static/img/mock/card/card-3.jpg',
             text: '介绍3'
           },
           {
             name: '姓名4',
-            src: '../../../../static/img/mock/card/card-4.jpg',
+            src: 'static/img/mock/card/card-4.jpg',
             text: '介绍4'
           }
         ]

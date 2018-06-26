@@ -33,7 +33,7 @@ export default {
 <style lang="scss">
 
  .btn-text {
-        color: #FFF;
+        color: #FFF !important;
         &.can-hover {
           &:hover {
             color: #FFEBA4;
