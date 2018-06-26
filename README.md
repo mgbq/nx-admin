@@ -1,5 +1,5 @@
 
-# vue-permission
+# nx-admin
 
 [![npm](https://img.shields.io/npm/v/vue-access-control.svg)](https://www.npmjs.com/package/vue-access-control/)  [![license](https://img.shields.io/github/license/tower1229/Vue-Access-Control.svg)]()
 
