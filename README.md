@@ -66,7 +66,7 @@ npm：`npm i vue-permission`
 
 [vue实现的权限系统](https://mgbq.github.io/vue-permission/#/login)
 
->   vue-permission project
+> vue-permission project
 
 ## Build Setup
 
