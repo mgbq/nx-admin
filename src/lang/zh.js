@@ -2,7 +2,7 @@
 export default {
   // 导航栏
   navbar: {
-    title: '自动化装逼系统',
+    title: '自动化管理系统',
     languageSwitch: '语言切换',
     theme: '主题'
   },

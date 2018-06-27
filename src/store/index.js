@@ -5,6 +5,7 @@ import user from './modules/user'
 import getters from './getters'
 import permission from './modules/permission'
 import fullScreen from './modules/fullScreen'
+import tags from './modules/tags'
 import common from './modules/common'
 Vue.use(Vuex)
 
@@ -14,7 +15,8 @@ const store = new Vuex.Store({
     user,
     permission,
     fullScreen,
-    common
+    common,
+    tags
   },
   getters
 })

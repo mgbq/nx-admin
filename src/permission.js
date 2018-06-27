@@ -32,6 +32,13 @@ router.beforeEach((to, from, next) => {
           })
         })
       } else {
+        const value = to.query.src ? to.query.src : to.path
+        const label = to.query.name ? to.query.name : to.name
+        store.commit('ADD_TAG', {
+          label: label,
+          value: value,
+          query: to.query
+        })
         console.log('====1')
         next() // 当有用户权限的时候，说明所有可访问路由已生成 如访问没权限的全面会自动进入404页面
       }

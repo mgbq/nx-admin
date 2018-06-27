@@ -1,10 +1,10 @@
 'use strict'
-var webpack = require('webpack')
 const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
-function resolve (dir) {
+var webpack = require("webpack")
+function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
 
@@ -22,7 +22,8 @@ const createLintingRule = () => ({
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    app: './src/main.js'
+    app: './src/main.js' // 解决打包后浏览器缓存问题 貌似没效果
+    //app: ['babel-polyfill','./src/main.js'] 
   },
   output: {
     path: config.build.assetsRoot,
@@ -31,19 +32,12 @@ module.exports = {
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
   },
-  plugins: [
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery",
-      "windows.jQuery": "jquery"
-    })
-  ],
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
-      'static': resolve('static'),
+      'static': path.resolve(__dirname, 'static'),
     }
   },
   module: {
@@ -55,23 +49,37 @@ module.exports = {
         options: vueLoaderConfig
       },
       {
+        test: /\.vue$/,
+        use: [
+          {
+            loader: 'vue-pretty-logger',
+            options: {
+              
+            }
+          }
+        ]
+      },
+      {
+        test: /\.sass$/,
+        loaders: ['style', 'css', 'sass']
+      },
+      {
         test: /\.js$/,
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
       },
-      // {
-      //   test: /\.(css|scss)$/,
-      //   loader: "style-loader!css-loader!sass-loader",
-      //   exclude: /node_modules/
-      // },
       {
-        test: /\.scss$/,
-        loaders: ["style", "css", "sass"]
+        test: /\.svg$/,
+        loader: 'svg-sprite-loader',
+        include: [resolve('src/icons')],
+        options: {
+          symbolId: 'icon-[name]'
+        }
       },
-      
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
+        exclude: [resolve('src/icons')],
         options: {
           limit: 10000,
           name: utils.assetsPath('img/[name].[hash:7].[ext]')
@@ -93,7 +101,8 @@ module.exports = {
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
       }
-    ]},
+    ]
+  },
   node: {
     // prevent webpack from injecting useless setImmediate polyfill because Vue
     // source contains it (although only uses it if it's native).
@@ -105,5 +114,12 @@ module.exports = {
     net: 'empty',
     tls: 'empty',
     child_process: 'empty'
-  }
+  },
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin('common.js'),
+    new webpack.ProvidePlugin({
+      jQuery: "jquery",
+      $: "jquery"
+    })
+  ]
 }

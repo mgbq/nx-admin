@@ -1,5 +1,7 @@
 import { login, logout, getInfo } from '@/api/login'
 import { getToken, setToken, removeToken } from '@/utils/auth'
+import { validatenull } from '@/utils/validate'
+import { getMenu } from '@/api/user'
 import {
   setStore,
   getStore,
@@ -17,7 +19,9 @@ const user = {
     }) || false,
     lockPasswd: getStore({
       name: 'lockPasswd'
-    }) || ''
+    }) || '',
+    userInfo: {},
+    menu: []
   },
 
   mutations: {
@@ -58,6 +62,21 @@ const user = {
       removeStore({
         name: 'isLock'
       })
+    },
+    SET_USERIFNO: (state, userInfo) => {
+      state.userInfo = userInfo
+    },
+    SET_MENU: (state, menu) => {
+      const list = menu.filter(ele => {
+        if (validatenull(ele.meta)) return true
+        if (validatenull(ele.meta.roles)) return true
+        if (ele.meta.roles.indexOf(state.roles[0]) !== -1) {
+          return true
+        } else {
+          return false
+        }
+      })
+      state.menu = list
     }
   },
 
@@ -84,10 +103,22 @@ const user = {
           const data = response.data
           commit('SET_ROLES', data.roles)
           commit('SET_NAME', data.name)
+          commit('SET_USERIFNO', data)
           commit('SET_AVATAR', data.avatar)
           resolve(response)
         }).catch(error => {
           reject(error)
+        })
+      })
+    },
+    // 获取系统菜单
+    GetMenu({ commit }, parentId) {
+      parentId
+      return new Promise(resolve => {
+        getMenu(parentId).then((res) => {
+          const data = res.data
+          commit('SET_MENU', data)
+          resolve(data)
         })
       })
     },

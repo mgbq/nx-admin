@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+const _import = require('./_import_' + process.env.NODE_ENV)
 
 Vue.use(Router)
 
@@ -13,54 +14,51 @@ export const constantRouterMap = [
     path: '/login',
     name: '登录页面',
     hidden: true,
-    component: resolve => require(['../views/login/index.vue'], resolve)
+    component: _import('login/index')
   },
   {
     path: '/lock',
     hidden: true,
     name: '锁屏页',
-    component: resolve => require(['../views/common/lock/index.vue'], resolve)
+    component: _import('common/lock/index')
   },
-  // {
-  //   path: '/404',
-  //   component: resolve => require(['../views/errorPage/404.vue'], resolve)
-  // },
   // 首页
   {
     path: '/wel',
-    // name: 'Readmehome',
     index: 'wel',
     meta: {
       title: 'wel',
       icon: 'el-icon-view'
     },
-    component: resolve => require(['../components/common/Home.vue'], resolve),
+    component: resolve => require(['../components/common/index'], resolve),
     children: [
       {
         name: 'wel',
         path: '/',
         meta: { title: 'wel', icon: 'el-icon-view' },
-        component: resolve => require(['../views/login/wel.vue'], resolve)
+        component: _import('login/wel'),
+        children: []
       }
+
     ]
   },
 
   // 报表页面
   {
     path: '/report',
-    // name: 'Readmehome',
     index: 'report',
     meta: {
       title: 'report',
       icon: 'el-icon-tickets'
     },
-    component: resolve => require(['../components/common/Home.vue'], resolve),
+    component: resolve => require(['../components/common/index.vue'], resolve),
     children: [
       {
         name: 'report',
         path: '/',
         meta: { title: 'report', icon: 'el-icon-tickets' },
-        component: resolve => require(['../views/page/report.vue'], resolve)
+        component: _import('page/report'),
+        children: []
       }
     ]
   },
@@ -74,13 +72,13 @@ export const constantRouterMap = [
       title: 'treeMenu',
       icon: 'el-icon-edit-outline'
     },
-    component: resolve => require(['../components/common/Home.vue'], resolve),
+    component: resolve => require(['../components/common/index.vue'], resolve),
     children: [
       {
         name: 'treeMenu',
         path: '/',
         meta: { title: 'treeMenu', icon: 'el-icon-edit-outline' },
-        component: resolve => require(['../views/tree/treeMenu.vue'], resolve)
+        component: _import('tree/treeMenu')
       }
     ]
   },
@@ -92,13 +90,30 @@ export const constantRouterMap = [
       title: 'Readme',
       icon: 'el-icon-menu'
     },
-    component: resolve => require(['../components/common/Home.vue'], resolve),
+    component: resolve => require(['../components/common/index.vue'], resolve),
     children: [
       {
         name: 'Readme',
         path: '/',
         meta: { title: 'Readme', icon: 'el-icon-menu' },
-        component: resolve => require(['../views/page/Readme.vue'], resolve)
+        component: _import('page/Readme')
+      }
+    ]
+  },
+  {
+    path: '/404',
+    index: '404',
+    meta: {
+      title: '404page',
+      icon: 'el-icon-circle-close'
+    },
+    component: resolve => require(['../components/common/index.vue'], resolve),
+    children: [
+      {
+        name: '404page',
+        path: '/404',
+        meta: { title: 'Readme', icon: 'el-icon-circle-close' },
+        component: _import('errorPage/404')
       }
     ]
   }
@@ -119,7 +134,7 @@ export const asyncRouterMap = [
       icon: 'el-icon-setting',
       roles: ['admin']
     },
-    component: resolve => require(['../components/common/Home.vue'], resolve),
+    component: resolve => require(['../components/common/index.vue'], resolve),
     children: [
       {
         name: 'permission',
@@ -127,24 +142,7 @@ export const asyncRouterMap = [
         meta: {
           title: 'permission', icon: 'el-icon-menu', roles: ['admin']
         },
-        component: resolve => require(['../views/page/permission.vue'], resolve)
-      }
-    ]
-  },
-  {
-    path: '/404',
-    index: '404',
-    meta: {
-      title: '404page',
-      icon: 'el-icon-circle-close'
-    },
-    component: resolve => require(['../components/common/Home.vue'], resolve),
-    children: [
-      {
-        name: '404page',
-        path: '/404',
-        meta: { title: 'Readme', icon: 'el-icon-circle-close' },
-        component: resolve => require(['../views/errorPage/404.vue'], resolve)
+        component: _import('page/permission')
       }
     ]
   },

@@ -81,7 +81,7 @@ export default {
   line-height: 90px;
 }
 .login-info-item {
-  font-size: 14px;
+  font-size: 18px;
 }
 .login-border {
   display: flex;
@@ -156,4 +156,8 @@ export default {
   text-indent: 5px;
   text-align: center;
 }
+.text-white {
+  color: #fff;
+}
+
 </style>
