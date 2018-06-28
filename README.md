@@ -52,9 +52,9 @@ nx-admin是一套基于Vue/Vue-Router/axios/Vuex/Element-ui开源的管理系统
 
 ## 下载
 
-git：`git clone https://github.com/mgbq/vue-permission.git`
+git：`git clone https://github.com/mgbq/nx-admin.git`
 
-npm：`npm i vue-permission`
+npm：`npm i nx-admin`
 
 
 ## 演示
