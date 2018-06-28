@@ -70,7 +70,7 @@ npm：`npm i vue-permission`
 
 演示地址:
 
-[vue实现的权限系统](https://mgbq.github.io/vue-permission/#/login)
+[vue实现的后台管理系统](https://mgbq.github.io/vue-permission/#/login)
 
 > nx-admin project
 
