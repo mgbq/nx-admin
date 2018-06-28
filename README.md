@@ -40,6 +40,8 @@ vue-permission是一套基于Vue/Vue-Router/axios/Vuex实现的前端用户权�
 
 [搭建 vue2 单元测试环境(karma+mocha+webpack3)](https://juejin.im/post/5b051519f265da0b8f62e94e)
 
+[vue实现首屏加载等待动画](https://juejin.im/post/5b336699e51d4558a846dcc2)
+
 
 ## 捐赠
 ![微信扫一扫](http://img.blog.csdn.net/20180301190740227?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzIzNDA4Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
