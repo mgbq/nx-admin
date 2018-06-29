@@ -46,6 +46,8 @@ nx-admin是一套基于Vue/Vue-Router/axios/Vuex/Element-ui开源的管理系统
 
 [vue实现首屏加载等待动画](https://juejin.im/post/5b336699e51d4558a846dcc2)
 
+[Vue项目中添加锁屏功能](https://juejin.im/post/5b35e05ee51d4558a75ea159)
+
 
 ## 捐赠
 ![微信扫一扫](http://img.blog.csdn.net/20180301190740227?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzIzNDA4Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
