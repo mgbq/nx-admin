@@ -3,16 +3,20 @@
 
 [![npm](https://img.shields.io/npm/v/vue-access-control.svg)](https://www.npmjs.com/package/vue-access-control/)  [![license](https://img.shields.io/github/license/tower1229/Vue-Access-Control.svg)]()
 
-> :gem: Vue权限后台系统
+> :gem: Vue自动化管理系统
 
-![logo](https://github.com/tower1229/tower1229.github.io/raw/master/asset/vsc-logo.png)
+![logo](https://github.com/mgbq/nx-admin/blob/master/src/assets/img/home/logo.png)
 
 ## 介绍
+ 
+nx-admin是一套基于Vue/Vue-Router/axios/Vuex/Element-ui开源的管理系统前端集成方案
 
-vue-permission是一套基于Vue/Vue-Router/axios/Vuex实现的前端用户权限控制。
 #### 因为也是纯粹的写写前端页面,所以数据方面用的是easymock.js,真实的模拟请求。
+
 #### 这个项目用到的
+
 ####  技术栈：
+
 ##### vue + webpack + vuex + axios
 
 #### 结构：
@@ -40,15 +44,17 @@ vue-permission是一套基于Vue/Vue-Router/axios/Vuex实现的前端用户权�
 
 [搭建 vue2 单元测试环境(karma+mocha+webpack3)](https://juejin.im/post/5b051519f265da0b8f62e94e)
 
+[vue实现首屏加载等待动画](https://juejin.im/post/5b336699e51d4558a846dcc2)
+
 
 ## 捐赠
 ![微信扫一扫](http://img.blog.csdn.net/20180301190740227?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzIzNDA4Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 ## 下载
 
-git：`git clone https://github.com/mgbq/vue-permission.git`
+git：`git clone https://github.com/mgbq/nx-admin.git`
 
-npm：`npm i vue-permission`
+npm：`npm i nx-admin`
 
 
 ## 演示
@@ -64,9 +70,71 @@ npm：`npm i vue-permission`
 
 演示地址:
 
-[vue实现的权限系统](https://mgbq.github.io/vue-permission/#/login)
+[vue实现的后台管理系统](https://mgbq.github.io/vue-permission/#/login)
 
-> vue-permission project
+> nx-admin project
+
+nx-admin 是完全开源免费的管理系统集成方案，由 nxmin 在工作之余由兴趣驱动完成，如果你也一样喜欢前端开发，欢迎加入我们的讨论/学习群，群内可以提问答疑，分享学习资料或者随便扯淡
+
+QQ群
+
+群号 493671066 欢迎大家
+
+## 功能
+
+* 首屏加载等待动画 避免首次加载白屏尴尬
+* 简约主题
+* 锁屏功能
+* 多 tab 页结构
+* 每个插件和组件都配有介绍文档
+* 登陆和注销
+* 根据路由自动生成菜单
+* 可折叠侧边栏
+* 方便的菜单设置
+* 多国语言支持
+* 富文本编辑器
+* Markdown 编辑器
+* 全屏功能
+* Fontawesome 图标库
+* 图标选择器（组件）
+* 自动引入下载的 SVG 图标
+* 前端假数据支持（ mock ）
+* 图表自适应可拖拽大小的卡片容器（示例）
+* 简化剪贴板操作
+* 简化Cookie操作
+* 时间日期计算工具
+* 导入 Excel （ xlsx 格式 + csv 格式 ）
+* 数据导出 Excel （ xlsx 格式 + csv 格式 ）
+* 数据导出文本
+* 数字动画
+* 可拖拽调整大小的切分布局
+* 可拖拽调整大小和位置的网格布局
+* 提供三种方便的页面容器组件（正常卡片，隐形容器，填满页面）
+* 代码高亮显示
+* GitHub 样式的 markdown 显示组件
+* markdown 内代码高亮
+* 为 markdown 扩展了百度云链接解析和优化显示
+* 右键菜单组件
+* 自定义滚动条和滚动控制
+* 内置4种主题
+* 公用样式抽离，方便的主题定制
+* 打包后随意目录部署（已经做好兼容设置）
+
+## TODO
+
+nx-admin 仍然处于开发中，这里有一些计划：
+
+* 分离出简化版本
+* 增加右上角通知中心
+* 增加一些实例页面以提供业务页面布局建议
+* 添加图表库
+* 面包屑导航
+* 树型表格组件
+* `1.1.0 完成` 抽离项目里的文档，集中存放在文档站点
+* `1.1.0 完成` 对主界面进行一次完善，调整整体布局和颜色
+
+欢迎你为 nx-admin的开发作出贡献（代码编写/文档翻译）。
+
 
 ## Build Setup
 
