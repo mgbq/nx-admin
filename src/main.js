@@ -9,8 +9,8 @@ import i18n from './lang' // Internationalization
 import { global } from '@/global/global'
 import ElementUI from 'element-ui'
 
-// svg图标
-import '@/icons' // icon
+// // svg图标
+// import '@/icons' // icon
 
 // font-awesome
 import '@/assets/library/font-awesome-4.7.0/css/font-awesome.min.css'

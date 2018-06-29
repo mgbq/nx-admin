@@ -10,15 +10,21 @@
     <h1 class="top-title">
       <topMenu></topMenu>
     </h1>
+    
     <div class="top-button is-right">
+      <el-tooltip class="item" effect="dark" content="疑问" placement="bottom">
+        <span class="top-item">
+          <nx-help></nx-help>
+        </span>
+      </el-tooltip>
       <el-tooltip class="item" effect="dark" content="主题色" placement="bottom">
         <span class="top-item">
-          <!-- <top-theme></top-theme> -->
+            <nx-skinComp></nx-skinComp>
         </span>
       </el-tooltip>
       <el-tooltip class="item" effect="dark" content="锁屏" placement="bottom">
         <span class="top-item">
-          <!-- <top-lock></top-lock> -->
+         <nx-top-lock></nx-top-lock>
         </span>
       </el-tooltip>
       <el-tooltip class="item" effect="dark" :content="isFullScren?'退出全屏':'全屏'" placement="bottom">
@@ -55,12 +61,15 @@
 </template>
 <script>
 import { mapGetters } from 'vuex'
+import nxTopLock from '@/components/common/nx-top/nx-top-lock'
+import nxHelp from '@/components/nx-help/index'
+import nxSkinComp from '@/components/nx-skin'
 import { fullscreenToggel, listenfullscreen } from '@/utils/util'
 // import topLock from './top-lock'
 import topMenu from './top-menu'
 import topBreadcrumb from './top-breadcrumb'
 export default {
-  components: { topMenu, topBreadcrumb },
+  components: { topMenu, topBreadcrumb, nxHelp, nxTopLock, nxSkinComp },
   name: 'top',
   data() {
     return {}
