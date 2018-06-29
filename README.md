@@ -38,13 +38,13 @@ nx-admin是一套基于Vue/Vue-Router/axios/Vuex/Element-ui开源的管理系统
 
 [Vue2.0实现的用户权限控制](http://blog.csdn.net/qq_32340877/article/details/79416344)
 
-[vue2.0-基于elementui换肤[自定义主题]](https://blog.csdn.net/qq_32340877/article/details/80176987)
+[Vue2.0-基于elementui换肤[自定义主题]](https://blog.csdn.net/qq_32340877/article/details/80176987)
 
 [Vue国际化处理 vue-i18n 以及项目自动切换中英文](https://blog.csdn.net/qq_32340877/article/details/80148913)
 
-[搭建 vue2 单元测试环境(karma+mocha+webpack3)](https://juejin.im/post/5b051519f265da0b8f62e94e)
+[搭建 Vue2 单元测试环境(karma+mocha+webpack3)](https://juejin.im/post/5b051519f265da0b8f62e94e)
 
-[vue实现首屏加载等待动画](https://juejin.im/post/5b336699e51d4558a846dcc2)
+[Vue实现首屏加载等待动画](https://juejin.im/post/5b336699e51d4558a846dcc2)
 
 [Vue项目中添加锁屏功能](https://juejin.im/post/5b35e05ee51d4558a75ea159)
 
