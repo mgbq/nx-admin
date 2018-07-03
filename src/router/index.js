@@ -56,21 +56,6 @@ export const constantRouterMap = [
 
     ]
   },
-  // {
-  //   path: '/treeMenu',
-  //   component: Layout,
-  //   meta: { title: '树形菜单', icon: 'example' },
-  //   children: [
-  //     {
-  //       path: 'treeMenu',
-  //       name: 'treeMenu',
-  //       component: _import('tree/treeMenu'),
-  //       meta: { title: '树形菜单', icon: 'table' }
-  //     }
-
-  //   ]
-  // },
-  // copy
   {
     path: '/index',
     component: Layout,
@@ -115,268 +100,27 @@ export const constantRouterMap = [
       }
     ]
   },
-  //
   {
-    path: '/Table',
+    path: '/table',
     component: Layout,
-    meta: { title: 'Table', icon: 'form' },
+    redirect: '/table/complex-table',
+    name: 'table',
+    meta: {
+      title: 'Table',
+      icon: 'table'
+    },
     children: [
       {
-        path: 'Table',
-        name: 'Table',
-        component: _import('table/Table'),
-        meta: { title: 'Table', icon: 'form' }
-      }
-
-    ]
-  },
-  {
-    path: '/orgMembersNav',
-    component: Layout,
-    redirect: '/orgMembersNav/table',
-    name: 'orgMembersNav',
-    meta: { title: '组织成员', icon: 'tree' },
-    children: [
-      {
-        path: 'table',
-        name: 'Table',
-        component: () => import('@/views/table/index'),
-        meta: { title: 'Table', icon: 'table' }
+        path: 'complex-table',
+        name: 'complex-table',
+        component: _import('table/complex-table'),
+        meta: { title: 'complexTable', icon: 'table' }
       },
       {
-        path: 'index',
-        name: '组织成员',
-        component: () => import('@/views/form/index'),
-        meta: { title: '组织成员', icon: 'form' }
-      }
-    ]
-  },
-  {
-    path: '/dataRoot',
-    component: Layout,
-    redirect: '/dataRoot/table',
-    name: 'dataRoot',
-    meta: { title: '数据中心', icon: 'example' },
-    children: [
-      {
-        path: 'table',
-        name: 'Table',
-        component: () => import('@/views/table/index'),
-        meta: { title: 'Table', icon: 'table' }
-      },
-      {
-        path: 'tree',
-        name: 'Treexx',
-        component: () => import('@/views/tree/index'),
-        meta: { title: 'Tree', icon: 'tree' }
-      }
-    ]
-  },
-  {
-    path: '/schedule',
-    component: Layout,
-    redirect: '/schedule/table',
-    name: 'schedule',
-    meta: { title: '进度管理', icon: 'example' },
-    children: [
-      {
-        path: 'table',
-        name: 'Table',
-        component: () => import('@/views/table/index'),
-        meta: { title: '进度计划', icon: 'table' }
-      },
-      {
-        path: 'tree',
-        name: '进度对比',
-        component: () => import('@/views/tree/index'),
-        meta: { title: '进度对比', icon: 'tree' }
-      }
-    ]
-  },
-  {
-    path: '/qualityManagement',
-    component: Layout,
-    redirect: '/qualityManagement/table',
-    name: 'qualityManagement',
-    meta: { title: '质量管理', icon: 'example' },
-    children: [
-      {
-        path: 'table',
-        name: 'Table',
-        component: () => import('@/views/table/index'),
-        meta: { title: '质量概况', icon: 'table' }
-      },
-      {
-        path: 'tree',
-        name: 'qualityInspection',
-        component: () => import('@/views/tree/index'),
-        meta: { title: '质量检查', icon: 'tree' }
-      }, {
-        path: 'tree',
-        name: 'qualityTrack',
-        component: () => import('@/views/tree/index'),
-        meta: { title: '质量跟踪', icon: 'tree' }
-      },
-      {
-        path: 'tree',
-        name: 'Thequalityreport',
-        component: () => import('@/views/tree/index'),
-        meta: { title: '质量报表', icon: 'tree' }
-      },
-      {
-        path: 'tree',
-        name: 'massDistribution',
-        component: () => import('@/views/tree/index'),
-        meta: { title: '质量分布', icon: 'tree' }
-      }
-    ]
-  },
-  {
-    path: '/securityManagement',
-    component: Layout,
-    redirect: '/securityManagement/table',
-    name: 'securityManagement',
-    meta: { title: '安全管理', icon: 'example' },
-    children: [
-      {
-        path: 'table',
-        name: '安全概况',
-        component: () => import('@/views/table/index'),
-        meta: { title: '安全概况', icon: 'table' }
-      },
-      {
-        path: 'tree',
-        name: '安全记录',
-        component: () => import('@/views/tree/index'),
-        meta: { title: '安全记录', icon: 'tree' }
-      },
-      {
-        path: 'tree',
-        name: 'Tree',
-        component: () => import('@/views/tree/index'),
-        meta: { title: '安全监控', icon: 'tree' }
-      }, {
-        path: 'tree',
-        name: '安全教育',
-        component: () => import('@/views/tree/index'),
-        meta: { title: '安全教育', icon: 'tree' }
-      },
-      {
-        path: 'tree',
-        name: '安全报表',
-        component: () => import('@/views/tree/index'),
-        meta: { title: '安全报表', icon: 'tree' }
-      }
-    ]
-  },
-  {
-    path: '/contractManagement',
-    component: Layout,
-    redirect: '/contractManagement/table',
-    name: 'contractManagement',
-    meta: { title: '合同管理', icon: 'example' },
-    children: [
-      {
-        path: 'table',
-        name: 'Table',
-        component: () => import('@/views/table/index'),
-        meta: { title: '合同记录', icon: 'table' }
-      },
-      {
-        path: 'tree',
-        name: '工程清单',
-        component: () => import('@/views/tree/index'),
-        meta: { title: '工程清单', icon: 'tree' }
-      }
-    ]
-  },
-  {
-    path: '/resourceManagement',
-    component: Layout,
-    redirect: '/resourceManagement/table',
-    name: 'resourceManagement',
-    meta: { title: '资源管理', icon: 'example' },
-    children: [
-      {
-        path: 'table',
-        name: 'Table',
-        component: () => import('@/views/table/index'),
-        meta: { title: '人工', icon: 'table' }
-      },
-      {
-        path: 'tree',
-        name: '材料',
-        component: () => import('@/views/tree/index'),
-        meta: { title: '材料', icon: 'tree' }
-      },
-      {
-        path: 'tree',
-        name: '机械',
-        component: () => import('@/views/tree/index'),
-        meta: { title: '机械', icon: 'tree' }
-      }
-    ]
-  },
-  {
-    path: '/documentManagement',
-    component: Layout,
-    redirect: '/documentManagement/table',
-    name: 'documentManagement',
-    meta: { title: '文档管理', icon: 'example' },
-    children: [
-      {
-        path: 'table',
-        name: 'Table',
-        component: () => import('@/views/table/index'),
-        meta: { title: 'Table', icon: 'table' }
-      },
-      {
-        path: 'tree',
-        name: 'wendan',
-        component: () => import('@/views/tree/index'),
-        meta: { title: 'Tree', icon: 'tree' }
-      }
-    ]
-  },
-  {
-    path: '/systemManagement',
-    component: Layout,
-    redirect: '/systemManagement/table',
-    name: 'systemManagement',
-    meta: { title: '系统管理', icon: 'system' },
-    children: [
-      {
-        path: 'table',
-        name: 'Table',
-        component: () => import('@/views/table/index'),
-        meta: { title: 'Table', icon: 'table' }
-      },
-      {
-        path: 'tree',
-        name: 'XX',
-        component: () => import('@/views/tree/index'),
-        meta: { title: 'Tree', icon: 'tree' }
-      }
-    ]
-  },
-  {
-    path: '/userManagement',
-    component: Layout,
-    redirect: '/userManagement/table',
-    name: 'userManagement',
-    meta: { title: '人员管理', icon: 'example' },
-    children: [
-      {
-        path: 'table',
-        name: 'Table',
-        component: () => import('@/views/table/index'),
-        meta: { title: 'Table', icon: 'table' }
-      },
-      {
-        path: 'tree',
-        name: 'renyuan',
-        component: () => import('@/views/tree/index'),
-        meta: { title: 'Tree', icon: 'tree' }
+        path: 'TreeTable',
+        name: 'TreeTable',
+        component: _import('table/tree-table/index'),
+        meta: { title: 'tree-table', icon: 'table' }
       }
     ]
   },

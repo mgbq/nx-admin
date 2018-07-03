@@ -130,12 +130,12 @@ export default {
         title: [{ required: true, trigger: 'change', validator: validate }]
       },
       articleList: [
-        { title: '基础篇', href: 'https://segmentfault.com/a/1190000009275424' },
-        { title: '登录权限篇', href: 'https://segmentfault.com/a/1190000009506097' },
-        { title: '实战篇', href: 'https://segmentfault.com/a/1190000009762198' },
-        { title: 'vueAdmin-template 篇', href: 'https://segmentfault.com/a/1190000010043013' },
-        { title: '自行封装 component', href: 'https://segmentfault.com/a/1190000009090836' },
-        { title: '优雅的使用 icon', href: 'https://segmentfault.com/a/https://segmentfault.com/a/1190000012213278' }
+        { title: 'Vue2.0实现的用户权限控制', href: 'http://blog.csdn.net/qq_32340877/article/details/79416344' },
+        { title: 'elementui换肤自定义主题', href: 'https://blog.csdn.net/qq_32340877/article/details/80176987' },
+        { title: 'Vue国际化 vue-i18n 中英文', href: 'https://blog.csdn.net/qq_32340877/article/details/80148913' },
+        { title: '单元测试环境', href: 'https://juejin.im/post/5b051519f265da0b8f62e94e' },
+        { title: 'Vue实现首屏加载等待动画', href: 'https://juejin.im/post/5b336699e51d4558a846dcc2' },
+        { title: 'Vue项目中添加锁屏功能', href: 'https://juejin.im/post/5b35e05ee51d4558a75ea159' }
       ]
     }
   }

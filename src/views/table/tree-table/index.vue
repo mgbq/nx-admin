@@ -2,7 +2,7 @@
   <div class="app-container">
 
     <el-tag style="margin-bottom:20px;">
-      <a href="https://github.com/mgbq/nx-admin/tree/master/src/components/TreeTable" target="_blank">Documentation</a>
+      <a href="https://github.com/PanJiaChen/vue-element-admin/tree/master/src/components/TreeTable" target="_blank">Documentation</a>
     </el-tag>
 
     <nx-tree-table :data="data" :columns="columns" border></nx-tree-table>

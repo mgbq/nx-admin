@@ -8,8 +8,8 @@ import locale from 'element-ui/lib/locale/lang/en' // lang i18n
 import '../static/css/iconfont/1.0.0/index.css' /* icofont*/
 
 import '@/styles/index.scss' // global css
-// mock接口设置
-import '@/mock/register'
+
+import './mock' // simulation data
 // font-awesome
 import '@/assets/library/font-awesome-4.7.0/css/font-awesome.min.css'
 import App from './App'

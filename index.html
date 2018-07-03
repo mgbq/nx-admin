@@ -4,9 +4,157 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>nx-admin</title>
+    <style>
+      html,
+      body,
+      #app {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+      }
+    
+      .nx-app-loading-group {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* background: #8e9eab;
+            background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
+            background: linear-gradient(to right, #eef2f3, #8e9eab); */
+        /* background: #4b6cb7;
+            background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
+            background: linear-gradient(to right, #182848, #4b6cb7); */
+        background: #57cec1;
+        background: -webkit-linear-gradient(to top, #D7DDE8, #57cec1);
+        background: linear-gradient(to top, #D7DDE8, #57cec1);
+      }
+    
+      .nx-app-loading-title {
+        color: #FFF;
+        font-weight: bold;
+        font-size: 14px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        letter-spacing: 0.2em;
+      }
+    
+      .nx-app-loading-sub-title {
+        color: #FFF;
+        font-size: 10px;
+      }
+    
+      .nx-app-loading-grid {
+        width: 30px;
+        height: 30px;
+      }
+    
+      .nx-app-loading-grid .nx-app-loading {
+        width: 10px;
+        height: 10px;
+        background-color: #FFF;
+        float: left;
+        -webkit-animation: nx-app-loading-grid-scale-delay 1.3s infinite ease-in-out;
+        animation: nx-app-loading-grid-scale-delay 1.3s infinite ease-in-out;
+      }
+    
+      .nx-app-loading-grid .nx-app-loading1 {
+        border-top-left-radius: 4px;
+        -webkit-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+      }
+    
+      .nx-app-loading-grid .nx-app-loading2 {
+        -webkit-animation-delay: 0.3s;
+        animation-delay: 0.3s;
+      }
+    
+      .nx-app-loading-grid .nx-app-loading3 {
+        border-top-right-radius: 4px;
+        -webkit-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+      }
+    
+      .nx-app-loading-grid .nx-app-loading4 {
+        -webkit-animation-delay: 0.1s;
+        animation-delay: 0.1s;
+      }
+    
+      .nx-app-loading-grid .nx-app-loading5 {
+        -webkit-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+      }
+    
+      .nx-app-loading-grid .nx-app-loading6 {
+        -webkit-animation-delay: 0.3s;
+        animation-delay: 0.3s;
+      }
+    
+      .nx-app-loading-grid .nx-app-loading7 {
+        border-bottom-left-radius: 4px;
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+      }
+    
+      .nx-app-loading-grid .nx-app-loading8 {
+        -webkit-animation-delay: 0.1s;
+        animation-delay: 0.1s;
+      }
+    
+      .nx-app-loading-grid .nx-app-loading9 {
+        border-bottom-right-radius: 4px;
+        -webkit-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+      }
+    
+      @-webkit-keyframes nx-app-loading-grid-scale-delay {
+        0%,
+        70%,
+        100% {
+          -webkit-transform: scale3D(1, 1, 1);
+          transform: scale3D(1, 1, 1);
+        }
+        35% {
+          -webkit-transform: scale3D(0, 0, 1);
+          transform: scale3D(0, 0, 1);
+        }
+      }
+    
+      @keyframes nx-app-loading-grid-scale-delay {
+        0%,
+        70%,
+        100% {
+          -webkit-transform: scale3D(1, 1, 1);
+          transform: scale3D(1, 1, 1);
+        }
+        35% {
+          -webkit-transform: scale3D(0, 0, 1);
+          transform: scale3D(0, 0, 1);
+        }
+      }
+    </style>
   </head>
   <body>
-    <div id="app"></div>
     <!-- built files will be auto injected -->
+      <div id="app">
+
+        <div class="nx-app-loading-group">
+          <div class="nx-app-loading-grid">
+            <div class="nx-app-loading nx-app-loading1"></div>
+            <div class="nx-app-loading nx-app-loading2"></div>
+            <div class="nx-app-loading nx-app-loading3"></div>
+            <div class="nx-app-loading nx-app-loading4"></div>
+            <div class="nx-app-loading nx-app-loading5"></div>
+            <div class="nx-app-loading nx-app-loading6"></div>
+            <div class="nx-app-loading nx-app-loading7"></div>
+            <div class="nx-app-loading nx-app-loading8"></div>
+            <div class="nx-app-loading nx-app-loading9"></div>
+          </div>
+          <div class="nx-app-loading-title">加载中</div>
+          <div class="nx-app-loading-sub-title">初次加载会比较慢，请耐心等待</div>
+        </div>
+        
+      </div>
   </body>
 </html>

@@ -12,7 +12,8 @@ module.exports = {
   extends: 'eslint:recommended',
   // required to lint *.vue files
   plugins: [
-    'html'
+    'html',
+    'vue'
   ],
   // check if imports actually resolve
   'settings': {
@@ -161,7 +162,7 @@ module.exports = {
         ':': 'before'
       }
     }],
-    'padded-blocks': [2, 'never'],
+    'padded-blocks': [2, 'never'], //要求或禁止块内填充
     'quotes': [2, 'single', {
       'avoidEscape': true,
       'allowTemplateLiterals': true
