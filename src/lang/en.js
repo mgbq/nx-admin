@@ -12,10 +12,12 @@ export default {
     Default: 'Default'
   },
   route: {
-    Readme: 'Readme',
-    permission: 'permission',
-    treeMenu: 'treeMenu',
     report: 'report',
-    wel: 'wel'
+    treeMenu: 'treeMenu',
+    wel: 'wel',
+    Lockscreenpage: 'Lockscreenpage',
+    countenance: 'countenance',
+    clipboard: 'clipboard'
+
   }
 }

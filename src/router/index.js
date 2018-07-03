@@ -43,15 +43,41 @@ export const constantRouterMap = [
     }]
   },
   {
+    path: '/wel',
+    component: Layout,
+    redirect: '/wel/wel',
+    name: 'wel',
+    hidden: true,
+    children: [{
+      path: 'wel',
+      component: () => import('@/views/login/wel')
+    }]
+  },
+  {
     path: '/report',
     component: Layout,
-    meta: { title: '报表', icon: 'example' },
+    meta: { title: 'report', icon: 'example' },
     children: [
       {
         path: 'report',
         name: 'report',
         component: _import('page/report'),
-        meta: { title: '报表', icon: 'table' }
+        meta: { title: 'report', icon: 'table' }
+      }
+
+    ]
+  },
+  // 表情
+  {
+    path: '/countenance',
+    component: Layout,
+    meta: { title: 'countenance', icon: 'example' },
+    children: [
+      {
+        path: 'countenance',
+        name: 'countenance',
+        component: _import('page/countenance'),
+        meta: { title: 'countenance', icon: 'table' }
       }
 
     ]
@@ -90,7 +116,7 @@ export const constantRouterMap = [
     component: Layout,
     redirect: '/orgMembersNav/histogram',
     name: 'orgMembersNav',
-    meta: { title: '图表成员', icon: 'tree' },
+    meta: { title: 'Chartmember', icon: 'tree' },
     children: [
       {
         path: 'histogram',
