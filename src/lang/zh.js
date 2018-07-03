@@ -14,10 +14,14 @@ export default {
     Default: '默认'
   },
   route: {
-    Readme: '自述',
-    permission: '权限',
+
     report: '报表',
     treeMenu: '树形菜单',
-    wel: '首页'
+    wel: '首页',
+    Lockscreenpage: '锁屏页',
+    countenance: '表情',
+    clipboard: '复制',
+    Chartmember: '图表成员'
+
   }
 }
