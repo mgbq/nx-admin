@@ -1,8 +1,8 @@
 <template>
   <el-dropdown trigger="click" class='international' @command="handleSetLanguage">
     <div>
-      <svg-icon class-name='international-icon' icon-class="language" />
-   语言切换
+      <nx-svg-icon class-name='international-icon' icon-class="language" />
+  
     </div>
     <el-dropdown-menu slot="dropdown">
       <el-dropdown-item command="zh" :disabled="language==='zh'">中文</el-dropdown-item>
@@ -12,10 +12,10 @@
 </template>
 
 <script>
-import svgIcon from '@/components/nx-svg-icon/index'
+import nxSvgIcon from '@/components/nx-svg-icon/index'
 export default {
   name: 'nx-lang-select',
-  components: { svgIcon },
+  components: { nxSvgIcon },
   computed: {
     language() {
       return this.$store.getters.language
