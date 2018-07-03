@@ -8,29 +8,29 @@ export const global = {
          */
   changeTheme(themeValue) {
     // 切换主题导航背景色
-    switch (themeValue) {
-      case 'blue':
-      /* eslint-disable */
-        $('.header').css('background-color', '#409eff')
-        break
-      case 'green':
-        $('.header').css('background-color', '#009a61')
-        break
-      case 'red':
-        $('.header').css('background-color', '#f44336')
-        break
-      case 'purple':
-        $('.header').css('background-color', '#7B7DE5')
-        break
-      default:
-        $('.header').css('background-color', '#21baa9')
-        break
-    }
+    // switch (themeValue) {
+    //   case 'Blue':
+    //   /* eslint-disable */
+    //     $('.navbar').css('background-color', '#409eff')
+    //     break
+    //   case 'Green':
+    //     $('.navbar').css('background-color', '#009a61')
+    //     break
+    //   case 'Red':
+    //     $('.navbar').css('background-color', '#f44336')
+    //     break
+    //   case 'Purple':
+    //     $('.navbar').css('background-color', '#7B7DE5')
+    //     break
+    //   default:
+    //     $('.navbar').css('background-color', '#21baa9')
+    //     break
+    // }
     // console.log('切换主题颜色值：',themeValue,that.staticPath,JSON.stringify(themeArray) );
     // 需要移到单独的文件存放
     var cssArray = themeArray
     for (let i = 0, len = cssArray.length; i < len; i++) {
-      var itemPath = 'static/theme/' + themeValue + '/' + cssArray[i].toLowerCase() + '.css'
+      var itemPath = '../../static/theme/' + themeValue + '/' + cssArray[i].toLowerCase() + '.css'
 
       loadCss(itemPath)
     }

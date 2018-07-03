@@ -2,7 +2,7 @@
   <div class="login-container pull-height" @keyup.enter.native="handleLogin">
     <div class="login-info text-white animated fadeInLeft">
       <div class="logo" style="margin-top:-426px">
-          <img src="../../assets/img/home/logo.png" width="160px" height="160px" alt="logo" style="vertical-align: middle;" />
+          <img src="../../assets/images/home/logo.png" width="160px" height="160px" alt="logo" style="vertical-align: middle;" />
       </div>
       <h2 class="login-info-title">{{website.info.title}}</h2>
       <ul class="login-info-list">
@@ -32,7 +32,6 @@
 import userLogin from './userlogin'
 import codeLogin from './codelogin'
 import { mapGetters } from 'vuex'
-// import swebsite from '../store/modules/common.js'
 export default {
   name: 'login',
   components: {
@@ -71,7 +70,7 @@ export default {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../../assets/img/top_images/login.png");
+  background-image: url("../../assets/images/top_images/login.png");
   background-size: cover;
 }
 .login-info {
@@ -81,7 +80,7 @@ export default {
   line-height: 90px;
 }
 .login-info-item {
-  font-size: 18px;
+  font-size: 14px;
 }
 .login-border {
   display: flex;
@@ -156,8 +155,4 @@ export default {
   text-indent: 5px;
   text-align: center;
 }
-.text-white {
-  color: #fff;
-}
-
 </style>

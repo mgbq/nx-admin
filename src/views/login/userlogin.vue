@@ -42,7 +42,7 @@ export default {
     return {
       loginForm: {
         username: 'admin',
-        password: 'admin'
+        password: '123456'
       },
       checked: false,
       code: {
@@ -57,7 +57,7 @@ export default {
         ],
         password: [
           { required: true, message: '请输入密码', trigger: 'blur' },
-          { min: 5, message: '密码长度最少为6位', trigger: 'blur' }
+          { min: 6, message: '密码长度最少为6位', trigger: 'blur' }
         ],
         code: [
           { required: true, message: '请输入验证码', trigger: 'blur' },
@@ -84,7 +84,7 @@ export default {
       this.$refs.loginForm.validate(valid => {
         if (valid) {
           this.$store.dispatch('Login', this.loginForm).then(res => {
-            this.$router.push({ path: '/wel' })
+            this.$router.push({ path: '/' })
           })
         }
       })

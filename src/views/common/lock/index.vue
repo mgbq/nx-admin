@@ -3,9 +3,9 @@
     <div class="lock-form animated bounceInDown">
       <div class="animated" :class="{'shake':passwdError,'bounceOut':pass}">
         <h3 class="text-white">{{name}}</h3>
-        <el-input placeholder="请输入登录密码" type="password" class="input-with-select animated" v-model="passwd" @keyup.enter.native="handleLogin">
-          <el-button slot="append" icon="icon-bofangqi-suoping" @click="handleLogin"></el-button>
-          <el-button slot="append" icon="icon-tuichu" @click="handleLogout"></el-button>
+        <el-input  placeholder="请输入登录密码" type="password" class="input-with-select animated" v-model="passwd" @keyup.enter.native="handleLogin">
+           <el-button slot="append" @click="handleLogin" style="padding-right:36px;"><svg-icon  class-name='international-icon' icon-class="deblocking"/></el-button>
+          <el-button slot="append" @click="handleLogout"><svg-icon class-name='international-icon' icon-class="lock-out"/></el-button>
         </el-input>
       </div>
 
@@ -62,7 +62,7 @@ export default {
       this.pass = true
       setTimeout(() => {
         this.$store.commit('CLEAR_LOCK')
-        this.$router.push('/Readme')
+        this.$router.push('/dashboard')
       }, 1000)
     }
   },
@@ -76,7 +76,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.6);
   position: relative;
 }
 .lock-container::before {
@@ -87,7 +86,7 @@ export default {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../../../assets/img/lockLogin.png");
+  background-image: url("../../../assets/images/lockLogin.png");
   background-size: cover;
 }
 .lock-form {

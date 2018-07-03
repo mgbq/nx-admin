@@ -1,21 +1,14 @@
 const getters = {
   language: state => state.app.language,
+  sidebar: state => state.app.sidebar,
+  device: state => state.app.device,
   token: state => state.user.token,
-  name: state => state.user.name,
   avatar: state => state.user.avatar,
-  routers: state => state.permission.routers,
-  addRouters: state => state.permission.addRouters,
-  isLock: state => state.user.isLock,
-  lockPasswd: state => state.user.lockPasswd,
+  name: state => state.user.name,
   roles: state => state.user.roles,
   website: state => state.common.website,
-  isCollapse: state => state.common.isCollapse,
-  isFullScren: state => state.common.isFullScren,
-  userInfo: state => state.user.userInfo,
-  tag: state => state.tags.tag,
-  tagList: state => state.tags.tagList,
-  tagCurrent: state => state.tags.tagCurrent,
-  tagWel: state => state.tags.tagWel,
-  menu: state => state.user.menu
+  isLock: state => state.user.isLock,
+  lockPasswd: state => state.user.lockPasswd,
+  isFullScren: state => state.common.isFullScren
 }
 export default getters

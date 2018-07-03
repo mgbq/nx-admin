@@ -1,19 +1,19 @@
 export default {
-  title: 'NxAdmin',
+  title: 'nx-admin',
   logo: 'N',
   author: 'BY nxmin',
   whiteList: ['/login', '/404', '/401', '/lock'],
   lockPage: '/lock',
   info: {
-    title: '自动化管理平台',
+    title: 'nx-admin',
     list: [
-      'NxAdmin 是一个基于XXXX工程可视化管理平台，采用token交互验证方式。',
-      '您可以 NxAdmin 为基础，不只限制于vue的页面，你可以嵌入任意第三方网站，基于iframe框架。',
-      'NxAdmin 构建简单上手快，最大程度上帮助企业节省时间成本和费用开支。'
+      'nx-admin 是一个基于XXXX工程可视化管理平台，采用token交互验证方式。',
+      '您可以 nx-admin 为基础，不只限制于vue的页面，你可以嵌入任意第三方网站，基于iframe框架。',
+      'nx-admin 构建简单上手快，最大程度上帮助企业节省时间成本和费用开支。'
     ]
   },
   wel: {
-    title: '自动化管理平台',
+    title: 'nx-admin',
     list: [
       'vuex本地持久化存储,封装h5的sessionStorage和localStorage',
       '加入了本地离线的包引入方法去引入vue，vue-router等第三方包',

@@ -1,13 +1,10 @@
 import { login, logout, getInfo } from '@/api/login'
 import { getToken, setToken, removeToken } from '@/utils/auth'
-import { validatenull } from '@/utils/validate'
-import { getMenu } from '@/api/user'
 import {
   setStore,
   getStore,
   removeStore
 } from '@/utils/store'
-
 const user = {
   state: {
     token: getToken(),
@@ -19,9 +16,7 @@ const user = {
     }) || false,
     lockPasswd: getStore({
       name: 'lockPasswd'
-    }) || '',
-    userInfo: {},
-    menu: []
+    }) || ''
   },
 
   mutations: {
@@ -62,22 +57,8 @@ const user = {
       removeStore({
         name: 'isLock'
       })
-    },
-    SET_USERIFNO: (state, userInfo) => {
-      state.userInfo = userInfo
-    },
-    SET_MENU: (state, menu) => {
-      const list = menu.filter(ele => {
-        if (validatenull(ele.meta)) return true
-        if (validatenull(ele.meta.roles)) return true
-        if (ele.meta.roles.indexOf(state.roles[0]) !== -1) {
-          return true
-        } else {
-          return false
-        }
-      })
-      state.menu = list
     }
+
   },
 
   actions: {
@@ -101,24 +82,16 @@ const user = {
       return new Promise((resolve, reject) => {
         getInfo(state.token).then(response => {
           const data = response.data
-          commit('SET_ROLES', data.roles)
+          if (data.roles && data.roles.length > 0) { // 验证返回的roles是否是一个非空数组
+            commit('SET_ROLES', data.roles)
+          } else {
+            reject('getInfo: roles must be a non-null array !')
+          }
           commit('SET_NAME', data.name)
-          commit('SET_USERIFNO', data)
           commit('SET_AVATAR', data.avatar)
           resolve(response)
         }).catch(error => {
           reject(error)
-        })
-      })
-    },
-    // 获取系统菜单
-    GetMenu({ commit }, parentId) {
-      parentId
-      return new Promise(resolve => {
-        getMenu(parentId).then((res) => {
-          const data = res.data
-          commit('SET_MENU', data)
-          resolve(data)
         })
       })
     },
@@ -141,7 +114,6 @@ const user = {
     FedLogOut({ commit }) {
       return new Promise(resolve => {
         commit('SET_TOKEN', '')
-        commit('CLEAR_LOCK')
         removeToken()
         resolve()
       })

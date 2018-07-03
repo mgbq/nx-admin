@@ -5,11 +5,11 @@ export default {
     theme: 'Theme'
   },
   skin: {
-    blue: 'blue',
-    green: 'green',
-    red: 'red',
-    purple: 'purple',
-    default: 'default'
+    Blue: 'Blue',
+    Green: 'Green',
+    Red: 'Red',
+    Purple: 'Purple',
+    Default: 'Default'
   },
   route: {
     Readme: 'Readme',

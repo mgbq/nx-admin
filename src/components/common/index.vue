@@ -66,7 +66,6 @@ export default {
     background: #f1f4f5;
     padding: 15px;
     box-sizing: border-box;
-    overflow-y: scroll;
     .router {
       padding: 15px 8px;
       background: #fff;

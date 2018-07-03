@@ -17,19 +17,16 @@
 import { generateSkinColor } from '@/utils/i18n'// 国际化主题名字
 import { global } from '@/global/global'
 export default {
+  name: 'nx-skin',
   data() {
     return {
       skins: [
-        // { name: 'blue', label: this.$t('skin.blue') },
-        // { name: 'green', label: this.$t('skin.green') },
-        // { name: 'red', label: this.$t('skin.red') },
-        // { name: 'purple', label: this.$t('skin.purple') },
-        // { name: 'default', label: this.$t('skin.default') }
-        { name: 'blue', label: 'blue' },
-        { name: 'green', label: 'green' },
-        { name: 'red', label: 'red' },
-        { name: 'purple', label: 'purple' },
-        { name: 'default', label: 'default' }
+
+        { name: 'Blue', label: 'Blue' },
+        { name: 'Green', label: 'Green' },
+        { name: 'Red', label: 'Red' },
+        { name: 'Purple', label: 'Purple' },
+        { name: 'Default', label: 'Default' }
       ]
     }
   },
@@ -46,7 +43,7 @@ export default {
 <style scoped>
 .lang {
   cursor: pointer;
-  color: #fff;
+  color:black;
 }
 
 .eldropdown {

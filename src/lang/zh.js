@@ -7,11 +7,11 @@ export default {
     theme: '主题'
   },
   skin: {
-    blue: '天空蓝',
-    green: '典雅绿',
-    red: '樱桃红',
-    purple: '贵族紫',
-    default: '默认'
+    Blue: '天空蓝',
+    Green: '典雅绿',
+    Red: '樱桃红',
+    Purple: '贵族紫',
+    Default: '默认'
   },
   route: {
     Readme: '自述',

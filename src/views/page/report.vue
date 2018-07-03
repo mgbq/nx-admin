@@ -1,7 +1,7 @@
 <template>
-  <div class="exhibition-contailer">
+  <div class="app-container">
      <a target="_blank" href="https://github.com/mgbq/vue-permission"><img
-        style="position: absolute; top: 0; right: 0; border: 0;"
+        style="position: absolute; top: 48px; right: 0; border: 0;"
         src="../../../static/img/report/forkme.png"
         alt="Fork me on GitHub"></a>
     <div class="item">
@@ -217,8 +217,8 @@ export default {
 }
 </style>
 <style lang ="scss">
-    @import '@/assets/css/data-card.scss';
-    @import '@/assets/css/data-display.scss';
-    @import '@/assets/css/data-icons.scss';
-    @import '@/assets/css/data-tabs.scss';
+    @import '../../styles/data-card.scss';
+    @import '../../styles/data-display.scss';
+    @import '../../styles/data-icons.scss';
+    @import '../../styles/data-tabs.scss';
 </style>

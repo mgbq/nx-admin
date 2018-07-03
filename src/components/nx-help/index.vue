@@ -5,7 +5,7 @@
         <nx-icon name="question-circle"/>
       </el-button>
     </el-tooltip>
-    <el-dialog title="帮助" width="700px" :visible.sync="dialogVisible">
+    <el-dialog title="帮助" width="700px" :visible.sync="dialogVisible" append-to-body>
       <div style="margin-top: -25px;">
         <h1 >如果你有问题可以加入交流群或者联系作者</h1>
         <el-row :gutter="20">
@@ -45,7 +45,7 @@ img {
   }
 }
  .btn-text {
-        color: #FFF;
+        color: #00162D;
         &.can-hover {
           &:hover {
             color: #FFEBA4;
