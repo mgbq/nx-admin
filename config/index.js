@@ -63,7 +63,7 @@ module.exports = {
      * then assetsPublicPath should be set to "/bar/".
      * In most cases please use '/' !!!
      */
-    assetsPublicPath: '/nx-admin/', // If you are deployed on the root path, please use '/'
+    assetsPublicPath: '/vue-permission/', // If you are deployed on the root path, please use '/'
 
     /**
      * Source Maps

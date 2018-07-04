@@ -102,6 +102,7 @@ const user = {
         logout(state.token).then(() => {
           commit('SET_TOKEN', '')
           commit('SET_ROLES', [])
+          commit('CLEAR_LOCK')
           removeToken()
           resolve()
         }).catch(error => {
