@@ -42,17 +42,18 @@ export const constantRouterMap = [
       component: () => import('@/views/dashboard/index')
     }]
   },
-  {
-    path: '/wel',
-    component: Layout,
-    redirect: '/wel/wel',
-    name: 'wel',
-    hidden: true,
-    children: [{
-      path: 'wel',
-      component: () => import('@/views/login/wel')
-    }]
-  },
+
+  // {
+  //   path: '/wel',
+  //   component: Layout,
+  //   redirect: '/wel/wel',
+  //   name: 'wel',
+  //   hidden: true,
+  //   children: [{
+  //     path: 'wel',
+  //     component: () => import('@/views/login/wel')
+  //   }]
+  // },
   {
     path: '/report',
     component: Layout,
