@@ -45,11 +45,11 @@ img {
   }
 }
  .btn-text {
-        color: #00162D;
+        color: #5a5e66;
         &.can-hover {
           &:hover {
             color: #FFEBA4;
-            background-color: #00162D;
+            background-color:#5a5e66;
           }
         }
       }

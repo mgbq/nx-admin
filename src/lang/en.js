@@ -12,12 +12,23 @@ export default {
     Default: 'Default'
   },
   route: {
-    report: 'report',
+    dashboard: 'dashboard',
     treeMenu: 'treeMenu',
     wel: 'wel',
     Lockscreenpage: 'Lockscreenpage',
     countenance: 'countenance',
-    clipboard: 'clipboard'
-
+    clipboard: 'clipboard',
+    permission: 'Permission',
+    pagePermission: 'Page Permission',
+    directivePermission: 'Directive Permission',
+    complexTable: 'Complex Table',
+    treeTable: 'Tree Table',
+    errorPages: 'Error Pages',
+    page401: '401',
+    page404: '404'
+  },
+  permission: {
+    roles: 'Your roles',
+    switchRoles: 'Switch roles'
   }
 }

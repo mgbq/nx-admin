@@ -43,7 +43,7 @@ export default {
 <style scoped>
 .lang {
   cursor: pointer;
-  color:black;
+  color:#5a5e66;
 }
 
 .eldropdown {

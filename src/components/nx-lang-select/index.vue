@@ -41,7 +41,7 @@ export default {
   vertical-align: -5px!important;
 }
 .el-dropdown{
-  color: rgb(8, 8, 8);
+  color:#5a5e66;
 }
 </style>
 

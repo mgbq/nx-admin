@@ -117,6 +117,20 @@ const user = {
         removeToken()
         resolve()
       })
+    },
+    // 动态修改权限
+    ChangeRoles({ commit }, role) {
+      return new Promise(resolve => {
+        commit('SET_TOKEN', role)
+        setToken(role)
+        getInfo(role).then(response => {
+          const data = response
+          commit('SET_ROLES', data.roles)
+          commit('SET_NAME', data.name)
+          commit('SET_AVATAR', data.avatar)
+          resolve()
+        })
+      })
     }
   }
 }

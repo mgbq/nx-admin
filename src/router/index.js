@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-const _import = require('./_import_' + process.env.NODE_ENV)
+// const _import = require('./_import_' + process.env.NODE_ENV)
 // in development-env not use lazy-loading, because lazy-loading too many pages will cause webpack hot update too slow. so only in production use lazy-loading;
 // detail: https://panjiachen.github.io/vue-element-admin-site/#/lazy-loading
 
@@ -22,25 +22,27 @@ import Layout from '../views/layout/Layout'
   }
 **/
 export const constantRouterMap = [
-  { path: '/login', component: () => import('@/views/login/index'), hidden: true },
+  // {
+  //   path: '/',
+  //   component: Layout,
+  //   redirect: '/login',
+  //   name: 'login',
+  //   hidden: true
+  // },
+  {
+    path: '',
+    component: Layout,
+    redirect: 'dashboard'
+  },
+  { path: '/login', component: () => import('@/views/login'), hidden: true },
   { path: '/404', component: () => import('@/views/404'), hidden: true },
+  { path: '/401', component: () => import('@/views/errorPage/401'), hidden: true },
   // 锁屏
   {
     path: '/lock',
     hidden: true,
     name: '锁屏页',
-    component: resolve => require(['../views/common/lock/index.vue'], resolve)
-  },
-  {
-    path: '/',
-    component: Layout,
-    redirect: '/report/report',
-    name: 'Dashboard',
-    hidden: true,
-    children: [{
-      path: 'dashboard',
-      component: () => import('@/views/dashboard/index')
-    }]
+    component: () => import('@/views/common/lock')
   },
 
   // {
@@ -55,78 +57,82 @@ export const constantRouterMap = [
   //   }]
   // },
   {
-    path: '/report',
+    path: '/dashboard',
     component: Layout,
-    meta: { title: 'report', icon: 'example' },
+    meta: { title: 'dashboard', icon: 'dashboard' },
     children: [
       {
-        path: 'report',
-        name: 'report',
-        component: _import('page/report'),
-        meta: { title: 'report', icon: 'table' }
+        path: 'dashboard',
+        name: 'dashboard',
+        component: () => import('@/views/page/dashboard'),
+        meta: { title: 'dashboard', icon: 'dashboard' }
       }
 
     ]
   },
-  // 表情
-  {
-    path: '/countenance',
-    component: Layout,
-    meta: { title: 'countenance', icon: 'example' },
-    children: [
-      {
-        path: 'countenance',
-        name: 'countenance',
-        component: _import('page/countenance'),
-        meta: { title: 'countenance', icon: 'table' }
-      }
+  // 表情包
+  // {
+  //   path: '/countenance',
+  //   component: Layout,
+  //   meta: { title: 'countenance', icon: 'example' },
+  //   children: [
+  //     {
+  //       path: 'countenance',
+  //       name: 'countenance',
+  //       component: () => import('@/views/page/countenance'),
+  //       meta: { title: 'countenance', icon: 'table' }
+  //     }
 
-    ]
-  },
+  //   ]
+  // },
   {
     path: '/index',
     component: Layout,
-    meta: { title: 'clipboard', icon: 'form' },
+    meta: { title: 'clipboard', icon: 'clipboard' },
     children: [
       {
         path: 'index',
         name: 'clipboard',
-        component: _import('clipboard/index'),
-        meta: { title: 'clipboard', icon: 'form' }
+        component: () => import('@/views/clipboard/index'),
+        meta: { title: 'clipboard', icon: 'clipboard' }
       }
 
     ]
   },
   // 小组件
   {
-    path: '/mixin',
+    path: '/components',
     component: Layout,
-    meta: { title: 'clipboard', icon: 'form' },
+    redirect: 'noredirect',
+    name: 'component-demo',
+    meta: {
+      title: 'components',
+      icon: 'component'
+    },
     children: [
       {
         path: 'mixin',
-        name: 'mixin',
-        component: _import('components-demo/mixin'),
-        meta: { title: 'mixin', icon: 'form' }
-      }
-
-    ]
-  },
-  {
-    path: '/orgMembersNav',
-    component: Layout,
-    redirect: '/orgMembersNav/histogram',
-    name: 'orgMembersNav',
-    meta: { title: 'Chartmember', icon: 'tree' },
-    children: [
-      {
-        path: 'histogram',
-        name: 'histogram',
-        component: () => import('@/views/charts/histogram'),
-        meta: { title: 'histogram', icon: 'table' }
+        name: 'componentMixin-demo',
+        component: () => import('@/views/components-demo/mixin'),
+        meta: { title: 'componentMixin', icon: 'component' }
       }
     ]
   },
+  // {
+  //   path: '/orgMembersNav',
+  //   component: Layout,
+  //   redirect: '/orgMembersNav/histogram',
+  //   name: 'orgMembersNav',
+  //   meta: { title: 'Chartmember', icon: 'tree' },
+  //   children: [
+  //     {
+  //       path: 'histogram',
+  //       name: 'histogram',
+  //       component: () => import('@/views/charts/histogram'),
+  //       meta: { title: 'histogram', icon: 'table' }
+  //     }
+  //   ]
+  // },
   {
     path: '/table',
     component: Layout,
@@ -140,18 +146,17 @@ export const constantRouterMap = [
       {
         path: 'complex-table',
         name: 'complex-table',
-        component: _import('table/complex-table'),
-        meta: { title: 'complexTable', icon: 'table' }
+        component: () => import('@/views/table/complex-table'),
+        meta: { title: 'complexTable' }
       },
       {
         path: 'TreeTable',
         name: 'TreeTable',
-        component: _import('table/tree-table/index'),
-        meta: { title: 'tree-table', icon: 'table' }
+        component: () => import('@/views/table/tree-table/index'),
+        meta: { title: 'treeTable' }
       }
     ]
-  },
-  { path: '*', redirect: '/404', hidden: true }
+  }
 ]
 
 export default new Router({
@@ -159,4 +164,47 @@ export default new Router({
   scrollBehavior: () => ({ y: 0 }),
   routes: constantRouterMap
 })
-
+export const asyncRouterMap = [
+  {
+    path: '/permission',
+    component: Layout,
+    redirect: '/permission/index',
+    alwaysShow: true, // will always show the root menu
+    meta: {
+      title: 'permission',
+      icon: 'lock',
+      roles: ['admin', 'editor'] // you can set roles in root nav
+    },
+    children: [{
+      path: 'page',
+      component: () => import('@/views/permission/page'),
+      name: 'pagePermission',
+      meta: {
+        title: 'pagePermission',
+        roles: ['admin'] // or you can only set roles in sub nav
+      }
+    }, {
+      path: 'directive',
+      component: () => import('@/views/permission/directive'),
+      name: 'directivePermission',
+      meta: {
+        title: 'directivePermission'
+        // if do not set roles, means: this page does not require permission
+      }
+    }]
+  },
+  {
+    path: '/error',
+    component: Layout,
+    redirect: 'noredirect',
+    name: 'errorPages',
+    meta: {
+      title: 'errorPages',
+      icon: '404'
+    },
+    children: [
+      { path: '401', component: () => import('@/views/errorPage/401'), name: 'page401', meta: { title: 'page401', noCache: true }},
+      { path: '404', component: () => import('@/views/errorPage/404'), name: 'page404', meta: { title: 'page404', noCache: true }}
+    ]
+  },
+  { path: '*', redirect: '/404', hidden: true }]
