@@ -49,9 +49,10 @@ nx-admin是一套基于Vue/Vue-Router/axios/Vuex/Element-ui开源的管理系统
 [Vue项目中添加锁屏功能](https://juejin.im/post/5b35e05ee51d4558a75ea159)
 
 
-## 捐赠
+## 捐赠 觉得不错 赏个咖啡 让作者打起精神 ~
 ![微信扫一扫](http://img.blog.csdn.net/20180301190740227?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzIzNDA4Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
+![支付宝扫一扫](https://img-blog.csdn.net/20180705100035634?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMzQwODc3/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 ## 下载
 
 git：`git clone https://github.com/mgbq/nx-admin.git`
@@ -137,6 +138,7 @@ nx-admin 仍然处于开发中，这里有一些计划：
 
 欢迎你为 nx-admin的开发作出贡献（代码编写/文档翻译）。
 
+<img src="https://raw.githubusercontent.com/FairyEver/d2-admin/master/github/give-a-star@2x.png"/>
 
 ## Build Setup
 
