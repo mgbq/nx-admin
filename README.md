@@ -11,6 +11,13 @@
  
 nx-admin是一套基于Vue/Vue-Router/axios/Vuex/Element-ui开源的管理系统前端集成方案
 
+
+**完整版**
+
+[Github 仓库](https://github.com/mgbq/nx-admin) | 
+[码云仓库](https://gitee.com/symgg/nx-admin) | 
+[预览地址](https://mgbq.github.io/vue-permission/#/login)
+
 #### 因为也是纯粹的写写前端页面,所以数据方面用的是mock.js,真实的模拟请求。
 
 #### 这个项目用到的
