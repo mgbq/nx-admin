@@ -10,7 +10,7 @@
         :props="defaultProps"
         :expand-on-click-node="false"
         :render-content="renderContent"
-        :default-expanded-keys="defaultExpandKeys"
+        
         @node-click="handleNodeClick"></el-tree>
       </div>
   </div>
@@ -143,14 +143,14 @@ export default{
 
 <style>
 .expand{
-  width:230px;
+  width:100%;
   height:100%;
   overflow:hidden;
 }
 .expand>div{
   height:85%;
   padding-top:20px;
-  width:100%;
+  width:50%;
   margin:20px auto;
   max-width:400px;
   overflow-y:auto;

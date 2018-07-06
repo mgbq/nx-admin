@@ -12,6 +12,13 @@ export default {
     Default: 'Default'
   },
   route: {
+    Components: 'Components',
+    dragKanban: 'dragKanban',
+    Table: 'Table',
+    componentMixin: 'componentMixin',
+    markdown: 'markdown',
+    treeMen: 'treeMen',
+    backToTop: 'backToTop',
     dashboard: 'dashboard',
     treeMenu: 'treeMenu',
     wel: 'wel',
@@ -30,5 +37,14 @@ export default {
   permission: {
     roles: 'Your roles',
     switchRoles: 'Switch roles'
+  },
+  components: {
+    documentation: 'documentation',
+    tinymceTips: 'tinymceTips',
+    dropzoneTips: 'dropzoneTips',
+    stickyTips: 'stickyTips',
+    backToTopTips1: 'backToTopTips1',
+    backToTopTips2: 'backToTopTips2',
+    imageUploadTips: 'imageUploadTips'
   }
 }

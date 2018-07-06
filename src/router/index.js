@@ -44,18 +44,7 @@ export const constantRouterMap = [
     name: '锁屏页',
     component: () => import('@/views/common/lock')
   },
-
-  // {
-  //   path: '/wel',
-  //   component: Layout,
-  //   redirect: '/wel/wel',
-  //   name: 'wel',
-  //   hidden: true,
-  //   children: [{
-  //     path: 'wel',
-  //     component: () => import('@/views/login/wel')
-  //   }]
-  // },
+  // 报表
   {
     path: '/dashboard',
     component: Layout,
@@ -70,6 +59,22 @@ export const constantRouterMap = [
 
     ]
   },
+  //
+  {
+    path: '/wel',
+    component: Layout,
+    meta: { title: 'wel', icon: 'wel' },
+    children: [
+      {
+        path: 'wel',
+        name: 'wel',
+        component: () => import('@/views/login/wel'),
+        meta: { title: 'wel', icon: 'wel' }
+      }
+
+    ]
+  },
+
   // 表情包
   // {
   //   path: '/countenance',
@@ -99,22 +104,79 @@ export const constantRouterMap = [
 
     ]
   },
-  // 小组件
+
+  // markdown组件
+  // {
+  //   path: '/dragKanban',
+  //   component: Layout,
+  //   redirect: 'noredirect',
+  //   name: 'dragKanban-demo',
+  //   meta: {
+  //     title: 'dragKanban',
+  //     icon: 'component'
+  //   },
+  //   children: [
+  //     {
+  //       path: 'dragKanban',
+  //       name: 'dragKanban',
+  //       component: () => import('@/views/page/dragKanban'),
+  //       meta: { title: 'dragKanban', icon: 'component' }
+  //     }
+  //   ]
+  // },
+  // 树形组件
   {
-    path: '/components',
+    path: '/treeMen',
     component: Layout,
     redirect: 'noredirect',
-    name: 'component-demo',
+    name: 'treeMen-demo',
     meta: {
-      title: 'components',
+      title: 'treeMen',
       icon: 'component'
     },
     children: [
       {
+        path: 'treeMen',
+        name: 'treeMen-demo',
+        component: () => import('@/views/tree/treeMen'),
+        meta: { title: 'treeMen', icon: 'component' }
+      }
+    ]
+  },
+  // 组件
+  {
+    path: '/page',
+    component: Layout,
+    redirect: '/page/dragKanban',
+    name: 'Components',
+    meta: {
+      title: 'Components',
+      icon: 'table'
+    },
+    children: [
+      {
+        path: 'dragKanban',
+        name: 'dragKanban',
+        component: () => import('@/views/page/dragKanban'),
+        meta: { title: 'dragKanban' }
+      },
+      {
+        path: 'markdown',
+        name: 'markdown',
+        component: () => import('@/views/page/markdown'),
+        meta: { title: 'markdown' }
+      },
+      {
+        path: 'backToTop',
+        name: 'backToTop',
+        component: () => import('@/views/page/backToTop'),
+        meta: { title: 'backToTop' }
+      },
+      {
         path: 'mixin',
-        name: 'componentMixin-demo',
+        name: 'componentMixin',
         component: () => import('@/views/components-demo/mixin'),
-        meta: { title: 'componentMixin', icon: 'component' }
+        meta: { title: 'componentMixin' }
       }
     ]
   },

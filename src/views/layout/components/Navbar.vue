@@ -5,6 +5,8 @@
     <nx-breadcrumb class="breadcrumb-container"></nx-breadcrumb>
 
     <div class="right-menu">
+    
+     <nx-github class="nx-github right-menu-item"></nx-github>
       <!-- <error-log class="errLog-container right-menu-item"></error-log> -->
       <nx-help  class="nx-help right-menu-item"/>
        <nx-top-lock class="nx-help"></nx-top-lock>
@@ -55,6 +57,7 @@ import nxHelp from '@/components/nx-help/index'
 import nxFullScreen from '@/components/nx-full-screen/index'
 import nxLangSelect from '@/components/nx-lang-select/index'
 import nxSkin from '@/components/nx-skin/index'
+import nxGithub from '@/components/nx-github/index'
 export default {
   components: {
     nxBreadcrumb,
@@ -63,7 +66,8 @@ export default {
     nxFullScreen,
     nxLangSelect,
     nxSkin,
-    nxTopLock
+    nxTopLock,
+    nxGithub
 
   },
   computed: {
@@ -101,6 +105,10 @@ export default {
     float: left;
   }
   .nx-help {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .nx-github {
     display: inline-block;
     vertical-align: top;
   }
