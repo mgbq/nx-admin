@@ -44,18 +44,7 @@ export const constantRouterMap = [
     name: '锁屏页',
     component: () => import('@/views/common/lock')
   },
-
-  // {
-  //   path: '/wel',
-  //   component: Layout,
-  //   redirect: '/wel/wel',
-  //   name: 'wel',
-  //   hidden: true,
-  //   children: [{
-  //     path: 'wel',
-  //     component: () => import('@/views/login/wel')
-  //   }]
-  // },
+  // 报表
   {
     path: '/dashboard',
     component: Layout,
@@ -79,12 +68,24 @@ export const constantRouterMap = [
       name: 'myiframe',
       component: () => import('@/components/nx-iframe'),
       meta: { title: 'thirdPartyWebsite', icon: 'people' }
-      // children: [{
-      //   path: 'urlPath?src=http://www.baidu.com'
-      // }]
     }]
 
   },
+  {
+    path: '/wel',
+    component: Layout,
+    meta: { title: 'wel', icon: 'wel' },
+    children: [
+      {
+        path: 'wel',
+        name: 'wel',
+        component: () => import('@/views/page/wel'),
+        meta: { title: 'wel', icon: 'wel' }
+      }
+
+    ]
+  },
+
   // 表情包
   // {
   //   path: '/countenance',
@@ -114,40 +115,128 @@ export const constantRouterMap = [
 
     ]
   },
-  // 小组件
+
+  // markdown组件
+  // {
+  //   path: '/dragKanban',
+  //   component: Layout,
+  //   redirect: 'noredirect',
+  //   name: 'dragKanban-demo',
+  //   meta: {
+  //     title: 'dragKanban',
+  //     icon: 'component'
+  //   },
+  //   children: [
+  //     {
+  //       path: 'dragKanban',
+  //       name: 'dragKanban',
+  //       component: () => import('@/views/page/dragKanban'),
+  //       meta: { title: 'dragKanban', icon: 'component' }
+  //     }
+  //   ]
+  // },
+  // 树形组件
   {
-    path: '/components',
+    path: '/treeMen',
     component: Layout,
     redirect: 'noredirect',
-    name: 'component-demo',
+    name: 'treeMen-demo',
     meta: {
-      title: 'components',
+      title: 'treeMen',
       icon: 'component'
     },
     children: [
       {
-        path: 'mixin',
-        name: 'componentMixin-demo',
-        component: () => import('@/views/components-demo/mixin'),
-        meta: { title: 'componentMixin', icon: 'component' }
+        path: 'treeMen',
+        name: 'treeMen-demo',
+        component: () => import('@/views/tree/treeMen'),
+        meta: { title: 'treeMen', icon: 'component' }
       }
     ]
   },
-  // {
-  //   path: '/orgMembersNav',
-  //   component: Layout,
-  //   redirect: '/orgMembersNav/histogram',
-  //   name: 'orgMembersNav',
-  //   meta: { title: 'Chartmember', icon: 'tree' },
-  //   children: [
-  //     {
-  //       path: 'histogram',
-  //       name: 'histogram',
-  //       component: () => import('@/views/charts/histogram'),
-  //       meta: { title: 'histogram', icon: 'table' }
-  //     }
-  //   ]
-  // },
+  // 组件
+  {
+    path: '/page',
+    component: Layout,
+    redirect: '/page/dragKanban',
+    name: 'Components',
+    meta: {
+      title: 'Components',
+      icon: 'table'
+    },
+    children: [
+      {
+        path: 'dragKanban',
+        name: 'dragKanban',
+        component: () => import('@/views/page/dragKanban'),
+        meta: { title: 'dragKanban' }
+      },
+      {
+        path: 'markdown',
+        name: 'markdown',
+        component: () => import('@/views/page/markdown'),
+        meta: { title: 'markdown' }
+      },
+      {
+        path: 'backToTop',
+        name: 'backToTop',
+        component: () => import('@/views/page/backToTop'),
+        meta: { title: 'backToTop' }
+      },
+      {
+        path: 'mixin',
+        name: 'componentMixin',
+        component: () => import('@/views/components-demo/mixin'),
+        meta: { title: 'componentMixin' }
+      }
+    ]
+  },
+  {
+    path: '/Tabs',
+    component: Layout,
+    redirect: 'Tabs',
+    name: 'Tabs',
+    meta: { title: 'Tabs', icon: 'table' },
+    children: [
+      {
+        path: 'Tabs',
+        name: 'Tabs',
+        component: () => import('@/views/table/Tabs'),
+        meta: { title: 'Tabs', icon: 'table' }
+      }
+    ]
+  },
+  {
+    path: '/from',
+    component: Layout,
+    redirect: '/table/BaseForm',
+    name: 'from',
+    meta: {
+      title: 'from',
+      icon: 'table'
+    },
+    children: [
+      {
+        path: 'BaseForm',
+        name: 'BaseForm',
+        component: () => import('@/views/table/BaseForm'),
+        meta: { title: 'BaseForm' }
+      },
+      {
+        path: 'VueEditor',
+        name: 'VueEditor',
+        component: () => import('@/views/table/VueEditor'),
+        meta: { title: 'VueEditor' }
+      },
+      {
+        path: 'Upload',
+        name: 'Upload',
+        component: () => import('@/views/table/Upload'),
+        meta: { title: 'Upload' }
+      }
+    ]
+  },
+  // 表格
   {
     path: '/table',
     component: Layout,
@@ -170,6 +259,7 @@ export const constantRouterMap = [
         component: () => import('@/views/table/tree-table/index'),
         meta: { title: 'treeTable' }
       }
+
     ]
   }
 ]

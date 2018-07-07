@@ -11,6 +11,13 @@
  
 nx-admin是一套基于Vue/Vue-Router/axios/Vuex/Element-ui开源的管理系统前端集成方案
 
+
+**完整版**
+
+[Github 仓库](https://github.com/mgbq/nx-admin) | 
+[码云仓库](https://gitee.com/symgg/nx-admin) | 
+[预览地址](https://mgbq.github.io/vue-permission/#/login)
+
 #### 因为也是纯粹的写写前端页面,所以数据方面用的是mock.js,真实的模拟请求。
 
 #### 这个项目用到的
@@ -50,9 +57,8 @@ nx-admin是一套基于Vue/Vue-Router/axios/Vuex/Element-ui开源的管理系统
 
 
 ## 捐赠 觉得不错 赏个咖啡 让作者打起精神 ~
-![微信扫一扫](http://img.blog.csdn.net/20180301190740227?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzIzNDA4Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+<img src="./github/二维码.jpg" width="400px" height="500px" alt="捐赠扫一扫">
 
-![支付宝扫一扫](https://img-blog.csdn.net/20180705100035634?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMzQwODc3/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 ## 下载
 
 git：`git clone https://github.com/mgbq/nx-admin.git`

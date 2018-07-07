@@ -72,13 +72,64 @@ a:hover {
 .app-main {
   min-height: 100%;
 }
-
+code {
+  background: #eef1f6;
+  padding: 15px 16px;
+  margin-bottom: 20px;
+  display: block;
+  line-height: 36px;
+  font-size: 15px;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  a {
+    color: #337ab7;
+    cursor: pointer;
+    &:hover {
+      color: rgb(32, 160, 255);
+    }
+  }
+}
 .app-container {
   padding: 20px;
   box-sizing: border-box;
   overflow-y: scroll;
 }
-
+.components-container {
+  margin: 30px 50px;
+  position: relative;
+}
 .text-white {
   color: #fff;
+}
+.container{
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.crumbs {
+    margin-bottom: 20px;
+}
+/*VueEditor */
+.plugins-tips {
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+/*BaseForm*/
+
+.form-box {
+    width: 600px;
+}
+
+.form-box .line {
+    text-align: center;
+}
+
+.el-time-panel__content::after,
+.el-time-panel__content::before {
+    margin-top: -7px;
+}
+
+.el-time-spinner__wrapper .el-scrollbar__wrap:not(.el-scrollbar__wrap--hidden-default) {
+    padding-bottom: 0;
 }
