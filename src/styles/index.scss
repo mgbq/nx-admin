@@ -100,3 +100,36 @@ code {
 .text-white {
   color: #fff;
 }
+.container{
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.crumbs {
+    margin-bottom: 20px;
+}
+/*VueEditor */
+.plugins-tips {
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+/*BaseForm*/
+
+.form-box {
+    width: 600px;
+}
+
+.form-box .line {
+    text-align: center;
+}
+
+.el-time-panel__content::after,
+.el-time-panel__content::before {
+    margin-top: -7px;
+}
+
+.el-time-spinner__wrapper .el-scrollbar__wrap:not(.el-scrollbar__wrap--hidden-default) {
+    padding-bottom: 0;
+}

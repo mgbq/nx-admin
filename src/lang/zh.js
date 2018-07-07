@@ -14,6 +14,10 @@ export default {
     Default: '默认'
   },
   route: {
+    from: '表单',
+    BaseForm: 'from表单',
+    VueEditor: '文本编辑',
+    Upload: '文件上传',
     Components: '组件',
     dragKanban: '可拖拽看板',
     Table: '表格',

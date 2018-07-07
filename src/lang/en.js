@@ -12,6 +12,10 @@ export default {
     Default: 'Default'
   },
   route: {
+    from: 'from',
+    BaseForm: 'BaseForm',
+    VueEditor: 'VueEditor',
+    Upload: 'Upload',
     Components: 'Components',
     dragKanban: 'dragKanban',
     Table: 'Table',
