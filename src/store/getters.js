@@ -11,6 +11,7 @@ const getters = {
   website: state => state.common.website,
   isLock: state => state.user.isLock,
   lockPasswd: state => state.user.lockPasswd,
-  isFullScren: state => state.common.isFullScren
+  isFullScren: state => state.common.isFullScren,
+  cachedViews: state => state.tagsView.cachedViews
 }
 export default getters

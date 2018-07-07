@@ -56,6 +56,14 @@ export default {
       }
       return false
     }
+  },
+  created() {
+    for (const o in this.routes) {
+      const obj = this.routes[o]
+      if (obj.path.indexOf('myiframe') >= 0) {
+        obj.children[0].path = 'urlPath?src=http://www.baidu.com'
+      }
+    }
   }
 }
 </script>

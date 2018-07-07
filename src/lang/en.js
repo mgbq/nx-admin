@@ -25,7 +25,8 @@ export default {
     treeTable: 'Tree Table',
     errorPages: 'Error Pages',
     page401: '401',
-    page404: '404'
+    page404: '404',
+    thirdPartyWebsite: 'thirdPartyWebsite'
   },
   permission: {
     roles: 'Your roles',

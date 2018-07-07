@@ -56,6 +56,7 @@ import nxFullScreen from '@/components/nx-full-screen/index'
 import nxLangSelect from '@/components/nx-lang-select/index'
 import nxSkin from '@/components/nx-skin/index'
 export default {
+  name: 'navBar',
   components: {
     nxBreadcrumb,
     nxHamburger,

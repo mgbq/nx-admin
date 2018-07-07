@@ -39,6 +39,19 @@ router.beforeEach((to, from, next) => {
           })
         })
       } else {
+        // let reqUrl = to.path
+        // const name = to.name
+        // if (to.path.indexOf('http') !== -1 || to.path.indexOf('https') !== -1) {
+        //   reqUrl = `/myiframe/urlPath?src=${reqUrl}&name=${name}`
+        //   to.path = reqUrl
+        //   next()
+        // }
+        // const iframe = {
+        //   title: 'http://www.baidu.com',
+        //   name: '百度'
+        // }
+        // this.$router.push(`/myiframe/urlPath?src=${iframe.title}&name=${iframe.name}`)
+
         // 没有动态改变权限的需求可直接next() 删除下方权限判断 ↓
         if (hasPermission(store.getters.roles, to.meta.roles)) {
           next()//

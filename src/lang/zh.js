@@ -28,7 +28,8 @@ export default {
     treeTable: '树形表格',
     errorPages: '错误页面',
     page401: '401',
-    page404: '404'
+    page404: '404',
+    thirdPartyWebsite: '第三方网站'
   },
   permission: {
     roles: '你的权限',

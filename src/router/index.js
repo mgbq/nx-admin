@@ -70,6 +70,21 @@ export const constantRouterMap = [
 
     ]
   },
+  {
+    path: '/myiframe',
+    component: Layout,
+    redirect: '/myiframe',
+    children: [{
+      path: ':routerPath',
+      name: 'myiframe',
+      component: () => import('@/components/nx-iframe'),
+      meta: { title: 'thirdPartyWebsite', icon: 'people' }
+      // children: [{
+      //   path: 'urlPath?src=http://www.baidu.com'
+      // }]
+    }]
+
+  },
   // 表情包
   // {
   //   path: '/countenance',
