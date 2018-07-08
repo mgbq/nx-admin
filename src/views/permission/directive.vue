@@ -4,7 +4,7 @@
     <div :key="key" style="margin-top:30px;">
       <span v-permission="['admin']" class="permission-alert">
         Only admin can see this
-        <el-button type="warning">警告按钮</el-button>
+        <el-button type="warning">admin</el-button>
         <el-button type="danger">危险按钮</el-button>
       </span>
 
