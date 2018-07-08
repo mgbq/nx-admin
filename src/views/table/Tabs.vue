@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div class="app-container">
         <div class="crumbs">
             <el-breadcrumb separator="/">
                 <el-breadcrumb-item><i class="el-icon-message"></i> tab选项卡</el-breadcrumb-item>

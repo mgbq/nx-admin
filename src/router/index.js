@@ -202,7 +202,7 @@ export const constantRouterMap = [
         path: 'Tabs',
         name: 'Tabs',
         component: () => import('@/views/table/Tabs'),
-        meta: { title: 'Tabs', icon: 'table' }
+        meta: { title: 'Tabs', icon: 'tab' }
       }
     ]
   },

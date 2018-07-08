@@ -5,22 +5,22 @@
     <nx-breadcrumb class="breadcrumb-container"></nx-breadcrumb>
 
     <div class="right-menu">
-    
-     <nx-github class="nx-github right-menu-item"></nx-github>
+
+      <nx-github style="margin-top:2px" class="nx-help right-menu-item"></nx-github>
       <!-- <error-log class="errLog-container right-menu-item"></error-log> -->
-      <nx-help  class="nx-help right-menu-item"/>
-       <nx-top-lock class="nx-help"></nx-top-lock>
+      <nx-help class="nx-help right-menu-item" />
+      <nx-top-lock class="nx-help"></nx-top-lock>
       <el-tooltip effect="dark" content="全屏" placement="bottom">
         <nx-full-screen class="screenfull right-menu-item"></nx-full-screen>
-     
+
       </el-tooltip>
-       
+
       <!-- <lang-select class="international right-menu-item"></lang-select> -->
       <nx-lang-select class="international right-menu-item"></nx-lang-select>
 
       <el-tooltip effect="dark" content="主题" placement="bottom">
         <!-- <theme-picker class="theme-switch right-menu-item"></theme-picker> -->
-         <nx-skin class="theme-switch right-menu-item"></nx-skin>
+        <nx-skin class="theme-switch right-menu-item"></nx-skin>
       </el-tooltip>
 
       <el-dropdown class="avatar-container right-menu-item" trigger="click">
@@ -36,7 +36,7 @@
           </router-link>
           <a target='_blank' href="https://github.com/mgbq/nx-admin/">
             <el-dropdown-item>
-             github地址
+              github地址
             </el-dropdown-item>
           </a>
           <el-dropdown-item divided>
@@ -69,14 +69,9 @@ export default {
     nxSkin,
     nxTopLock,
     nxGithub
-
   },
   computed: {
-    ...mapGetters([
-      'sidebar',
-      'name',
-      'avatar'
-    ])
+    ...mapGetters(['sidebar', 'name', 'avatar'])
   },
   methods: {
     toggleSideBar() {
@@ -84,7 +79,7 @@ export default {
     },
     logout() {
       this.$store.dispatch('LogOut').then(() => {
-        location.reload()// In order to re-instantiate the vue-router object to avoid bugs
+        location.reload() // In order to re-instantiate the vue-router object to avoid bugs
       })
     }
   }
@@ -102,22 +97,18 @@ export default {
     float: left;
     padding: 0 10px;
   }
-  .breadcrumb-container{
+  .breadcrumb-container {
     float: left;
   }
   .nx-help {
     display: inline-block;
     vertical-align: top;
   }
-  .nx-github {
-    display: inline-block;
-    vertical-align: top;
-  }
   .right-menu {
     float: right;
     height: 100%;
-    &:focus{
-     outline: none;
+    &:focus {
+      outline: none;
     }
     .right-menu-item {
       display: inline-block;
@@ -126,7 +117,7 @@ export default {
     .screenfull {
       height: 20px;
     }
-    .international{
+    .international {
       vertical-align: top;
     }
     .theme-switch {

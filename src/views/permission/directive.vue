@@ -3,18 +3,26 @@
     <switch-roles @change="handleRolesChange" />
     <div :key="key" style="margin-top:30px;">
       <span v-permission="['admin']" class="permission-alert">
-        Only
-        <el-tag class="permission-tag" size="small">admin</el-tag> can see this
+        Only admin can see this
+        <el-button type="warning">警告按钮</el-button>
+        <el-button type="danger">危险按钮</el-button>
       </span>
+
       <span v-permission="['editor']" class="permission-alert">
-        Only
-        <el-tag class="permission-tag" size="small">editor</el-tag> can see this
+        Only editor can see this
+        <el-button type="success">编辑</el-button>
+        <el-button type="info">信息按钮</el-button>
       </span>
+
       <span v-permission="['admin','editor']" class="permission-alert">
-        Both
-        <el-tag class="permission-tag" size="small">admin</el-tag> and
-        <el-tag class="permission-tag" size="small">editor</el-tag> can see this
+        Both adminand editor can see this
+        <el-button type="primary">主要按钮</el-button>
+        <el-button type="success">成功按钮</el-button>
+        <el-button type="info">信息按钮</el-button>
+        <el-button type="warning">警告按钮</el-button>
+        <el-button type="danger">危险按钮</el-button>
       </span>
+
     </div>
   </div>
 </template>
@@ -23,7 +31,7 @@
 import permission from '@/directive/permission/index.js' // 权限判断指令
 import SwitchRoles from './components/SwitchRoles'
 
-export default{
+export default {
   name: 'directivePermission',
   components: { SwitchRoles },
   directives: { permission },
@@ -43,7 +51,7 @@ export default{
 <style rel="stylesheet/scss" lang="scss" scoped>
 .app-container {
   /deep/ .permission-alert {
-    width: 320px;
+    width: 100%;
     margin-top: 30px;
     background-color: #f0f9eb;
     color: #67c23a;
@@ -51,7 +59,7 @@ export default{
     border-radius: 4px;
     display: block;
   }
-  /deep/ .permission-tag{
+  /deep/ .permission-tag {
     background-color: #ecf5ff;
   }
 }
