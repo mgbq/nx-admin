@@ -207,13 +207,13 @@ export const constantRouterMap = [
     ]
   },
   {
-    path: '/from',
+    path: '/form',
     component: Layout,
     redirect: '/table/BaseForm',
-    name: 'from',
+    name: 'form',
     meta: {
-      title: 'from',
-      icon: 'table'
+      title: 'form',
+      icon: 'form'
     },
     children: [
       {
