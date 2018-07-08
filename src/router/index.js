@@ -156,9 +156,9 @@ export const constantRouterMap = [
   },
   // 组件
   {
-    path: '/page',
+    path: '/components',
     component: Layout,
-    redirect: '/page/dragKanban',
+    redirect: '/components/dragKanban',
     name: 'Components',
     meta: {
       title: 'Components',
@@ -168,19 +168,19 @@ export const constantRouterMap = [
       {
         path: 'dragKanban',
         name: 'dragKanban',
-        component: () => import('@/views/page/dragKanban'),
+        component: () => import('@/views/components/dragKanban'),
         meta: { title: 'dragKanban' }
       },
       {
         path: 'markdown',
         name: 'markdown',
-        component: () => import('@/views/page/markdown'),
+        component: () => import('@/views/components/markdown'),
         meta: { title: 'markdown' }
       },
       {
         path: 'backToTop',
         name: 'backToTop',
-        component: () => import('@/views/page/backToTop'),
+        component: () => import('@/views/components/backToTop'),
         meta: { title: 'backToTop' }
       },
       {
@@ -219,19 +219,19 @@ export const constantRouterMap = [
       {
         path: 'BaseForm',
         name: 'BaseForm',
-        component: () => import('@/views/table/BaseForm'),
+        component: () => import('@/views/form/BaseForm'),
         meta: { title: 'BaseForm' }
       },
       {
         path: 'VueEditor',
         name: 'VueEditor',
-        component: () => import('@/views/table/VueEditor'),
+        component: () => import('@/views/form/VueEditor'),
         meta: { title: 'VueEditor' }
       },
       {
         path: 'Upload',
         name: 'Upload',
-        component: () => import('@/views/table/Upload'),
+        component: () => import('@/views/form/Upload'),
         meta: { title: 'Upload' }
       }
     ]
