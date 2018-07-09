@@ -154,6 +154,24 @@ export const constantRouterMap = [
       }
     ]
   },
+  // 图标组件
+  {
+    path: '/iconIndex',
+    component: Layout,
+    name: 'iconIndex',
+    meta: {
+      title: 'Icons',
+      icon: 'component'
+    },
+    children: [
+      {
+        path: 'iconIndex',
+        name: 'iconIndex',
+        component: () => import('@/views/svg-icons/iconIndex'),
+        meta: { title: 'Icons', icon: 'component' }
+      }
+    ]
+  },
   // 组件
   {
     path: '/components',
@@ -277,7 +295,7 @@ export const asyncRouterMap = [
     alwaysShow: true, // will always show the root menu
     meta: {
       title: 'permission',
-      icon: 'lock',
+      icon: 'el-icon-news',
       roles: ['admin', 'editor'] // you can set roles in root nav
     },
     children: [{

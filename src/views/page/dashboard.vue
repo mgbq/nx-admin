@@ -1,9 +1,10 @@
 <template>
   <div class="app-container">
-     <a target="_blank" href="https://github.com/mgbq/vue-permission"><img
+   <nx-github-corner></nx-github-corner>
+     <!-- <a target="_blank" href="https://github.com/mgbq/vue-permission"><img
         style="position: absolute; top: 48px; right: 0; border: 0;"
         src="../../../static/img/report/forkme.png"
-        alt="Fork me on GitHub"></a>
+        alt="Fork me on GitHub"></a> -->
     <div class="item">
       <h4>数据展示</h4>
       <nx-data-display :option="option"></nx-data-display>
@@ -33,13 +34,15 @@ import nxDataDisplay from '@/components/nx-data-display/nx-data-display'
 import nxDataCard from '@/components/nx-data-card/nx-data-card'
 import nxDataTabs from '@/components/nx-data-tabs/nx-data-tabs'
 import nxDataIcons from '@/components/nx-data-icons/nx-data-icons'
+import nxGithubCorner from '@/components/nx-github-corner'
 export default {
   name: 'report',
   components: {
     nxDataDisplay,
     nxDataCard,
     nxDataTabs,
-    nxDataIcons
+    nxDataIcons,
+    nxGithubCorner
 
   },
   data() {
