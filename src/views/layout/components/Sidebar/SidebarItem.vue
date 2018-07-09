@@ -61,7 +61,7 @@ export default {
     for (const o in this.routes) {
       const obj = this.routes[o]
       if (obj.path.indexOf('myiframe') >= 0) {
-        obj.children[0].path = 'urlPath?src=http://www.baidu.com'
+        obj.children[0].path = 'urlPath?src=https://www.baidu.com'
       }
     }
   }

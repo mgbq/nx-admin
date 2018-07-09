@@ -101,20 +101,20 @@ export const constantRouterMap = [
 
   //   ]
   // },
-  {
-    path: '/index',
-    component: Layout,
-    meta: { title: 'clipboard', icon: 'clipboard' },
-    children: [
-      {
-        path: 'index',
-        name: 'clipboard',
-        component: () => import('@/views/clipboard/index'),
-        meta: { title: 'clipboard', icon: 'clipboard' }
-      }
+  // {
+  //   path: '/index',
+  //   component: Layout,
+  //   meta: { title: 'clipboard', icon: 'clipboard' },
+  //   children: [
+  //     {
+  //       path: 'index',
+  //       name: 'clipboard',
+  //       component: () => import('@/views/clipboard/index'),
+  //       meta: { title: 'clipboard', icon: 'clipboard' }
+  //     }
 
-    ]
-  },
+  //   ]
+  // },
 
   // markdown组件
   // {
@@ -182,6 +182,12 @@ export const constantRouterMap = [
         name: 'backToTop',
         component: () => import('@/views/components/backToTop'),
         meta: { title: 'backToTop' }
+      },
+      {
+        path: 'clipboard',
+        name: 'clipboard',
+        component: () => import('@/views/clipboard/index'),
+        meta: { title: 'clipboard', icon: 'clipboard' }
       },
       {
         path: 'mixin',
