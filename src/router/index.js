@@ -35,7 +35,7 @@ export const constantRouterMap = [
     redirect: 'dashboard'
   },
   { path: '/login', component: () => import('@/views/login'), hidden: true },
-  { path: '/404', component: () => import('@/views/404'), hidden: true },
+  { path: '/404', component: () => import('@/views/errorPage/404'), hidden: true },
   { path: '/401', component: () => import('@/views/errorPage/401'), hidden: true },
   // 锁屏
   {
