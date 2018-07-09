@@ -51,5 +51,10 @@ export default {
     backToTopTips1: 'backToTopTips1',
     backToTopTips2: 'backToTopTips2',
     imageUploadTips: 'imageUploadTips'
+  },
+  tagsView: {
+    close: 'Close',
+    closeOthers: 'Close Others',
+    closeAll: 'Close All'
   }
 }

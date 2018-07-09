@@ -32,10 +32,10 @@ export const constantRouterMap = [
   {
     path: '',
     component: Layout,
-    redirect: 'dashboard'
+    redirect: '/dashboard/dashboard'
   },
   { path: '/login', component: () => import('@/views/login'), hidden: true },
-  { path: '/404', component: () => import('@/views/404'), hidden: true },
+  { path: '/404', component: () => import('@/views/errorPage/404'), hidden: true },
   { path: '/401', component: () => import('@/views/errorPage/401'), hidden: true },
   // 锁屏
   {
@@ -101,20 +101,20 @@ export const constantRouterMap = [
 
   //   ]
   // },
-  {
-    path: '/index',
-    component: Layout,
-    meta: { title: 'clipboard', icon: 'clipboard' },
-    children: [
-      {
-        path: 'index',
-        name: 'clipboard',
-        component: () => import('@/views/clipboard/index'),
-        meta: { title: 'clipboard', icon: 'clipboard' }
-      }
+  // {
+  //   path: '/index',
+  //   component: Layout,
+  //   meta: { title: 'clipboard', icon: 'clipboard' },
+  //   children: [
+  //     {
+  //       path: 'index',
+  //       name: 'clipboard',
+  //       component: () => import('@/views/clipboard/index'),
+  //       meta: { title: 'clipboard', icon: 'clipboard' }
+  //     }
 
-    ]
-  },
+  //   ]
+  // },
 
   // markdown组件
   // {
@@ -202,6 +202,12 @@ export const constantRouterMap = [
         meta: { title: 'backToTop' }
       },
       {
+        path: 'clipboard',
+        name: 'clipboard',
+        component: () => import('@/views/clipboard/index'),
+        meta: { title: 'clipboard', icon: 'clipboard' }
+      },
+      {
         path: 'mixin',
         name: 'componentMixin',
         component: () => import('@/views/components-demo/mixin'),
@@ -225,13 +231,13 @@ export const constantRouterMap = [
     ]
   },
   {
-    path: '/from',
+    path: '/form',
     component: Layout,
     redirect: '/table/BaseForm',
-    name: 'from',
+    name: 'form',
     meta: {
-      title: 'from',
-      icon: 'table'
+      title: 'form',
+      icon: 'form'
     },
     children: [
       {
