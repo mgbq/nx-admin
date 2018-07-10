@@ -16,7 +16,10 @@ const user = {
     }) || false,
     lockPasswd: getStore({
       name: 'lockPasswd'
-    }) || ''
+    }) || '',
+    browserHeaderTitle: getStore({
+      name: 'browserHeaderTitle'
+    }) || 'NxAdmin'
   },
 
   mutations: {
@@ -57,6 +60,9 @@ const user = {
       removeStore({
         name: 'isLock'
       })
+    },
+    SET_BROWSERHEADERTITLE: (state, action) => {
+      state.browserHeaderTitle = action.browserHeaderTitle
     }
 
   },
