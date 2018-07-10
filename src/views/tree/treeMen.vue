@@ -1,5 +1,9 @@
 <template>
   <div class="expand">
+     <p class="warn-content">
+      <a href="https://xiaoniezi.github.io/2017-10-16/vue-ElementUI-tree-expand/" target="_blank">Tree组件参考 tree
+      </a>
+    </p>
     <div>
         <el-button @click="handleAddTop">添加顶级节点</el-button>
         <el-tree ref="expandMenuList" class="expand-tree"

@@ -216,7 +216,7 @@ export default {
 
 <style scoped>
 .item {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 </style>
 <style lang ="scss">

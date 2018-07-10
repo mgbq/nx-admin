@@ -34,12 +34,12 @@ export const constantRouterMap = [
     component: Layout,
     redirect: '/dashboard/dashboard'
   },
-  { path: '/login', component: () => import('@/views/login'), hidden: true },
+  { path: '/login', component: () => import('@/views/login'), name: '登录NxAdmin', hidden: true },
   { path: '/404', component: () => import('@/views/errorPage/404'), hidden: true },
   { path: '/401', component: () => import('@/views/errorPage/401'), hidden: true },
   // 锁屏
   {
-    path: '/lock',
+    path: '/locks',
     hidden: true,
     name: '锁屏页',
     component: () => import('@/views/common/lock')
@@ -55,8 +55,19 @@ export const constantRouterMap = [
         name: 'dashboard',
         component: () => import('@/views/dashboard/dashboard'),
         meta: { title: 'dashboard', icon: 'dashboard' }
+      },
+      {
+        path: 'DiscountFigure',
+        name: 'DiscountFigure',
+        component: () => import('@/views/charts/DiscountFigure'),
+        meta: { title: 'DiscountFigure', icon: 'dashboard' }
+      },
+      {
+        path: 'columnar',
+        name: 'columnar',
+        component: () => import('@/views/charts/columnar'),
+        meta: { title: 'columnar', icon: 'dashboard' }
       }
-
     ]
   },
   {
@@ -116,25 +127,6 @@ export const constantRouterMap = [
   //   ]
   // },
 
-  // markdown组件
-  // {
-  //   path: '/dragKanban',
-  //   component: Layout,
-  //   redirect: 'noredirect',
-  //   name: 'dragKanban-demo',
-  //   meta: {
-  //     title: 'dragKanban',
-  //     icon: 'component'
-  //   },
-  //   children: [
-  //     {
-  //       path: 'dragKanban',
-  //       name: 'dragKanban',
-  //       component: () => import('@/views/page/dragKanban'),
-  //       meta: { title: 'dragKanban', icon: 'component' }
-  //     }
-  //   ]
-  // },
   // 树形组件
   {
     path: '/treeMen',
@@ -161,14 +153,14 @@ export const constantRouterMap = [
     name: 'iconIndex',
     meta: {
       title: 'Icons',
-      icon: 'component'
+      icon: 'icon'
     },
     children: [
       {
         path: 'iconIndex',
         name: 'iconIndex',
         component: () => import('@/views/svg-icons/iconIndex'),
-        meta: { title: 'Icons', icon: 'component' }
+        meta: { title: 'Icons', icon: 'icon' }
       }
     ]
   },
@@ -321,7 +313,7 @@ export const asyncRouterMap = [
     alwaysShow: true, // will always show the root menu
     meta: {
       title: 'permission',
-      icon: 'el-icon-news',
+      icon: 'lock',
       roles: ['admin', 'editor'] // you can set roles in root nav
     },
     children: [{

@@ -30,6 +30,7 @@ import '@/icons' // icon
 
 import '@/permission' // permission control
 
+Vue.use(VCharts)
 Vue.use(ElementUI, { locale })
 iconfontVersion.forEach(ele => {
   loadStyle(iconfontUrl.replace('$key', ele))
@@ -51,7 +52,6 @@ new Vue({
   router,
   store,
   i18n,
-  VCharts,
   // template: '<App/>',
   // components: { App }
   render: h => h(App)

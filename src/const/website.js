@@ -13,7 +13,7 @@ export default {
     ]
   },
   wel: {
-    title: 'nx-admin',
+    title: 'nx-admin 通用管理系统快速开发框架',
     list: [
       'vuex本地持久化存储,封装h5的sessionStorage和localStorage',
       '加入了本地离线的包引入方法去引入vue，vue-router等第三方包',
