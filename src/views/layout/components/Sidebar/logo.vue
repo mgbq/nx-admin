@@ -57,7 +57,7 @@ export default {
   // width: 230px;
   height: 64px;
   line-height: 64px;
-  background: #002140;
+  background: #473C8B;
   color: #fdfdfd;
   text-align: center;
   font-size: 20px;
@@ -67,7 +67,7 @@ export default {
 }
 .logo_title {
   padding: 0 5px 0 0;
-  color: #409eff;
+  color: #42b983;
   font-size: 20px;
   &.is-bold {
     font-weight: 700;

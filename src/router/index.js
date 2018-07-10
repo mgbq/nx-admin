@@ -39,7 +39,7 @@ export const constantRouterMap = [
   { path: '/401', component: () => import('@/views/errorPage/401'), hidden: true },
   // 锁屏
   {
-    path: '/lock',
+    path: '/locks',
     hidden: true,
     name: '锁屏页',
     component: () => import('@/views/common/lock')
@@ -161,14 +161,14 @@ export const constantRouterMap = [
     name: 'iconIndex',
     meta: {
       title: 'Icons',
-      icon: 'component'
+      icon: 'icon'
     },
     children: [
       {
         path: 'iconIndex',
         name: 'iconIndex',
         component: () => import('@/views/svg-icons/iconIndex'),
-        meta: { title: 'Icons', icon: 'component' }
+        meta: { title: 'Icons', icon: 'icon' }
       }
     ]
   },
