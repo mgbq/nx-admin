@@ -14,6 +14,8 @@ export default {
     Default: '默认'
   },
   route: {
+    ajax: '',
+    vueActual: 'vue实战',
     from: '表单',
     BaseForm: 'from表单',
     VueEditor: '文本编辑',

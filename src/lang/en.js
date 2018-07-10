@@ -12,6 +12,7 @@ export default {
     Default: 'Default'
   },
   route: {
+    vueActual: 'vueActual',
     from: 'from',
     BaseForm: 'BaseForm',
     VueEditor: 'VueEditor',

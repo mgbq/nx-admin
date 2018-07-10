@@ -57,6 +57,10 @@ module.exports = {
         include: [resolve('src'), resolve('test') ,resolve('node_modules/webpack-dev-server/client')]
       },
       {
+        test: /\.md$/,
+        loaders: ["text-loader"]
+      },
+      {
         test: /\.svg$/,
         loader: 'svg-sprite-loader',
         include: [resolve('src/icons')],

@@ -53,7 +53,7 @@ export const constantRouterMap = [
       {
         path: 'dashboard',
         name: 'dashboard',
-        component: () => import('@/views/page/dashboard'),
+        component: () => import('@/views/dashboard/dashboard'),
         meta: { title: 'dashboard', icon: 'dashboard' }
       }
 
@@ -174,6 +174,25 @@ export const constantRouterMap = [
   },
   // 组件
   {
+    path: '/vuexActual',
+    component: Layout,
+    redirect: '/vuexActual/Pos',
+    name: 'vuexActual',
+    meta: {
+      title: 'vuexActual',
+      icon: 'shizhan'
+    },
+    children: [
+      {
+        path: 'Pos',
+        name: 'Pos',
+        component: () => import('@/views/vuexActual/Pos'),
+        meta: { title: 'vueActual', icon: 'shizhan' }
+      }
+    ]
+  },
+  // // 组件
+  {
     path: '/components',
     component: Layout,
     redirect: '/components/dragKanban',
@@ -260,6 +279,7 @@ export const constantRouterMap = [
       }
     ]
   },
+
   // 表格
   {
     path: '/table',
