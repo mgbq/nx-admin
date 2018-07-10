@@ -24,6 +24,8 @@ export default {
     treeMen: 'treeMen',
     backToTop: 'backToTop',
     dashboard: 'dashboard',
+    DiscountFigure: 'DiscountFigure',
+    columnar: '柱状图',
     treeMenu: 'treeMenu',
     wel: 'wel',
     Lockscreenpage: 'Lockscreenpage',

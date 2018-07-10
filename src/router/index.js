@@ -55,8 +55,19 @@ export const constantRouterMap = [
         name: 'dashboard',
         component: () => import('@/views/page/dashboard'),
         meta: { title: 'dashboard', icon: 'dashboard' }
+      },
+      {
+        path: 'DiscountFigure',
+        name: 'DiscountFigure',
+        component: () => import('@/views/charts/DiscountFigure'),
+        meta: { title: 'DiscountFigure', icon: 'dashboard' }
+      },
+      {
+        path: 'columnar',
+        name: 'columnar',
+        component: () => import('@/views/charts/columnar'),
+        meta: { title: 'columnar', icon: 'dashboard' }
       }
-
     ]
   },
   {
@@ -116,25 +127,6 @@ export const constantRouterMap = [
   //   ]
   // },
 
-  // markdown组件
-  // {
-  //   path: '/dragKanban',
-  //   component: Layout,
-  //   redirect: 'noredirect',
-  //   name: 'dragKanban-demo',
-  //   meta: {
-  //     title: 'dragKanban',
-  //     icon: 'component'
-  //   },
-  //   children: [
-  //     {
-  //       path: 'dragKanban',
-  //       name: 'dragKanban',
-  //       component: () => import('@/views/page/dragKanban'),
-  //       meta: { title: 'dragKanban', icon: 'component' }
-  //     }
-  //   ]
-  // },
   // 树形组件
   {
     path: '/treeMen',

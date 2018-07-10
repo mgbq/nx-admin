@@ -26,6 +26,8 @@ export default {
     treeMen: '树形菜单',
     backToTop: '返回顶部',
     dashboard: '报表',
+    DiscountFigure: '折线图',
+    columnar: '柱状图',
     treeMenu: '树形菜单',
     wel: '动态文字',
     Lockscreenpage: '锁屏页',
