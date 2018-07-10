@@ -145,8 +145,6 @@ nx-admin 仍然处于开发中，这里有一些计划：
 
 欢迎你为 nx-admin的开发作出贡献（代码编写/文档翻译）。
 
-<img src="https://raw.githubusercontent.com/FairyEver/d2-admin/master/github/give-a-star@2x.png"/>
-
 ## Build Setup
 
 ``` bash
