@@ -18,9 +18,11 @@ nx-admin是一套基于Vue/Vue-Router/axios/Vuex/Element-ui开源的管理系统
 [码云仓库](https://gitee.com/symgg/nx-admin) | 
 [预览地址](https://mgbq.github.io/vue-permission/#/login)
 
+<img src="./github/nx-admin.png" width="800px" height="400" alt="nx-admin">
+
 #### 因为也是纯粹的写写前端页面,所以数据方面用的是mock.js,真实的模拟请求。
 
-#### 这个项目用到的
+#### 这个项目用了花裤衩的模板[vueAdmin-template](https://github.com/PanJiaChen/vueAdmin-template)
 
 ####  技术栈：
 
@@ -60,7 +62,7 @@ nx-admin是一套基于Vue/Vue-Router/axios/Vuex/Element-ui开源的管理系统
 
 
 ## 捐赠 觉得不错 赏个咖啡 让作者打起精神 ~
-<img src="./github/二维码.jpg" width="400px" height="500px" alt="捐赠扫一扫">
+<img src="./github/二维码.jpg" width="400px" height="400px" alt="捐赠扫一扫">
 
 ## 下载
 
@@ -91,6 +93,8 @@ nx-admin 是完全开源免费的管理系统集成方案，由 nxmin 在工作�
 QQ群
 
 群号 493671066 欢迎大家
+
+<img src="./github/QqAndWeiXin.png" width="800px" height="400" alt="chat">
 
 ## 功能
 
