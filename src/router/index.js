@@ -39,7 +39,7 @@ export const constantRouterMap = [
   { path: '/401', component: () => import('@/views/errorPage/401'), hidden: true },
   // 锁屏
   {
-    path: '/locks',
+    path: '/lock',
     hidden: true,
     name: '锁屏页',
     component: () => import('@/views/common/lock')
@@ -238,19 +238,19 @@ export const constantRouterMap = [
   },
   // 实战
   {
-    path: '/vuexActual',
+    path: '/vueActual',
     component: Layout,
-    redirect: '/vuexActual/Pos',
-    name: 'vuexActual',
+    redirect: '/vueActual/Pos',
+    name: 'vueActual',
     meta: {
-      title: 'vuexActual',
+      title: 'vueActual',
       icon: 'shizhan'
     },
     children: [
       {
         path: 'Pos',
         name: 'Pos',
-        component: () => import('@/views/vuexActual/Pos'),
+        component: () => import('@/views/vueActual/Pos'),
         meta: { title: 'vueActual', icon: 'shizhan' }
       }
     ]

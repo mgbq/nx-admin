@@ -62,7 +62,7 @@ export default {
       this.pass = true
       setTimeout(() => {
         this.$store.commit('CLEAR_LOCK')
-        this.$router.push('/dashboard')
+        this.$router.push('/dashboard/dashboard')
       }, 1000)
     }
   },

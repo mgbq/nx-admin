@@ -9,10 +9,9 @@
       <nx-github style="margin-top:2px" class="nx-help right-menu-item"></nx-github>
       <!-- <error-log class="errLog-container right-menu-item"></error-log> -->
       <nx-help class="nx-help right-menu-item" />
-      <nx-top-lock class="nx-help"></nx-top-lock>
+      <nx-top-lock style="cursor:pointer" class="nx-help"></nx-top-lock>
       <el-tooltip effect="dark" content="全屏" placement="bottom">
         <nx-full-screen class="screenfull right-menu-item"></nx-full-screen>
-
       </el-tooltip>
 
       <!-- <lang-select class="international right-menu-item"></lang-select> -->
