@@ -1,13 +1,11 @@
 <template>
-    <div id='emoji'>
-        <div class="crumbs">
-            <el-breadcrumb separator="/">
-                <el-breadcrumb-item>
-                    <i class="el-icon-setting"></i> Github-emoji</el-breadcrumb-item>
-            </el-breadcrumb>
-        </div>
-			<index></index>
-</div>
+    <div id='emoji' class="app-container">
+        <p class="warn-content">
+            <a href="https://github.com/windiest/github-emoji" target="_blank">github-emoji组件参考github-emoji
+            </a>
+        </p>
+        <index></index>
+    </div>
 </template>
 
 <script >
@@ -16,11 +14,9 @@ export default {
   name: 'countenance',
   components: {
     index
-
   }
 }
 </script>
 
 <style>
-
 </style>
