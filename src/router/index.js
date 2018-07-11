@@ -55,7 +55,15 @@ export const constantRouterMap = [
         name: 'dashboard',
         component: () => import('@/views/dashboard/dashboard'),
         meta: { title: 'dashboard', icon: 'dashboard' }
-      },
+      }
+    ]
+  },
+  // 图表
+  {
+    path: '/charts',
+    component: Layout,
+    meta: { title: 'charts', icon: 'chart' },
+    children: [
       {
         path: 'DiscountFigure',
         name: 'DiscountFigure',
@@ -314,6 +322,7 @@ export const constantRouterMap = [
       }
     ]
   },
+  // 表单
   {
     path: '/form',
     component: Layout,
@@ -341,10 +350,64 @@ export const constantRouterMap = [
         name: 'Upload',
         component: () => import('@/views/form/Upload'),
         meta: { title: 'Upload' }
+      },
+      {
+        path: 'test',
+        name: 'test',
+        component: () => import('@/views/form/test'),
+        meta: { title: 'test' }
       }
     ]
   },
-
+  // 右菜单
+  {
+    path: '/contextmenu',
+    component: Layout,
+    redirect: '/contextmenu/simple',
+    name: 'contextmenu',
+    meta: {
+      title: 'contextmenu',
+      icon: 'right-mean'
+    },
+    children: [
+      {
+        path: 'simple',
+        name: 'simple',
+        component: () => import('@/views/contextmenu/simple'),
+        meta: { title: 'simple' }
+      },
+      {
+        path: 'divier',
+        name: 'divier',
+        component: () => import('@/views/contextmenu/divier'),
+        meta: { title: 'divier' }
+      },
+      {
+        path: 'group',
+        name: 'group',
+        component: () => import('@/views/contextmenu/group'),
+        meta: { title: 'group' }
+      },
+      {
+        path: 'submenu',
+        name: 'submenu',
+        component: () => import('@/views/contextmenu/submenu'),
+        meta: { title: 'submenu' }
+      },
+      {
+        path: 'disabled',
+        name: 'disabled',
+        component: () => import('@/views/contextmenu/disabled'),
+        meta: { title: 'disabled' }
+      },
+      {
+        path: 'custom-trigger',
+        name: 'customtrigger',
+        component: () => import('@/views/contextmenu/custom-trigger'),
+        meta: { title: 'customtrigger' }
+      }
+    ]
+  },
   // 表格
   {
     path: '/table',

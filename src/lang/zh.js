@@ -14,6 +14,13 @@ export default {
     Default: '默认'
   },
   route: {
+    contextmenu: '右键菜单',
+    simple: '基础',
+    divier: '分割线',
+    group: '按钮组',
+    submenu: '子菜单',
+    disabled: '禁用',
+    customtrigger: '自定义事件',
     form: '表单',
     Tabs: 'table选项卡',
     Table: '表格',

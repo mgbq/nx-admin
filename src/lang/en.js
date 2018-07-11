@@ -12,6 +12,13 @@ export default {
     Default: 'Default'
   },
   route: {
+    contextmenu: 'contextmenu',
+    simple: 'simple',
+    divier: 'divier',
+    group: 'group',
+    submenu: 'submenu',
+    disabled: 'disabled',
+    customtrigger: 'custom-trigger',
     form: 'form',
     Tabs: 'Tabs',
     Table: 'Table',
