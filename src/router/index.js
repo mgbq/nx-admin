@@ -166,19 +166,19 @@ export const constantRouterMap = [
   },
   // 组件
   {
-    path: '/vuexActual',
+    path: '/vueActual',
     component: Layout,
-    redirect: '/vuexActual/Pos',
-    name: 'vuexActual',
+    redirect: '/vueActual/Pos',
+    name: 'vueActual',
     meta: {
-      title: 'vuexActual',
+      title: 'vueActual',
       icon: 'shizhan'
     },
     children: [
       {
         path: 'Pos',
         name: 'Pos',
-        component: () => import('@/views/vuexActual/Pos'),
+        component: () => import('@/views/vueActual/Pos'),
         meta: { title: 'vueActual', icon: 'shizhan' }
       }
     ]

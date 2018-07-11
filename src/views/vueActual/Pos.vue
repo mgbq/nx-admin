@@ -1,7 +1,7 @@
 <template>
     <div class="pos app-container">
         <p class="warn-content">
-            <a href="https://github.com/shenghy/AwesomePOS/" target="_blank">vuex参考技术胖
+            <a href="https://github.com/shenghy/AwesomePOS/" target="_blank">crud参考技术胖
             </a>
         </p>
         <div>
