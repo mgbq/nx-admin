@@ -179,15 +179,15 @@ export const constantRouterMap = [
 
   // 表情包
   {
-    path: '/countenance',
+    path: '/emoji',
     component: Layout,
-    meta: { title: 'countenance', icon: 'example' },
+    meta: { title: 'emoji', icon: 'emoji' },
     children: [
       {
-        path: 'countenance',
-        name: 'countenance',
-        component: () => import('@/views/page/countenance'),
-        meta: { title: 'countenance', icon: 'emoji' }
+        path: 'emoji',
+        name: 'emoji',
+        component: () => import('@/views/githubemoji'),
+        meta: { title: 'emoji', icon: 'emoji' }
       }
 
     ]

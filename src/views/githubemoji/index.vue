@@ -9,7 +9,7 @@
 </template>
 
 <script >
-import index from '@/components/nx-counten/index'
+import index from '@/components/nx-github-emoji/index'
 export default {
   name: 'countenance',
   components: {
