@@ -56,6 +56,8 @@ nx-admin是一套基于Vue/Vue-Router/axios/Vuex/Element-ui开源的管理系统
 
 [Vue项目中添加锁屏功能](https://juejin.im/post/5b35e05ee51d4558a75ea159)
 
+[Vue项目添加动态浏览器头部title](https://juejin.im/post/5b446e24e51d45194d4fce14)
+
 
 ## 捐赠 觉得不错 赏个咖啡 让作者打起精神 ~
 <img src="./github/二维码.jpg" width="400px" height="500px" alt="捐赠扫一扫">
