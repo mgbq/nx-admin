@@ -11,7 +11,9 @@ import '../static/css/iconfont/1.0.0/index.css' /* icofont*/
 import 'normalize.css/normalize.css'// A modern alternative to CSS resets
 import 'weui'
 import '@/styles/index.scss' // global css
-
+// 右键菜单
+import contentmenu from 'v-contextmenu'
+import 'v-contextmenu/dist/index.css'
 import './mock' // simulation data
 
 // font-awesome
@@ -39,6 +41,7 @@ import '@/icons' // icon
 import '@/permission' // permission control
 
 Vue.use(VCharts)
+Vue.use(contentmenu)
 Vue.use(ElementUI, { locale })
 iconfontVersion.forEach(ele => {
   loadStyle(iconfontUrl.replace('$key', ele))
