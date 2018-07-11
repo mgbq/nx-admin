@@ -22,7 +22,7 @@ nx-admin是一套基于Vue/Vue-Router/axios/Vuex/Element-ui开源的管理系统
 
 #### 因为也是纯粹的写写前端页面,所以数据方面用的是mock.js,真实的模拟请求。
 
-#### 这个项目用了花裤衩的模板[vueAdmin-template](https://github.com/PanJiaChen/vueAdmin-template)
+#### 这个项目借鉴了花裤衩的模板[vueAdmin-template](https://github.com/PanJiaChen/vueAdmin-template)
 
 ####  技术栈：
 
