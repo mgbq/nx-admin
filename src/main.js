@@ -1,20 +1,28 @@
 import Vue from 'vue'
+
 import VCharts from 'v-charts'
-import 'normalize.css/normalize.css'// A modern alternative to CSS resets
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import locale from 'element-ui/lib/locale/lang/en' // lang i18n
 import '../static/css/iconfont/1.0.0/index.css' /* icofont*/
 
+// css
+import 'normalize.css/normalize.css'// A modern alternative to CSS resets
+import 'weui'
 import '@/styles/index.scss' // global css
 
 import './mock' // simulation data
+
 // font-awesome
 import '@/assets/library/font-awesome-4.7.0/css/font-awesome.min.css'
+
 import App from './App'
+
 import router from './router'
+
 import store from './store'
+
 // Internationalization
 import i18n from './lang'
 import { global } from '@/global/global'

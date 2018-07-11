@@ -98,35 +98,20 @@ export const constantRouterMap = [
   },
 
   // 表情包
-  // {
-  //   path: '/countenance',
-  //   component: Layout,
-  //   meta: { title: 'countenance', icon: 'example' },
-  //   children: [
-  //     {
-  //       path: 'countenance',
-  //       name: 'countenance',
-  //       component: () => import('@/views/page/countenance'),
-  //       meta: { title: 'countenance', icon: 'table' }
-  //     }
+  {
+    path: '/countenance',
+    component: Layout,
+    meta: { title: 'countenance', icon: 'example' },
+    children: [
+      {
+        path: 'countenance',
+        name: 'countenance',
+        component: () => import('@/views/page/countenance'),
+        meta: { title: 'countenance', icon: 'emoji' }
+      }
 
-  //   ]
-  // },
-  // {
-  //   path: '/index',
-  //   component: Layout,
-  //   meta: { title: 'clipboard', icon: 'clipboard' },
-  //   children: [
-  //     {
-  //       path: 'index',
-  //       name: 'clipboard',
-  //       component: () => import('@/views/clipboard/index'),
-  //       meta: { title: 'clipboard', icon: 'clipboard' }
-  //     }
-
-  //   ]
-  // },
-
+    ]
+  },
   // 树形组件
   {
     path: '/treeMen',
@@ -135,14 +120,14 @@ export const constantRouterMap = [
     name: 'treeMen-demo',
     meta: {
       title: 'treeMen',
-      icon: 'component'
+      icon: 'TreeMean'
     },
     children: [
       {
         path: 'treeMen',
         name: 'treeMen-demo',
         component: () => import('@/views/tree/treeMen'),
-        meta: { title: 'treeMen', icon: 'component' }
+        meta: { title: 'treeMen', icon: 'TreeMean' }
       }
     ]
   },
@@ -191,7 +176,7 @@ export const constantRouterMap = [
     name: 'Components',
     meta: {
       title: 'Components',
-      icon: 'table'
+      icon: 'component'
     },
     children: [
       {
@@ -231,7 +216,7 @@ export const constantRouterMap = [
     component: Layout,
     redirect: 'Tabs',
     name: 'Tabs',
-    meta: { title: 'Tabs', icon: 'table' },
+    meta: { title: 'Tabs', icon: 'tab' },
     children: [
       {
         path: 'Tabs',
