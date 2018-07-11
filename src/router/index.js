@@ -39,7 +39,7 @@ export const constantRouterMap = [
   { path: '/401', component: () => import('@/views/errorPage/401'), hidden: true },
   // 锁屏
   {
-    path: '/locks',
+    path: '/lock',
     hidden: true,
     name: '锁屏页',
     component: () => import('@/views/common/lock')
