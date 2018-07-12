@@ -332,12 +332,6 @@ export const constantRouterMap = [
         name: 'Upload',
         component: () => import('@/views/form/Upload'),
         meta: { title: 'Upload' }
-      },
-      {
-        path: 'test',
-        name: 'test',
-        component: () => import('@/views/form/test'),
-        meta: { title: 'test' }
       }
     ]
   },
