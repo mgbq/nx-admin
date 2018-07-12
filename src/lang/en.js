@@ -62,7 +62,26 @@ export default {
     errorPages: 'Error Pages',
     page401: '401',
     page404: '404',
-    thirdPartyWebsite: 'thirdPartyWebsite'
+    thirdPartyWebsite: 'thirdPartyWebsite',
+    charts: 'Charts',
+    emoji: 'emoji',
+    test: 'test',
+    excel: 'Excel',
+    exportExcel: 'Export Excel',
+    selectExcel: 'Export Selected',
+    uploadExcel: 'Upload Excel',
+    zip: 'Zip',
+    exportZip: 'Export Zip',
+    i18n: 'i18n'
+  },
+  excel: {
+    export: 'Export',
+    selectedExport: 'Export selected items',
+    placeholder: 'Please enter the file name(default excel-list)'
+  },
+  zip: {
+    export: 'Export',
+    placeholder: 'Please enter the file name(default file)'
   },
   permission: {
     roles: 'Your roles',
