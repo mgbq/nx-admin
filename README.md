@@ -68,7 +68,7 @@ nx-admin是一套基于Vue/Vue-Router/axios/Vuex/Element-ui开源的管理系统
 
 git：`git clone https://github.com/mgbq/nx-admin.git`
 
-npm：`npm i nx-admin`
+npm：`npm install`
 
 
 ## 演示
