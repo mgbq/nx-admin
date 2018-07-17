@@ -11,9 +11,6 @@
   <a href="https://github.com/ElemeFE/element">
     <img src="https://img.shields.io/badge/element--ui-2.3.2-brightgreen.svg" alt="element-ui">
   </a>
-  <a href="https://travis-ci.org/PanJiaChen/vue-element-admin" rel="nofollow">
-    <img src="https://img.shields.io/badge/download-1k-brightgreen.svg" alt="download">
-  </a>
    <a href="https://travis-ci.org/mgbq/nx-admin" rel="nofollow">
     <img src="https://travis-ci.org/mgbq/nx-admin.svg?branch=master" alt="Build Status">
   </a>
