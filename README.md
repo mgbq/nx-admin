@@ -21,8 +21,7 @@
 
 
 ## 介绍
- 
-nx-admin是一套基于Vue/Vue-Router/axios/Vuex/Element-ui开源的管理系统前端集成方案
+[nx-admin](https://mgbq.github.io/vue-permission/#/login) 是一个开源的管理系统前端集成方案，它基于 [vue](https://github.com/vuejs/vue) 和 [element](https://github.com/ElemeFE/element)。它使用了最新的前端技术栈，内置了i18国际化解决方案，动态路由，权限验证，提炼了典型的业务模型，提供了丰富的功能组件，它可以帮助你快速搭建企业级中后台产品原型。最大程度上帮助个人，企业节省时间成本和费用开支。
 
 
 **完整版**
@@ -33,28 +32,9 @@ nx-admin是一套基于Vue/Vue-Router/axios/Vuex/Element-ui开源的管理系统
 
 <img src="./github/nx-admin.png" width="800px" height="400" alt="nx-admin">
 
-#### 因为也是纯粹的写写前端页面,所以数据方面用的是mock.js,真实的模拟请求。
+## 前序准备
 
-#### 这个项目借鉴了花裤衩的模板[vueAdmin-template](https://github.com/PanJiaChen/vueAdmin-template)
-
-####  技术栈：
-
-##### vue + webpack + vuex + axios
-
-#### 结构：
-- build: webpack配置
-- config: 项目配置参数
-- common 共用的
-- components:组件
-- api :增删改查的接口
-- mock：模拟数据
-- src assets: 静态资源文件，存放图片啥的 
-- router.js: 路由表 
-- store: 状态管理 
-- utils: 常用工具类封装
-- views: 视图页面
--  static: 静态文件 存放 favicon.ico 等等
-
+你需要在本地安装 [node](http://nodejs.org/) 和 [git](https://git-scm.com/)。本项目技术栈基于 [ES2015+](http://es6.ruanyifeng.com/)、[vue](https://cn.vuejs.org/index.html)、[vuex](https://vuex.vuejs.org/zh-cn/)、[vue-router](https://router.vuejs.org/zh-cn/) 、[axios](https://github.com/axios/axios) 和 [element-ui](https://github.com/ElemeFE/element)，所有的请求数据都使用[Mock.js](https://github.com/nuysoft/Mock)模拟，提前了解和学习这些知识会对使用本项目有很大的帮助。
 
 ## 相关文档
 [老板让我十分钟上手nx-admin](https://juejin.im/post/5b43226c51882519ad616c2a)
@@ -73,6 +53,7 @@ nx-admin是一套基于Vue/Vue-Router/axios/Vuex/Element-ui开源的管理系统
 
 [Vue项目添加动态浏览器头部title](https://juejin.im/post/5b446e24e51d45194d4fce14)
 
+#### 这个项目借鉴了花裤衩的模板[vueAdmin-template](https://github.com/PanJiaChen/vueAdmin-template)
 
 ## 捐赠 觉得不错 赏个咖啡 让作者打起精神 ~
 <img src="./github/二维码.jpg" width="400px" height="400px" alt="捐赠扫一扫">
