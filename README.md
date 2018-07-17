@@ -17,9 +17,11 @@
    <a href="https://travis-ci.org/mgbq/nx-admin" rel="nofollow">
     <img src="https://travis-ci.org/mgbq/nx-admin.svg?branch=master" alt="Build Status">
   </a>
+  
+  > ## :gem: Vue自动化管理系统
 </p>
 
-> :gem: Vue自动化管理系统
+
 
 ## 介绍
  
