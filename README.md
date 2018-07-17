@@ -1,11 +1,22 @@
 
-# nx-admin
 
-[![npm](https://img.shields.io/npm/v/vue-access-control.svg)](https://www.npmjs.com/package/vue-access-control/)  [![license](https://img.shields.io/github/license/tower1229/Vue-Access-Control.svg)]()
+<p align="center">
+  <img  src="https://github.com/mgbq/nx-admin/blob/master/src/assets/img/home/logo.png">
+</p>
+
+<p align="center">
+  <a href="https://github.com/vuejs/vue">
+    <img src="https://img.shields.io/badge/vue-2.5.10-brightgreen.svg" alt="vue">
+  </a>
+  <a href="https://github.com/ElemeFE/element">
+    <img src="https://img.shields.io/badge/element--ui-2.3.2-brightgreen.svg" alt="element-ui">
+  </a>
+  <a href="https://travis-ci.org/PanJiaChen/vue-element-admin" rel="nofollow">
+    <img src="https://img.shields.io/badge/download-1k-brightgreen.svg" alt="download">
+  </a>
+</p>
 
 > :gem: Vue自动化管理系统
-
-![logo](https://github.com/mgbq/nx-admin/blob/master/src/assets/img/home/logo.png)
 
 ## 介绍
  
