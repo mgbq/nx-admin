@@ -197,7 +197,6 @@ export const constantRouterMap = [
     path: '/treeMen',
     component: Layout,
     redirect: 'noredirect',
-    name: 'treeMen-demo',
     meta: {
       title: 'treeMen',
       icon: 'TreeMean'
@@ -215,7 +214,6 @@ export const constantRouterMap = [
   {
     path: '/iconIndex',
     component: Layout,
-    name: 'iconIndex',
     meta: {
       title: 'Icons',
       icon: 'icon'
@@ -296,7 +294,6 @@ export const constantRouterMap = [
     path: '/Tabs',
     component: Layout,
     redirect: 'Tabs',
-    name: 'Tabs',
     meta: { title: 'Tabs', icon: 'tab' },
     children: [
       {
@@ -411,6 +408,63 @@ export const constantRouterMap = [
         meta: { title: 'treeTable' }
       }
 
+    ]
+  },
+  //
+  {
+    path: '/excel',
+    component: Layout,
+    redirect: '/excel/exportExcel',
+    name: 'excel',
+    meta: {
+      title: 'excel',
+      icon: 'excel'
+    },
+    children: [
+      {
+        path: 'exportExcel',
+        name: 'exportExcel',
+        component: () => import('@/views/excel/exportExcel'),
+        meta: { title: 'exportExcel' }
+      },
+      {
+        path: 'selectExcel',
+        name: 'selectExcel',
+        component: () => import('@/views/excel/selectExcel'),
+        meta: { title: 'selectExcel' }
+      },
+      {
+        path: 'uploadExcel',
+        name: 'uploadExcel',
+        component: () => import('@/views/excel/uploadExcel'),
+        meta: { title: 'uploadExcel' }
+      }
+    ]
+  },
+  {
+    path: '/zip',
+    component: Layout,
+    redirect: 'zip',
+    children: [
+      {
+        path: 'index',
+        name: 'index',
+        component: () => import('@/views/zip/index'),
+        meta: { title: 'zip', icon: 'zip' }
+      }
+    ]
+  },
+  {
+    path: '/i18n-demo',
+    component: Layout,
+    redirect: 'i18n-demo',
+    children: [
+      {
+        path: 'indexLang',
+        name: 'indexLang',
+        component: () => import('@/views/i18n-demo/indexLang'),
+        meta: { title: 'i18n', icon: 'international' }
+      }
     ]
   }
 ]

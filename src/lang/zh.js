@@ -65,11 +65,30 @@ export default {
     errorPages: '错误页面',
     page401: '401',
     page404: '404',
-    thirdPartyWebsite: '第三方网站'
+    thirdPartyWebsite: '第三方网站',
+    charts: 'Charts',
+    emoji: 'emoji',
+    test: 'test',
+    excel: 'Excel',
+    exportExcel: 'Export Excel',
+    selectExcel: 'Export Selected',
+    uploadExcel: 'Upload Excel',
+    zip: 'Zip',
+    exportZip: 'Export Zip',
+    i18n: '国际化'
   },
   permission: {
     roles: '你的权限',
     switchRoles: '切换权限'
+  },
+  excel: {
+    export: '导出',
+    selectedExport: '导出已选择项',
+    placeholder: '请输入文件名(默认excel-list)'
+  },
+  zip: {
+    export: '导出',
+    placeholder: '请输入文件名(默认file)'
   },
   componentss: {
     documentation: '文档',

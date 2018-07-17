@@ -68,7 +68,7 @@ nx-admin是一套基于Vue/Vue-Router/axios/Vuex/Element-ui开源的管理系统
 
 git：`git clone https://github.com/mgbq/nx-admin.git`
 
-npm：`npm i nx-admin`
+npm：`npm install`
 
 
 ## 演示
@@ -95,6 +95,31 @@ QQ群
 群号 493671066 欢迎大家
 
 <img src="./github/QqAndWeiXin.png" width="800px" height="400" alt="chat">
+
+## 其他注意事项 ##
+### 一、如果我不想用到上面的某些组件呢，那我怎么在模板中删除掉不影响到其他功能呢？ ###
+
+举个栗子，我不想用 Vue-Quill-Editor 这个组件，那我需要分三步走。
+
+第一步：删除该组件的路由，在目录 src/router/index.js 中，找到引入改组件的路由，删除下面这段代码。
+
+```JavaScript
+  {
+        path: 'VueEditor',
+        name: 'VueEditor',
+        component: () => import('@/views/form/VueEditor'),
+        meta: { title: 'VueEditor' }
+  },
+```
+
+第二步：删除引入该组件的文件。在目录 src/view/form/ 删除 VueEditor.vue 文件。
+
+第三步：卸载该组件。执行以下命令：
+	
+	npm un vue-quill-editor -S
+
+完成。
+
 
 ## 功能
 
