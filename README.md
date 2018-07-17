@@ -55,8 +55,6 @@
 
 #### 这个项目借鉴了花裤衩的模板[vueAdmin-template](https://github.com/PanJiaChen/vueAdmin-template)
 
-## 捐赠 觉得不错 赏个咖啡 让作者打起精神 ~
-<img src="./github/二维码.jpg" width="400px" height="400px" alt="捐赠扫一扫">
 
 ## 下载
 
@@ -170,20 +168,48 @@ nx-admin 仍然处于开发中，这里有一些计划：
 
 欢迎你为 nx-admin的开发作出贡献（代码编写/文档翻译）。
 
-## Build Setup
+## 开发
+```bash
+# 克隆项目
+git clone https://github.com/mgbq/nx-admin.git
 
-``` bash
-# install dependencies
+# 安装依赖
 npm install
+   
+# 建议不要用cnpm安装 会有各种诡异的bug 可以通过如下操作解决 npm 下载速度慢的问题
+npm install --registry=https://registry.npm.taobao.org
 
-# serve with hot reload at localhost:8080
+# 启动服务
 npm run dev
+```
+浏览器访问 http://localhost:9528
 
-# build for production with minification
-npm run build
+## 发布
+```bash
+# 构建测试环境
+npm run build:sit
 
-# build for production and view the bundle analyzer report
-npm run build --report
+# 构建生产环境
+npm run build:prod
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 其它
+```bash
+# --report to build with bundle size analytics
+npm run build:prod --report
+
+# --preview to start a server in local to preview
+npm run build:prod --preview
+
+# lint code
+npm run lint
+
+# auto fix
+npm run lint -- --fix
+```
+## 捐赠 觉得不错 赏个咖啡 让作者打起精神 ~
+<img src="./github/二维码.jpg" width="400px" height="400px" alt="捐赠扫一扫">
+## License
+
+[MIT](https://github.com/mgbq/nx-admin/blob/master/LICENSE)
+Copyright (c) 2018-present nxmin
