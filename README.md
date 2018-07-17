@@ -86,7 +86,7 @@ QQ群
 
 群号 493671066 欢迎大家
 
-<img src="./github/QqAndWeiXin.png" width="800px" height="400" alt="chat">
+<img src="./github/QqAndWeiXin.png" width="800px" height="420" alt="chat">
 
 ## 其他注意事项 ##
 ### 一、如果我不想用到上面的某些组件呢，那我怎么在模板中删除掉不影响到其他功能呢？ ###
@@ -208,7 +208,8 @@ npm run lint
 npm run lint -- --fix
 ```
 ## 捐赠 觉得不错 赏个咖啡 让作者打起精神 ~
-<img src="./github/二维码.jpg" width="400px" height="400px" alt="捐赠扫一扫">
+<img src="./github/二维码.jpg" width="400px" height="460px" alt="捐赠扫一扫">
+
 ## License
 
 [MIT](https://github.com/mgbq/nx-admin/blob/master/LICENSE)
