@@ -14,6 +14,12 @@
    <a href="https://travis-ci.org/mgbq/nx-admin" rel="nofollow">
     <img src="https://travis-ci.org/mgbq/nx-admin.svg?branch=master" alt="Build Status">
   </a>
+    <a href="https://github.com/mgbq/nx-admin/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/mgbq/nx-admin.svg" alt="license">
+  </a>
+  <a href="https://github.com/mgbq/nx-admin/releases">
+    <img src="https://img.shields.io/badge/release-1.2-blue.svg" alt="GitHub release">
+  </a>
   
   > ## :gem: Vue自动化管理系统
 </p>
