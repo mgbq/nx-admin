@@ -18,6 +18,7 @@
   > ## :gem: Vue自动化管理系统
 </p>
 
+简体中文 | [English](./README.en.md)
 
 
 ## 介绍
