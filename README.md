@@ -62,6 +62,10 @@
 
 #### 这个项目借鉴了花裤衩的模板[vueAdmin-template](https://github.com/PanJiaChen/vueAdmin-template)
 
+**本项目不支持低版本浏览器(如 ie)，有需求请自行添加 polyfill [详情](https://github.com/mgbq/nx-admin/wiki#babel-polyfill)**
+
+**注意：该项目使用 element-ui@2.3.0+ 版本，所以最低兼容 vue@2.5.0+**
+
 
 ## 下载
 
