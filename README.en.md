@@ -63,6 +63,9 @@ You need to install [node](http://nodejs.org/) and [git](https://git-scm.com/) l
 
 #### This project borrows from the pattern of the flower vents  [vueAdmin-template](https://github.com/PanJiaChen/vueAdmin-template)
 
+This project does not support low version browsers (e.g. IE). Please add polyfill yourself if you need them.
+
+Note: This project uses element-ui@2.3.0+ version, so the minimum compatible vue@2.5.0+
 
 ## download
 
