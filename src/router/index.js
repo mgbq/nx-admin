@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+
 // const _import = require('./_import_' + process.env.NODE_ENV)
 // in development-env not use lazy-loading, because lazy-loading too many pages will cause webpack hot update too slow. so only in production use lazy-loading;
 // detail: https://panjiachen.github.io/vue-element-admin-site/#/lazy-loading
@@ -150,6 +151,7 @@ export const constantRouterMap = [
       }
     ]
   },
+  // 第三方官网
   {
     path: '/myiframe',
     component: Layout,
@@ -162,6 +164,20 @@ export const constantRouterMap = [
     }]
 
   },
+  // pdf说明
+  {
+    path: '/nx-pdf-test',
+    component: Layout,
+    redirect: '/nx-pdf-test',
+    children: [{
+      path: 'pdf',
+      name: 'pdf',
+      component: () => import('@/views/nx-pdf-test/index'),
+      meta: { title: 'PDF', icon: 'pdf' }
+    }]
+
+  },
+
   {
     path: '/wel',
     component: Layout,
@@ -212,8 +228,10 @@ export const constantRouterMap = [
   },
   // 图标组件
   {
-    path: '/iconIndex',
+    path: '/icons',
     component: Layout,
+    redirect: 'icons/iconIndex',
+    name: 'icons',
     meta: {
       title: 'Icons',
       icon: 'icon'
@@ -222,8 +240,14 @@ export const constantRouterMap = [
       {
         path: 'iconIndex',
         name: 'iconIndex',
-        component: () => import('@/views/svg-icons/iconIndex'),
-        meta: { title: 'Icons', icon: 'icon' }
+        component: () => import('@/views/icons/svg-icons/iconIndex'),
+        meta: { title: 'svg-icons', icon: 'icon' }
+      },
+      {
+        path: 'font-awesome',
+        name: 'font-awesome',
+        component: () => import('@/views/icons/font-awesome/'),
+        meta: { title: 'font-awesome', icon: 'icon' }
       }
     ]
   },
@@ -286,6 +310,18 @@ export const constantRouterMap = [
         name: 'componentMixin',
         component: () => import('@/views/components-demo/mixin'),
         meta: { title: 'componentMixin' }
+      },
+      {
+        path: 'index',
+        name: 'index',
+        component: () => import('@/views/components/index'),
+        meta: { title: 'HightLightinViewer' }
+      },
+      {
+        path: 'countup',
+        name: 'countup',
+        component: () => import('@/views/components/countup/'),
+        meta: { title: 'Digitalanimation' }
       }
     ]
   },
@@ -301,6 +337,22 @@ export const constantRouterMap = [
         name: 'Tabs',
         component: () => import('@/views/table/Tabs'),
         meta: { title: 'Tabs', icon: 'tab' }
+      }
+    ]
+  },
+
+  // 滚动定位
+  {
+    path: '/better-scroll',
+    component: Layout,
+    redirect: 'better-scroll/to',
+    meta: { title: 'better-scroll', icon: 'better-scroll' },
+    children: [
+      {
+        path: 'to',
+        name: 'to',
+        component: () => import('@/views/better-scroll/to'),
+        meta: { title: 'Rollingpositioning', icon: 'Rollingpositioning' }
       }
     ]
   },

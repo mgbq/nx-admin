@@ -48,7 +48,7 @@ export default {
     markdown: 'Markdown',
     treeMen: '树形菜单',
     backToTop: '返回顶部',
-    dashboard: '报表',
+    dashboard: '首页',
     DiscountFigure: '折线图',
     columnar: '柱状图',
     treeMenu: '树形菜单',
@@ -75,7 +75,12 @@ export default {
     uploadExcel: 'Upload Excel',
     zip: 'Zip',
     exportZip: 'Export Zip',
-    i18n: '国际化'
+    i18n: '国际化',
+    PDF: 'PDF',
+    HightLightinViewer: '代码高亮显示',
+    Rollingpositioning: '滚动定位',
+    Digitalanimation: '数字动画',
+    list: 'list'
   },
   permission: {
     roles: '你的权限',

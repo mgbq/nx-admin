@@ -12,6 +12,11 @@ export default {
     Default: 'Default'
   },
   route: {
+    list: 'list',
+    Digitalanimation: 'Digitalanimation',
+    Rollingpositioning: 'Rollingpositioning',
+    PDF: 'PDF',
+    HightLightinViewer: 'HightLightinViewer',
     contextmenu: 'contextmenu',
     simple: 'simple',
     divier: 'divier',

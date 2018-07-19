@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import nxSvgIcon from '@/components/nx-svg-icon'// svg组件
-import generateIconsView from '@/views/svg-icons/generateIconsView.js'// just for @/views/icons , you can delete it
+import generateIconsView from '@/views/icons/svg-icons/generateIconsView.js'// just for @/views/icons , you can delete it
 // register globally
 Vue.component('svg-icon', nxSvgIcon)
 
