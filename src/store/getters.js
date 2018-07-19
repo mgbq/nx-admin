@@ -14,7 +14,8 @@ const getters = {
   isFullScren: state => state.common.isFullScren,
   visitedViews: state => state.tagsView.visitedViews,
   cachedViews: state => state.tagsView.cachedViews,
-  browserHeaderTitle: state => state.user.browserHeaderTitle
+  browserHeaderTitle: state => state.user.browserHeaderTitle,
+  errorLogs: state => state.errorLog.logs
 
 }
 export default getters
