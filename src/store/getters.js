@@ -15,5 +15,6 @@ const getters = {
   visitedViews: state => state.tagsView.visitedViews,
   cachedViews: state => state.tagsView.cachedViews,
   browserHeaderTitle: state => state.user.browserHeaderTitle
+
 }
 export default getters
