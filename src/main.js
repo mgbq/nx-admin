@@ -9,7 +9,6 @@ import '../static/css/iconfont/1.0.0/index.css' /* icofont*/
 
 // css
 import 'normalize.css/normalize.css'// A modern alternative to CSS resets
-import 'weui'
 import '@/styles/index.scss' // global css
 // 右键菜单
 import contentmenu from 'v-contextmenu'

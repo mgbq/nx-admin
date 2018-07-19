@@ -989,6 +989,7 @@
 	}
 </script>
 <style>
+@import 'weui';
 	.page__hd {
 		padding: 40px;
 	}
