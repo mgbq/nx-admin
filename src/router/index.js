@@ -63,6 +63,8 @@ export const constantRouterMap = [
   {
     path: '/charts',
     component: Layout,
+    redirect: '/charts/DiscountFigure',
+    name: 'charts',
     meta: { title: 'charts', icon: 'chart' },
     children: [
       {
@@ -166,13 +168,13 @@ export const constantRouterMap = [
   },
   // pdf说明
   {
-    path: '/nx-pdf-test',
+    path: '/pdfTest',
     component: Layout,
-    redirect: '/nx-pdf-test',
+    redirect: '/pdfTest/pdf',
     children: [{
       path: 'pdf',
       name: 'pdf',
-      component: () => import('@/views/nx-pdf-test/index'),
+      component: () => import('@/views/pdfTest/index'),
       meta: { title: 'PDF', icon: 'pdf' }
     }]
 
@@ -230,7 +232,7 @@ export const constantRouterMap = [
   {
     path: '/icons',
     component: Layout,
-    redirect: 'icons/iconIndex',
+    redirect: '/icons/iconIndex',
     name: 'icons',
     meta: {
       title: 'Icons',
@@ -360,7 +362,7 @@ export const constantRouterMap = [
   {
     path: '/form',
     component: Layout,
-    redirect: '/table/BaseForm',
+    redirect: '/form/BaseForm',
     name: 'form',
     meta: {
       title: 'form',
@@ -530,7 +532,8 @@ export const asyncRouterMap = [
   {
     path: '/permission',
     component: Layout,
-    redirect: '/permission/index',
+    redirect: '/permission/page',
+    name: 'permission',
     alwaysShow: true, // will always show the root menu
     meta: {
       title: 'permission',

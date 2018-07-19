@@ -1,5 +1,5 @@
 <template>
-  <div class="wel-contailer">
+  <div class="wel-contailer app-container">
     <div class="banner-text">
       <h2>{{website.wel.title}}</h2>
       <span :class="['actor',{typeing:isText}]">{{text}}</span>

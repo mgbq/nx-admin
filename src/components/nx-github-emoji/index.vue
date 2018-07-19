@@ -988,7 +988,7 @@
 	  }
 	}
 </script>
-<style>
+<style scoped="scoped">
 @import 'weui';
 	.page__hd {
 		padding: 40px;
