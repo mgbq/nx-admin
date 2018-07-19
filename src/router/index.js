@@ -243,13 +243,13 @@ export const constantRouterMap = [
         path: 'iconIndex',
         name: 'iconIndex',
         component: () => import('@/views/icons/svg-icons/iconIndex'),
-        meta: { title: 'svg-icons', icon: 'icon' }
+        meta: { title: 'svgicons', icon: 'icon' }
       },
       {
         path: 'font-awesome',
         name: 'font-awesome',
         component: () => import('@/views/icons/font-awesome/'),
-        meta: { title: 'font-awesome', icon: 'icon' }
+        meta: { title: 'fontawesome', icon: 'icon' }
       }
     ]
   },
@@ -570,6 +570,20 @@ export const asyncRouterMap = [
     children: [
       { path: '401', component: () => import('@/views/errorPage/401'), name: 'page401', meta: { title: 'page401', noCache: true }},
       { path: '404', component: () => import('@/views/errorPage/404'), name: 'page404', meta: { title: 'page404', noCache: true }}
+    ]
+  },
+  // 错误日志
+  {
+    path: '/errorLog',
+    component: Layout,
+
+    children: [
+      {
+        path: 'errorLog',
+        name: 'errorLog',
+        component: () => import('@/views/errorLog/errorLog'),
+        meta: { title: 'Errorlog', icon: 'errorLog' }
+      }
     ]
   },
   { path: '*', redirect: '/404', hidden: true }]

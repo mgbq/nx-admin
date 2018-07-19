@@ -15,6 +15,7 @@ import contentmenu from 'v-contextmenu'
 // import 'v-contextmenu/dist/index.css'
 import './mock' // simulation data
 
+import './errorLog'// error log
 // font-awesome
 import '@/assets/library/font-awesome-4.7.0/css/font-awesome.min.css'
 

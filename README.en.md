@@ -30,6 +30,8 @@ English | [简体中文](./README.md)
 
 It is a magical vue admin based on the newest development stack of vue, built-in i18n solution, typical templates for enterprise applications, lots of awesome features. It helps you build a large complex Single-Page Applications.Help individuals and businesses to the greatest extent, saving time and money.
 
+[document](https://mgbq.github.io/nx-admin-site/)
+
 **Full edition**
 
 [Github entrepot ](https://github.com/mgbq/nx-admin) | 
