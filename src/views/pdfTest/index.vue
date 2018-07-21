@@ -6,7 +6,7 @@
         </p>
     <!-- <el-tooltip effect="dark" placement="bottom">
       <div slot="content"> -->
-  <object id="show-resources" type="application/pdf" internalinstanceid="291" data="https://cdn.qlippie.com/pdf/Egame_Brandbook.pdf#zoom=42.1" title="">
+  <object class="app-container" id="show-resources" type="application/pdf" internalinstanceid="291" data="https://cdn.qlippie.com/pdf/Egame_Brandbook.pdf#zoom=42.1" title="">
 	</object>
         <!-- <a class="link" :href="url" target="_blank">转到 Github</a> -->
       <!-- </div>

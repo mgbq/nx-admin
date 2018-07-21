@@ -40,6 +40,13 @@ It is a magical vue admin based on the newest development stack of vue, built-in
 
 <img src="./github/nx-admin.png" width="800px" height="400" alt="nx-admin">
 
+**simplified**
+
+[Github entrepot](https://github.com/mgbq/nxAdmin-template) | 
+[Gitee entrepot](https://gitee.com/symgg/nxAdmin-template) | 
+[Preview](https://mgbq.github.io/nxAdmin-template)
+
+
 
 ## Preparation
 
