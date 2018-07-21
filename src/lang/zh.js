@@ -83,7 +83,10 @@ export default {
     list: 'list',
     Errorlog: '错误日志',
     svgicons: 'svg图标',
-    fontawesome: 'fontawesome图标'
+    fontawesome: 'fontawesome图标',
+    pointMap: '点聚合地图',
+    roadBookMap: '路书地图',
+    cityLlistMap: '城市列表地图'
   },
   permission: {
     roles: '你的权限',

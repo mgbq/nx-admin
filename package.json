@@ -58,6 +58,7 @@
     "v-charts": "^1.17.6",
     "v-contextmenu": "^2.7.0",
     "vue": "2.5.10",
+    "vue-baidu-map": "^0.21.10",
     "vue-cropperjs": "^2.2.1",
     "vue-i18n": "^8.0.0",
     "vue-quill-editor": "^3.0.6",

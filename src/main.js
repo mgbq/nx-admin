@@ -2,6 +2,8 @@ import Vue from 'vue'
 
 import VCharts from 'v-charts'
 
+// 地图
+import BaiduMap from 'vue-baidu-map'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import locale from 'element-ui/lib/locale/lang/en' // lang i18n
@@ -55,6 +57,11 @@ iconfontVersion.forEach(ele => {
 Vue.use(ElementUI, {
   size: 'medium', // set element-ui default size
   i18n: (key, value) => i18n.t(key, value)
+})
+// 地图
+Vue.use(BaiduMap, {
+  // ak 是在百度地图开发者平台申请的密钥 详见 http://lbsyun.baidu.com/apiconsole/key */
+  ak: 'oW2UEhdth2tRbEE4FUpF9E5YVDCIPYih'
 })
 // 加载用户主题
 if (localStorage.getItem('themeValue')) {

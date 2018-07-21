@@ -80,7 +80,10 @@ export default {
     i18n: 'i18n',
     Errorlog: 'Errorlog',
     svgicons: 'svgicons',
-    fontawesome: 'fontawesome'
+    fontawesome: 'fontawesome',
+    pointMap: 'pointMap',
+    roadBookMap: 'roadBookMap',
+    cityLlistMap: 'cityLlistMap'
   },
   excel: {
     export: 'Export',

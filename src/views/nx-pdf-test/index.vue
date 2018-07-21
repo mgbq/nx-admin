@@ -1,5 +1,9 @@
 <template>
-
+<div class="app-container">
+   <p class="warn-content">
+            <a href="https://blog.csdn.net/beyond__devil/article/details/78826826" target="_blank">参考PDF
+            </a>
+        </p>
     <!-- <el-tooltip effect="dark" placement="bottom">
       <div slot="content"> -->
   <object id="show-resources" type="application/pdf" internalinstanceid="291" data="https://cdn.qlippie.com/pdf/Egame_Brandbook.pdf#zoom=42.1" title="">
@@ -10,12 +14,12 @@
         <nx-icon name="github" style="font-size: 20px"/>
       </el-button>
     </el-tooltip> -->
-  
+</div>
 </template>
 		<style type="text/css">
 			#show-resources {
 				width: 70%;
-				height: 80%;
+				height: 60%;
 				visibility: visible;
 				position: fixed;
 				z-index: 10011;
