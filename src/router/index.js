@@ -160,7 +160,7 @@ export const constantRouterMap = [
     redirect: '/map/pointAccumulationMap',
     name: 'baidumap',
     meta: {
-      title: '百度地图',
+      title: 'baidumap',
       icon: 'baidumap'
     },
     children: [

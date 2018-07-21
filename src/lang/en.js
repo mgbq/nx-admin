@@ -83,7 +83,9 @@ export default {
     fontawesome: 'fontawesome',
     pointMap: 'pointMap',
     roadBookMap: 'roadBookMap',
-    cityLlistMap: 'cityLlistMap'
+    cityLlistMap: 'cityLlistMap',
+    baidumap: 'baidumap',
+    gpsMap: 'gpsMap'
   },
   excel: {
     export: 'Export',
