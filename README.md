@@ -107,7 +107,24 @@ nx-admin 是完全开源免费的管理系统集成方案，由 nxmin 在工作�
 <img src="./github/QqAndWeiXin.png" width="800px" height="420" alt="chat">
 
 ## 其他注意事项 ##
-### 一、如果我不想用到上面的某些组件呢，那我怎么在模板中删除掉不影响到其他功能呢？ ###
+### 一、如果我不想用到上面的紫色颜色，那我怎么修改为自己喜欢的颜色呢？ ###
+
+第一步： 修改代码地址为:[src/styles/variables](https://github.com/mgbq/nx-admin/blob/master/src/styles/variables.scss)里面的//sidebar注释部分
+
+第二步： 修改代码地址为：[src/views/layout/components/Sidebar/index.vue](https://github.com/mgbq/nx-admin/blob/master/src/views/layout/components/Sidebar/index.vue)下面部分颜色代码即可。
+```javaScript
+<el-menu
+      mode="vertical"
+      :show-timeout="200"
+      :default-active="$route.path"
+      :collapse="isCollapse"
+      background-color="#6959CD"
+      text-color="white"
+      active-text-color="#42b983"
+    >
+```
+
+### 二、如果我不想用到上面的某些组件呢，那我怎么在模板中删除掉不影响到其他功能呢？ ###
 
 举个栗子，我不想用 Vue-Quill-Editor 这个组件，那我需要分三步走。
 
