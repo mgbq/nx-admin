@@ -15,6 +15,6 @@ export const loadStyle = url => {
  */
 export const setTitle = function(title) {
   title = title ? `${title}` : 'NxAdmin'
-  window.document.title = title
+  window.document.title = title + '-nxAdmin'
 }
 

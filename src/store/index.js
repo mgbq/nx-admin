@@ -7,7 +7,7 @@ import getters from './getters'
 import fullScreen from './modules/fullScreen'
 import permission from './modules/permission'
 import tagsView from './modules/tagsView'
-
+import errorLog from './modules/errorLog'
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
@@ -17,7 +17,8 @@ const store = new Vuex.Store({
     common,
     fullScreen,
     permission,
-    tagsView
+    tagsView,
+    errorLog
 
   },
   getters

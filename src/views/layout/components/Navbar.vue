@@ -5,6 +5,7 @@
     <nx-breadcrumb class="breadcrumb-container"></nx-breadcrumb>
 
     <div class="right-menu">
+     <error-log class="errLog-container right-menu-item"></error-log>
 
       <nx-github style="margin-top:2px" class="nx-help right-menu-item"></nx-github>
       <!-- <error-log class="errLog-container right-menu-item"></error-log> -->
@@ -19,7 +20,11 @@
 
       <el-dropdown class="avatar-container right-menu-item" trigger="click">
         <div class="avatar-wrapper">
+<<<<<<< HEAD
         <img class="user-avatar" src="https://mgbq.github.io/nx-admin-site/home.png">
+=======
+          <img class="user-avatar" src="https://mgbq.github.io/nx-admin-site/home.png">
+>>>>>>> f9964819812c39751323f6a1d3a99c7087e41f36
           <i class="el-icon-caret-bottom"></i>
         </div>
         <el-dropdown-menu slot="dropdown">
@@ -44,7 +49,12 @@
 
 <script>
 import { mapGetters } from 'vuex'
+<<<<<<< HEAD
 
+=======
+import ErrorLog from '@/components/ErrorLog'
+import nxTopLock from '@/components/nx-top-lock'
+>>>>>>> f9964819812c39751323f6a1d3a99c7087e41f36
 import nxBreadcrumb from '@/components/nx-breadcrumb'
 import nxHamburger from '@/components/nx-hamburger'
 import nxHelp from '@/components/nx-help/index'
@@ -59,7 +69,14 @@ export default {
     nxHamburger,
     nxHelp,
     nxLangSelect,
+<<<<<<< HEAD
     nxGithub
+=======
+    nxSkin,
+    nxTopLock,
+    nxGithub,
+    ErrorLog
+>>>>>>> f9964819812c39751323f6a1d3a99c7087e41f36
   },
   computed: {
     ...mapGetters(['sidebar', 'name', 'avatar'])
@@ -92,6 +109,10 @@ export default {
     float: left;
   }
   .nx-help {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .errLog-container {
     display: inline-block;
     vertical-align: top;
   }

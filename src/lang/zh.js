@@ -80,7 +80,15 @@ export default {
     HightLightinViewer: '代码高亮显示',
     Rollingpositioning: '滚动定位',
     Digitalanimation: '数字动画',
-    list: 'list'
+    list: 'list',
+    Errorlog: '错误日志',
+    svgicons: 'svg图标',
+    fontawesome: 'fontawesome图标',
+    pointMap: '点聚合地图',
+    roadBookMap: '路书地图',
+    cityLlistMap: '城市列表地图',
+    baidumap: '百度地图',
+    gpsMap: 'gps定位'
   },
   permission: {
     roles: '你的权限',
@@ -108,5 +116,10 @@ export default {
     close: '关闭',
     closeOthers: '关闭其它',
     closeAll: '关闭所有'
+  },
+  errorLog: {
+    tips: '请点击右上角bug小图标',
+    description: '现在的管理后台基本都是spa的形式了，它增强了用户体验，但同时也会增加页面出问题的可能性，可能一个小小的疏忽就导致整个页面的死锁。好在 Vue 官网提供了一个方法来捕获处理异常，你可以在其中进行错误处理或者异常上报。',
+    documentation: '文档介绍'
   }
 }

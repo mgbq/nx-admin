@@ -30,6 +30,7 @@
 ## 介绍
 [nx-admin](https://mgbq.github.io/vue-permission/#/login) 是一个开源的管理系统前端集成方案，它基于 [vue](https://github.com/vuejs/vue) 和 [element](https://github.com/ElemeFE/element)。它使用了最新的前端技术栈，内置了i18国际化解决方案，动态路由，权限验证，提炼了典型的业务模型，提供了丰富的功能组件，它可以帮助你快速搭建企业级中后台产品原型。最大程度上帮助个人，企业节省时间成本和费用开支。
 
+[中文文档](https://mgbq.github.io/nx-admin-site/zh/)
 
 **完整版**
 
@@ -38,6 +39,12 @@
 [预览地址](https://mgbq.github.io/vue-permission/#/login)
 
 <img src="./github/nx-admin.png" width="800px" height="400" alt="nx-admin">
+
+**简化版**
+
+[Github 仓库](https://github.com/mgbq/nxAdmin-template) | 
+[码云仓库](https://gitee.com/symgg/nxAdmin-template) | 
+[预览地址](https://mgbq.github.io/nxAdmin-template)
 
 ## 前序准备
 
@@ -93,14 +100,31 @@ npm：`npm install`
 
 nx-admin 是完全开源免费的管理系统集成方案，由 nxmin 在工作之余由兴趣驱动完成，如果你也一样喜欢前端开发，欢迎加入我们的讨论/学习群，群内可以提问答疑，分享学习资料或者随便扯淡
 
-QQ群
+## 技术答疑，交流QQ群
 
-群号 493671066 欢迎大家
+群号 493671066 这里可以帮你答疑nx-admin这个项目各种疑惑，问题，防止发广告者，入群费设置为0.9元，请谅解，欢迎大家
 
 <img src="./github/QqAndWeiXin.png" width="800px" height="420" alt="chat">
 
 ## 其他注意事项 ##
-### 一、如果我不想用到上面的某些组件呢，那我怎么在模板中删除掉不影响到其他功能呢？ ###
+### 一、如果我不想用到上面的紫色颜色，那我怎么修改为自己喜欢的颜色呢？ ###
+
+第一步： 修改代码地址为:[src/styles/variables](https://github.com/mgbq/nx-admin/blob/master/src/styles/variables.scss)里面的//sidebar注释部分
+
+第二步： 修改代码地址为：[src/views/layout/components/Sidebar/index.vue](https://github.com/mgbq/nx-admin/blob/master/src/views/layout/components/Sidebar/index.vue)下面部分颜色代码即可。
+```javaScript
+<el-menu
+      mode="vertical"
+      :show-timeout="200"
+      :default-active="$route.path"
+      :collapse="isCollapse"
+      background-color="#6959CD"
+      text-color="white"
+      active-text-color="#42b983"
+    >
+```
+
+### 二、如果我不想用到上面的某些组件呢，那我怎么在模板中删除掉不影响到其他功能呢？ ###
 
 举个栗子，我不想用 Vue-Quill-Editor 这个组件，那我需要分三步走。
 

@@ -72,7 +72,7 @@ export const constantRouterMap = [
   {
     path: '/form',
     component: Layout,
-    redirect: '/table/BaseForm',
+    redirect: '/form/BaseForm',
     name: 'form',
     meta: {
       title: 'form',
@@ -135,7 +135,6 @@ export default new Router({
   routes: constantRouterMap
 })
 export const asyncRouterMap = [
-
   {
     path: '/error',
     component: Layout,
@@ -148,6 +147,20 @@ export const asyncRouterMap = [
     children: [
       { path: '401', component: () => import('@/views/errorPage/401'), name: 'page401', meta: { title: 'page401', noCache: true }},
       { path: '404', component: () => import('@/views/errorPage/404'), name: 'page404', meta: { title: 'page404', noCache: true }}
+    ]
+  },
+  // 错误日志
+  {
+    path: '/errorLog',
+    component: Layout,
+
+    children: [
+      {
+        path: 'errorLog',
+        name: 'errorLog',
+        component: () => import('@/views/errorLog/errorLog'),
+        meta: { title: 'Errorlog', icon: 'errorLog' }
+      }
     ]
   },
   { path: '*', redirect: '/404', hidden: true }]
