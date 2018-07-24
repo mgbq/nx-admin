@@ -16,19 +16,7 @@ export default {
 </script>
 <style>
  
-  html,
-  body,
-  .app {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-  .app {
-    background-color: #000;
-    perspective: 1200px;
-  }
-
+ 
   .app .app-router-view {
     position: absolute;
     top: 0;
