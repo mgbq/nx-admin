@@ -1,12 +1,9 @@
 import Vue from 'vue'
 
-<<<<<<< HEAD
-=======
 import VCharts from 'v-charts'
 
 // 地图
 import BaiduMap from 'vue-baidu-map'
->>>>>>> f9964819812c39751323f6a1d3a99c7087e41f36
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import locale from 'element-ui/lib/locale/lang/en' // lang i18n
@@ -15,13 +12,9 @@ import '../static/css/iconfont/1.0.0/index.css' /* icofont*/
 // css
 import 'normalize.css/normalize.css'// A modern alternative to CSS resets
 import '@/styles/index.scss' // global css
-<<<<<<< HEAD
-
-=======
 // 右键菜单
 import contentmenu from 'v-contextmenu'
 // import 'v-contextmenu/dist/index.css'
->>>>>>> f9964819812c39751323f6a1d3a99c7087e41f36
 import './mock' // simulation data
 
 import './errorLog'// error log
@@ -36,7 +29,7 @@ import store from './store'
 
 // Internationalization
 import i18n from './lang'
-
+import { global } from '@/global/global'
 import {
   loadStyle
 } from './utils/util'
@@ -55,6 +48,8 @@ Object.keys(filters).forEach(key => {
   Vue.filter(key, filters[key])
 })
 
+Vue.use(VCharts)
+Vue.use(contentmenu)
 Vue.use(ElementUI, { locale })
 iconfontVersion.forEach(ele => {
   loadStyle(iconfontUrl.replace('$key', ele))
@@ -63,9 +58,6 @@ Vue.use(ElementUI, {
   size: 'medium', // set element-ui default size
   i18n: (key, value) => i18n.t(key, value)
 })
-<<<<<<< HEAD
-
-=======
 // 地图
 Vue.use(BaiduMap, {
   // ak 是在百度地图开发者平台申请的密钥 详见 http://lbsyun.baidu.com/apiconsole/key */
@@ -77,7 +69,6 @@ if (localStorage.getItem('themeValue')) {
 } else {
   global.changeTheme('default')
 }
->>>>>>> f9964819812c39751323f6a1d3a99c7087e41f36
 Vue.config.productionTip = false
 
 new Vue({

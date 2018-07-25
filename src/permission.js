@@ -18,8 +18,18 @@ const whiteList = ['/login'] // 不重定向白名单
 router.beforeEach((to, from, next) => {
   NProgress.start()
   if (getToken()) {
+    // 设置浏览器头部标题
+    const browserHeaderTitle = to.name
+    store.commit('SET_BROWSERHEADERTITLE', {
+      browserHeaderTitle: browserHeaderTitle
+    })
     /* has token*/
-    if (to.path === '/login') {
+    if (store.getters.isLock && to.path !== '/lock') {
+      next({
+        path: '/lock'
+      })
+      NProgress.done()
+    } else if (to.path === '/login') {
       next({ path: '/' })
       NProgress.done() // if current page is dashboard will not trigger	afterEach hook, so manually handle it
     } else {
@@ -46,6 +56,11 @@ router.beforeEach((to, from, next) => {
       }
     }
   } else {
+    // 设置浏览器头部标题
+    const browserHeaderTitle = to.name
+    store.commit('SET_BROWSERHEADERTITLE', {
+      browserHeaderTitle: browserHeaderTitle
+    })
     if (whiteList.indexOf(to.path) !== -1) {
       next()
     } else {

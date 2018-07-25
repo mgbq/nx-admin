@@ -37,16 +37,6 @@ module.exports = {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
       'static': path.resolve(__dirname, 'static'),
-      'assets': resolve('src/assets'),
-      'components': resolve('src/components'),
-      'services': resolve('src/services'),
-      'directives': resolve('src/directives'),
-      'vuestic-mixins': resolve('src/vuestic-theme/vuestic-mixins'),
-      'vuestic-components': resolve('src/vuestic-theme/vuestic-components'),
-      'vuestic-directives': resolve('src/vuestic-theme/vuestic-directives'),
-      'vuestic-theme': resolve('src/vuestic-theme'),
-      'data': resolve('src/data'),
-      'vuex-store': resolve('src/store')
     }
   },
   module: {
