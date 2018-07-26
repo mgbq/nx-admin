@@ -55,6 +55,8 @@
 
 [Vue2.0实现的用户权限控制](http://blog.csdn.net/qq_32340877/article/details/79416344)
 
+[Mock.js模拟登录和表格的增删改查](https://juejin.im/post/5b59804c5188251acb0d00bf)
+
 [Vue2.0-基于elementui换肤[自定义主题]](https://blog.csdn.net/qq_32340877/article/details/80176987)
 
 [Vue国际化处理 vue-i18n 以及项目自动切换中英文](https://blog.csdn.net/qq_32340877/article/details/80148913)
