@@ -1,12 +1,12 @@
 <template>
 <div class="app-container">
    <p class="warn-content">
-            <a href="http://www.iconfont.cn/" target="_blank">参考阿里图标, 修改./src/config/env.js中的iconfontVersion地址即可实时调用阿里云在线图标库
+            <a href="http://www.iconfont.cn/" target="_blank">参考阿里图标
 
             </a>
         </p>
 <div class="iconfon-container pull-height">
-    <!-- <h3 style="color:red;">修改./src/config/env.js中的iconfontVersion地址即可实时调用阿里云在线图标库</h3> -->
+     <h3 style="color:red;">修改./src/config/env.js中的iconfontVersion地址即可实时调用阿里云在线图标库</h3>
     <ul class="icon-list">
         <li><span><i class="icon-daohanglanmoshi02"></i><span class="icon-name">icon-daohanglanmoshi02</span></span></li>
         <li><span><i class="icon-changyonglogo27"></i><span class="icon-name">icon-changyonglogo27</span></span></li>
