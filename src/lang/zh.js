@@ -14,6 +14,7 @@ export default {
     Default: '默认'
   },
   route: {
+    AliIcons: '阿里图标',
     contextmenu: '右键菜单',
     simple: '基础',
     divier: '分割线',

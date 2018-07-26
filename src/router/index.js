@@ -286,7 +286,13 @@ export const constantRouterMap = [
         path: 'font-awesome',
         name: 'font-awesome',
         component: () => import('@/views/icons/font-awesome/'),
-        meta: { title: 'fontawesome', icon: 'icon' }
+        meta: { title: 'fontawesome', icon: 'font-awesome' }
+      },
+      {
+        path: 'AliIcons',
+        name: 'AliIcons',
+        component: () => import('@/views/icons/AliIcons/'),
+        meta: { title: 'AliIcons', icon: 'AliIcons' }
       }
     ]
   },
