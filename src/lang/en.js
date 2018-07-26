@@ -12,6 +12,7 @@ export default {
     Default: 'Default'
   },
   route: {
+    AliIcons: 'AliIcons',
     list: 'list',
     Digitalanimation: 'Digitalanimation',
     Rollingpositioning: 'Rollingpositioning',
