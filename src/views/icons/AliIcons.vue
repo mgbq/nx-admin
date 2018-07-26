@@ -1,7 +1,8 @@
 <template>
 <div class="app-container">
    <p class="warn-content">
-            <a href="http://www.iconfont.cn/" target="_blank">参考阿里图标
+            <a href="http://www.iconfont.cn/" target="_blank">参考阿里图标, 修改./src/config/env.js中的iconfontVersion地址即可实时调用阿里云在线图标库
+
             </a>
         </p>
 <div class="iconfon-container pull-height">
