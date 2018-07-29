@@ -261,7 +261,7 @@ npm run lint -- --fix
 
 ## 感谢
 这个项目借鉴了[vueAdmin-template](https://github.com/PanJiaChen/vueAdmin-template),[d2admin](https://github.com/d2-projects/d2-admin),
-[avue](https://github.com/nmxiaowei/avue)部分组件。
+[avue](https://gitee.com/smallweigit/avue)部分组件。
 
 ## License
 
