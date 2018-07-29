@@ -69,8 +69,6 @@
 
 [Vue项目添加动态浏览器头部title](https://juejin.im/post/5b446e24e51d45194d4fce14)
 
-#### 这个项目借鉴了花裤衩的模板[vueAdmin-template](https://github.com/PanJiaChen/vueAdmin-template)
-
 **本项目不支持低版本浏览器(如 ie)，有需求请自行添加 polyfill [详情](https://github.com/mgbq/nx-admin/wiki#babel-polyfill)**
 
 **注意：该项目使用 element-ui@2.3.0+ 版本，所以最低兼容 vue@2.5.0+**
@@ -260,6 +258,10 @@ npm run lint -- --fix
 ```
 ## 捐赠 觉得不错 赏个咖啡 让作者打起精神 ~
 <img src="./github/二维码.jpg" width="400px" height="460px" alt="捐赠扫一扫">
+
+## 感谢
+这个项目借鉴了[vueAdmin-template](https://github.com/PanJiaChen/vueAdmin-template),[d2admin](https://github.com/d2-projects/d2-admin),
+[avue](https://github.com/nmxiaowei/avue)部分组件。
 
 ## License
 
