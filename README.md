@@ -123,8 +123,11 @@ nx-admin 是完全开源免费的管理系统集成方案，由 nxmin 在工作�
       active-text-color="#42b983"
     >
 ```
+### 二、如果我不想用到刷新加载动画怎么做呢？ ###
 
-### 二、如果我不想用到上面的某些组件呢，那我怎么在模板中删除掉不影响到其他功能呢？ ###
+把index.html里面相关的[loader-wrappe](https://github.com/mgbq/nx-admin/blob/master/index.html#L245) 加载动画div 和相关css去掉即可。
+
+### 三、如果我不想用到上面的某些组件呢，那我怎么在模板中删除掉不影响到其他功能呢？ ###
 
 举个栗子，我不想用 Vue-Quill-Editor 这个组件，那我需要分三步走。
 
