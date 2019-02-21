@@ -233,20 +233,20 @@ export const constantRouterMap = [
   },
 
   // 表情包
-  {
-    path: '/emoji',
-    component: Layout,
-    meta: { title: 'emoji', icon: 'emoji' },
-    children: [
-      {
-        path: 'emoji',
-        name: 'emoji',
-        component: () => import('@/views/githubemoji'),
-        meta: { title: 'emoji', icon: 'emoji' }
-      }
+  // {
+  //   path: '/emoji',
+  //   component: Layout,
+  //   meta: { title: 'emoji', icon: 'emoji' },
+  //   children: [
+  //     {
+  //       path: 'emoji',
+  //       name: 'emoji',
+  //       component: () => import('@/views/githubemoji'),
+  //       meta: { title: 'emoji', icon: 'emoji' }
+  //     }
 
-    ]
-  },
+  //   ]
+  // },
   // 树形组件
   {
     path: '/treeMen',
