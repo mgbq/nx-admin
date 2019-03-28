@@ -23,7 +23,7 @@ export default {
     disabled: '禁用',
     customtrigger: '自定义事件',
     form: '表单',
-    Tabs: 'table选项卡',
+    Tabs: 'tabs选项卡',
     Table: '表格',
     Icons: 'icon图标',
     treeChart: '树图',
