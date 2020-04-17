@@ -35,7 +35,7 @@
 **完整版**
 
 [Github 仓库](https://github.com/mgbq/nx-admin) | 
-[码云仓库](https://gitee.com/symgg/nx-admin) | 
+[码云仓库](https://gitee.com/nxmin/nx-admin) | 
 [预览地址](https://sdsdsy.gitee.io/nxadmin)
 
 <img src="./github/nx-admin.png" width="800px" height="400" alt="nx-admin">
@@ -43,7 +43,7 @@
 **简化版**
 
 [Github 仓库](https://github.com/mgbq/nxAdmin-template) | 
-[码云仓库](https://gitee.com/symgg/nxAdmin-template) | 
+[码云仓库](https://gitee.com/nxmin/nxAdmin-template) | 
 [预览地址](https://mgbq.github.io/nxAdmin-template)
 
 ## 前序准备
