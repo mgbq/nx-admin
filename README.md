@@ -36,7 +36,7 @@
 
 [Github 仓库](https://github.com/mgbq/nx-admin) | 
 [码云仓库](https://gitee.com/symgg/nx-admin) | 
-[预览地址](https://mgbq.github.io/vue-permission/#/login)
+[预览地址](https://sdsdsy.gitee.io/nxadmin)
 
 <img src="./github/nx-admin.png" width="800px" height="400" alt="nx-admin">
 
