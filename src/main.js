@@ -7,7 +7,7 @@ import BaiduMap from 'vue-baidu-map'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import locale from 'element-ui/lib/locale/lang/en' // lang i18n
-import '../static/css/iconfont/1.0.0/index.css' /* icofont*/
+import '@/assets/css/iconfont/1.0.0/index.css' /* icofont*/
 
 // css
 import 'normalize.css/normalize.css'// A modern alternative to CSS resets

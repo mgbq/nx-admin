@@ -1,18 +1,22 @@
 <template>
   <div class="icons-container">
     <p class="warn-content">
-      <a href="https://panjiachen.github.io/vue-element-admin-site/guide/advanced/icon.html" target="_blank">svg组件参考 vue-element-admin Add and use
-      </a>
+      <a
+        href="https://panjiachen.github.io/vue-element-admin-site/guide/advanced/icon.html"
+        target="_blank"
+      >svg组件参考 vue-element-admin Add and use</a>
     </p>
     <div class="icons-wrapper">
-      <div v-for="item of iconsMap" :key="item" @click="handleClipboard(generateIconCode(item),$event)">
+      <div
+        v-for="item of svgIcons"
+        :key="item"
+        @click="handleClipboard(generateIconCode(item),$event)"
+      >
         <el-tooltip placement="top">
-          <div slot="content">
-            {{generateIconCode(item)}}
-          </div>
+          <div slot="content">{{ generateIconCode(item) }}</div>
           <div class="icon-item">
             <svg-icon class-name="disabled" :icon-class="item" />
-            <span>{{item}}</span>
+            <span>{{ item }}</span>
           </div>
         </el-tooltip>
       </div>
@@ -21,22 +25,17 @@
 </template>
 
 <script>
-import icons from './generateIconsView'
 import clipboard from '@/utils/clipboard'
+import svgIcons from './svg-icons.js'
 
 export default {
-  name: 'icons',
+  name: 'Icons',
   data() {
     return {
-      iconsMap: []
+      svgIcons
     }
   },
-  mounted() {
-    const iconsMap = icons.state.iconsMap.map((i) => {
-      return i.default.id.split('-')[1]
-    })
-    this.iconsMap = iconsMap
-  },
+  mounted() {},
   methods: {
     generateIconCode(symbol) {
       return `<svg-icon icon-class="${symbol}" />`
@@ -70,7 +69,7 @@ export default {
     font-size: 25px;
     margin-top: 10px;
   }
-  .disabled{
+  .disabled {
     pointer-events: none;
   }
 }
