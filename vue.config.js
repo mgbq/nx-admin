@@ -45,7 +45,7 @@ module.exports = {
   publicPath: '/',
   outputDir: 'dist',
   assetsDir: 'static',
-  lintOnSave: process.env.NODE_ENV === 'development',
+  lintOnSave: false,
   productionSourceMap: false,
   devServer: {
     port: port,
@@ -66,30 +66,22 @@ module.exports = {
     }
   },
   chainWebpack(config) {
+    // set svg-sprite-loader
     config.module
-      .rule('cache-loader')
-      .test(/\.ext$/)
-      .use('cache-loader')
-      .loader('cache-loader')
+      .rule('svg')
+      .exclude.add(resolve('src/icons'))
       .end()
-
-    config.resolve.alias.set('@$', resolve('src'))
-    const svgRule = config.module.rule('svg')
-    svgRule.uses.clear()
-    svgRule
-      .oneOf('inline')
-      .resourceQuery(/inline/)
-      .use('vue-svg-icon-loader')
-      .loader('vue-svg-icon-loader')
+    config.module
+      .rule('icons')
+      .test(/\.svg$/)
+      .include.add(resolve('src/icons'))
       .end()
-      .end()
-      .oneOf('external')
-      .use('file-loader')
-      .loader('file-loader')
+      .use('svg-sprite-loader')
+      .loader('svg-sprite-loader')
       .options({
-        name: 'assets/[name].[hash:8].[ext]'
+        symbolId: 'icon-[name]'
       })
-
+      .end()
     // set preserveWhitespace
     config.module
       .rule('vue')
